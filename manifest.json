@@ -1,0 +1,10 @@
+{
+  "Name": "Button's Extra Books",
+  "Author": "Spiderbuttons",
+  "Version": "1.0.0",
+  "Description": "Adds a few more books and powers to the bookseller's library.",
+  "UniqueID": "Spiderbuttons.ButtonsExtraBooks",
+  "EntryDll": "ButtonsExtraBooks.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}
