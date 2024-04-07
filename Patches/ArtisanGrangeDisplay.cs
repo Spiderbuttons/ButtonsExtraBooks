@@ -1,74 +1,24 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection.Emit;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
-using StardewValley.GameData;
+using ButtonsExtraBooks.Helpers;
 
 namespace ButtonsExtraBooks
 {
-    public static class ButtonsExtraBooks_ArtisanMachines
+    [HarmonyPatch]
+    static class ArtisanGrangeDisplay
     {
-        private static bool Applied { get; set; }
-        private static IMonitor Monitor { get; set; }
-        
-        public static void Apply(Harmony harmony, IMonitor monitor)
-        {
-            if (Applied)
-                throw new InvalidOperationException("ButtonsExtraBooks_ArtisanMachines patch is already applied.");
-            Monitor = monitor;
-            Monitor.Log("Patching in ArtisanMachines Book...", LogLevel.Trace);
-            try
-            {
-                harmony.Patch(
-                    original: AccessTools.Method(typeof(Event), "judgeGrange"),
-                    transpiler: new HarmonyMethod(typeof(ButtonsExtraBooks_ArtisanMachines), nameof(judgeGrange_Transpiler))
-                );
-                // Now patch the "ApplyQuantityModifiers" method in Utility to actually apply the buff. it should be a prefix
-                harmony.Patch(
-                    original: AccessTools.Method(typeof(Utility), nameof(Utility.ApplyQuantityModifiers)),
-                    prefix: new HarmonyMethod(typeof(ButtonsExtraBooks_ArtisanMachines), nameof(ApplyQuantityModifiers_Prefix))
-                );
-            }
-            catch (Exception ex)
-            {
-                Monitor.Log("Error patching ButtonsExtraBooks_ArtisanMachines: \n" + ex, LogLevel.Error);
-            }
-            Applied = true;
-        }
-        
-        private static void ApplyQuantityModifiers_Prefix(ref IList<QuantityModifier> modifiers, ref Item targetItem)
-        {
-            try
-            {
-                if (Game1.getAllFarmers().Any(farmer => farmer.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_ArtisanMachines") != 0) && targetItem.Category == -26)
-                {
-                    Monitor.Log("Applying ArtisanMachines buff to " + targetItem.Name, LogLevel.Trace);
-                    QuantityModifier artisanBuff = new QuantityModifier
-                    {
-                        Id = "Spiderbuttons.ButtonsExtraBooks_ArtisanMachines",
-                        Modification = QuantityModifier.ModificationType.Multiply,
-                        Amount = 0.75f
-                    };
-                    if (modifiers == null) modifiers = new List<QuantityModifier>();
-                    modifiers.Add(artisanBuff);
-                }
-            }
-            catch (Exception ex)
-            {
-                Monitor.Log("Error in ButtonsExtraBooks_ArtisanMachines.ApplyQuantityModifiers_Prefix: \n" + ex, LogLevel.Error);
-            }
-        }
-
-        private static IEnumerable<CodeInstruction> judgeGrange_Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
+        [HarmonyPatch(typeof(Event), "judgeGrange")]
+        private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
             try
             {
                 var code = new List<CodeInstruction>(instructions);
                 
-                // create new localVariable called artisanPoints to add to the original method
                 var artisanPoints = il.DeclareLocal(typeof(int));
                 code.Insert(0, new CodeInstruction(OpCodes.Ldc_I4_0));
                 code.Insert(1, new CodeInstruction(OpCodes.Stloc, artisanPoints));
@@ -130,7 +80,7 @@ namespace ButtonsExtraBooks
             }
             catch (Exception ex)
             {
-                Monitor.Log("Error in ButtonsExtraBooks_Artisan.judgeGrange_Transpiler: \n" + ex, LogLevel.Error);
+                Loggers.Log("Error in ButtonsExtraBooks_Artisan.judgeGrange_Transpiler: \n" + ex, LogLevel.Error);
                 return instructions;
             }
         }
