@@ -1,9 +1,7 @@
-﻿using System;
-using ButtonsExtraBooks.Config;
+﻿using ButtonsExtraBooks.Config;
 using ButtonsExtraBooks.Helpers;
 using ContentPatcher;
 using GenericModConfigMenu;
-using Microsoft.Xna.Framework;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
@@ -20,6 +18,7 @@ namespace ButtonsExtraBooks
         internal static IContentPatcherAPI ContentPatcher { get; private set; } = null!;
         public override void Entry(IModHelper helper)
         {
+            i18n.Init(helper.Translation);
             Config = helper.ReadConfig<ModConfig>();
             ModMonitor = this.Monitor;
             var harmony = new Harmony(base.ModManifest.UniqueID);
@@ -34,7 +33,6 @@ namespace ButtonsExtraBooks
         {
             if (!Context.IsWorldReady) return;
             if (Game1.player.stats.Get("Spiderbuttons.ButtonsExtraBooks_Debug_RemoveAll") != 0) RemovePowers.RemoveAll();
-            // Loggers.Log(Config.DebugBook.ToString());
         }
         
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
@@ -45,7 +43,6 @@ namespace ButtonsExtraBooks
                 ModMonitor.Log("ContentPatcher not found. This mod requires ContentPatcher to function.", LogLevel.Error);
                 return;
             }
-            // register tokens for config
             ContentPatcher.RegisterToken(
                 mod: ModManifest,
                 name: "ConfigAlwaysAvailable",

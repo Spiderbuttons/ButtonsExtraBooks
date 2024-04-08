@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Reflection.Emit;
+using ButtonsExtraBooks.Helpers;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
-using ButtonsExtraBooks.Helpers;
 
-namespace ButtonsExtraBooks
+namespace ButtonsExtraBooks.Patches
 {
     [HarmonyPatch]
     static class ArtisanGrangeDisplay

@@ -1,4 +1,5 @@
-﻿using GenericModConfigMenu;
+﻿using System.Net.Mime;
+using GenericModConfigMenu;
 using HarmonyLib;
 using StardewModdingAPI;
 
@@ -17,6 +18,9 @@ public sealed class ModConfig
     
     public bool EnableArtisanManual { get; set; } = true;
     public int ArtisanManualPercentDecrease { get; set; } = 15;
+    
+    public bool BigMelonsBook { get; set; } = true;
+    public int BigMelonsPercent { get; set; } = 5;
     
     public bool DebugBook { get; set; } = false;
 
@@ -40,86 +44,146 @@ public sealed class ModConfig
     public void SetupConfig(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper, Harmony harmony)
     {
         configMenu.Register(
-                    mod: ModManifest,
-                    reset: Init,
-                    save: () => Helper.WriteConfig(this)
-                );
-                configMenu.AddSectionTitle(
-                    mod: ModManifest,
-                    text: () => "General Settings"
-                );
-                configMenu.AddBoolOption(
-                    mod: ModManifest,
-                    name: () => "Always Available",
-                    tooltip: () => "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
-                    getValue: () => AlwaysAvailable,
-                    setValue: value => AlwaysAvailable = value
-                );
-                configMenu.AddSectionTitle(
-                    mod: ModManifest,
-                    text: () => "Book Settings"
-                );
-                configMenu.AddBoolOption(
-                    mod: ModManifest,
-                    name: () => "Enable Beginner's Luck",
-                    tooltip: () => "If disabled, the Beginner's Luck book will not be available.",
-                    getValue: () => EnableBeginnersLuck,
-                    setValue: value => EnableBeginnersLuck = value
-                );
-                configMenu.AddNumberOption(
-                    mod: ModManifest,
-                    name: () => "Beginner's Luck Bonus",
-                    tooltip: () => "How much luck is added after reading the Beginner's Luck book.",
-                    getValue: () => BeginnersLuckAmount,
-                    setValue: value => BeginnersLuckAmount = value
-                );
-                configMenu.AddBoolOption(
-                    mod: ModManifest,
-                    name: () => "Enable Book of Altruism",
-                    tooltip: () => "If disabled, the Book of Altruism book will not be available.",
-                    getValue: () => EnableBookOfAltruism,
-                    setValue: value => EnableBookOfAltruism = value
-                );
-                configMenu.AddBoolOption(
-                    mod: ModManifest,
-                    name: () => "Enable Winter Forestry",
-                    tooltip: () => "If disabled, the Winter Forestry book will not be available.",
-                    getValue: () => EnableWinterForestry,
-                    setValue: value => EnableWinterForestry = value
-                );
-                configMenu.AddBoolOption(
-                    mod: ModManifest,
-                    name: () => "Enable Artisans Guild Manual",
-                    tooltip: () => "If disabled, the Artisans Guild Manual book will not be available.",
-                    getValue: () => EnableArtisanManual,
-                    setValue: value => EnableArtisanManual = value
-                );
-                configMenu.AddNumberOption(
-                    mod: ModManifest,
-                    name: () => "Artisans Guild Manual Bonus",
-                    tooltip: () => "Percent decrease to the processing time of machines producing artisan goods.",
-                    getValue: () => ArtisanManualPercentDecrease,
-                    setValue: (value) =>
-                    {
-                        ArtisanManualPercentDecrease = value;
-                        harmony.UnpatchAll(ModManifest.UniqueID);
-                        harmony.PatchAll();
-                    },
-                    min: 1,
-                    max: 50,
-                    interval: 1,
-                    formatValue: (value) => $"{value}%"
-                );
-                configMenu.AddSectionTitle(
-                    mod: ModManifest,
-                    text: () => "Debug Settings"
-                );
-                configMenu.AddBoolOption(
-                    mod: ModManifest,
-                    name: () => "Debug Book",
-                    tooltip: () => "If enabled, a debug book will be available from Pierre that will remove all of your powers.",
-                    getValue: () => DebugBook,
-                    setValue: value => DebugBook = value
-                );
+            mod: ModManifest,
+            reset: Init,
+            save: () => Helper.WriteConfig(this)
+        );
+        SetupPages(configMenu, ModManifest, Helper, harmony);
+        SetupGeneral(configMenu, ModManifest, Helper, harmony);
+        SetupBooks(configMenu, ModManifest, Helper, harmony);
+        SetupDebug(configMenu, ModManifest, Helper, harmony);
+    }
+    
+    private static void SetupPages(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper,
+        Harmony harmony)
+    {
+        configMenu.AddPageLink(
+            mod: ModManifest,
+            pageId: "Config.Pages.General",
+            text: i18n.Config_SectionTitle_General
+        );
+        configMenu.AddPageLink(
+            mod: ModManifest,
+            pageId: "Config.Pages.Books",
+            text: i18n.Config_SectionTitle_Books
+        );
+        configMenu.AddPageLink(
+            mod: ModManifest,
+            pageId: "Config.Pages.Debug",
+            text: i18n.Config_SectionTitle_Debug
+        );
+    }
+    
+    private void SetupGeneral(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper,
+        Harmony harmony)
+    {
+        configMenu.AddPage(
+            mod: ModManifest,
+            pageId: "Config.Pages.General",
+            pageTitle: i18n.Config_SectionTitle_General
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_General_AlwaysAvailable_Name,
+            tooltip: i18n.Config_General_AlwaysAvailable_Description,
+            getValue: () => AlwaysAvailable,
+            setValue: value => AlwaysAvailable = value
+        );
+    }
+    
+    private void SetupBooks(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper,
+        Harmony harmony)
+    {
+        configMenu.AddPage(
+            mod: ModManifest,
+            pageId: "Config.Pages.Books",
+            pageTitle: i18n.Config_SectionTitle_Books
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_EnableBeginnersLuck_Name,
+            tooltip: i18n.Config_Books_EnableBeginnersLuck_Description,
+            getValue: () => EnableBeginnersLuck,
+            setValue: value => EnableBeginnersLuck = value
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_BeginnersLuckBonus_Name,
+            tooltip: i18n.Config_Books_BeginnersLuckBonus_Description,
+            getValue: () => BeginnersLuckAmount,
+            setValue: value => BeginnersLuckAmount = value
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_EnableBookOfAltruism_Name,
+            tooltip: i18n.Config_Books_EnableBookOfAltruism_Description,
+            getValue: () => EnableBookOfAltruism,
+            setValue: value => EnableBookOfAltruism = value
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_EnableWinterForestry_Name,
+            tooltip: i18n.Config_Books_EnableWinterForestry_Description,
+            getValue: () => EnableWinterForestry,
+            setValue: value => EnableWinterForestry = value
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_EnableArtisanManual_Name,
+            tooltip: i18n.Config_Books_EnableArtisanManual_Description,
+            getValue: () => EnableArtisanManual,
+            setValue: value => EnableArtisanManual = value
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_ArtisanManualBonus_Name,
+            tooltip: i18n.Config_Books_ArtisanManualBonus_Description,
+            getValue: () => ArtisanManualPercentDecrease,
+            setValue: (value) =>
+            {
+                ArtisanManualPercentDecrease = value;
+                harmony.UnpatchAll(ModManifest.UniqueID);
+                harmony.PatchAll();
+            },
+            min: 1,
+            max: 50,
+            interval: 1,
+            formatValue: (value) => $"{value}%"
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_EnableBigMelons_Name,
+            tooltip: i18n.Config_Books_EnableBigMelons_Description,
+            getValue: () => BigMelonsBook,
+            setValue: value => BigMelonsBook = value
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_BigMelonsBonus_Name,
+            tooltip: i18n.Config_Books_BigMelonsBonus_Description,
+            getValue: () => BigMelonsPercent,
+            setValue: value => BigMelonsPercent = value,
+            min: 2,
+            max: 100,
+            interval: 1,
+            formatValue: value => $"{value}%"
+        );
+    }
+    
+    private void SetupDebug(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper,
+        Harmony harmony)
+    {
+        configMenu.AddPage(
+            mod: ModManifest,
+            pageId: "Config.Pages.Debug",
+            pageTitle: i18n.Config_Books_EnableBeginnersLuck_Name
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Debug_EnableDebugBook_Name,
+            tooltip: i18n.Config_Debug_EnableDebugBook_Description,
+            getValue: () => DebugBook,
+            setValue: value => DebugBook = value
+        );
     }
 }
