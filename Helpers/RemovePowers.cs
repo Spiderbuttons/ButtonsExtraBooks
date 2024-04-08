@@ -18,7 +18,7 @@ static class RemovePowers
             if (Game1.player.stats.Get($"Spiderbuttons.ButtonsExtraBooks_Book_{power.Name}") != 0)
             {
                 Game1.player.stats.Set($"Spiderbuttons.ButtonsExtraBooks_Book_{power.Name}", 0);
-                if (refund) Game1.player.dropItem(ItemRegistry.Create($"(O)Spiderbuttons.ButtonsExtraBooks_Book_{power.Name}"));
+                if (refund && ModEntry.Config.GetPowerEnabled(power.Name)) Game1.player.dropItem(ItemRegistry.Create($"(O)Spiderbuttons.ButtonsExtraBooks_Book_{power.Name}"));
             }
         }
     }

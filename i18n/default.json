@@ -9,26 +9,26 @@
   "Config.General.AlwaysAvailable.Description": "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
   
   // BOOK SETTINGS //
-  "Config.Books.EnableBeginnersLuck.Name": "Enable Beginner's Luck",
-  "Config.Books.EnableBeginnersLuck.Description": "If disabled, the Beginner's Luck book will not be available.",
-  "Config.Books.BeginnersLuckBonus.Name": "Beginner's Luck Bonus",
-  "Config.Books.BeginnersLuckBonus.Description": "How much luck is added after reading the Beginner's Luck book.",
+  "Config.Books.EnableLuck.Name": "Enable Beginner's Luck",
+  "Config.Books.EnableLuck.Description": "If disabled, the Beginner's Luck book will not be available.",
+  "Config.Books.LuckBonus.Name": "Beginner's Luck Bonus",
+  "Config.Books.LuckBonus.Description": "How much luck is added after reading the Beginner's Luck book.",
   
-  "Config.Books.EnableBookOfAltruism.Name": "Enable Book of Altruism",
-  "Config.Books.EnableBookOfAltruism.Description": "If disabled, the Book of Altruism will not be available.",
+  "Config.Books.EnableExtraGifts.Name": "Enable Book of Altruism",
+  "Config.Books.EnableExtraGifts.Description": "If disabled, the Book of Altruism will not be available.",
   
-  "Config.Books.EnableWinterForestry.Name": "Enable Winter Forestry",
-  "Config.Books.EnableWinterForestry.Description": "If disabled, the Winter Forestry book will not be available.",
+  "Config.Books.EnableTreesIgnoreSeason.Name": "Enable Winter Forestry",
+  "Config.Books.EnableTreesIgnoreSeason.Description": "If disabled, the Winter Forestry book will not be available.",
   
-  "Config.Books.EnableArtisanManual.Name": "Enable Artisans Guild Manual",
-  "Config.Books.EnableArtisanManual.Description": "If disabled, the Artisans Guild Manual will not be available.",
-  "Config.Books.ArtisanManualBonus.Name": "Artisans Guild Manual Bonus",
-  "Config.Books.ArtisanManualBonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
+  "Config.Books.EnableArtisanMachines.Name": "Enable Artisans Guild Manual",
+  "Config.Books.EnableArtisanMachines.Description": "If disabled, the Artisans Guild Manual will not be available.",
+  "Config.Books.ArtisanMachinesBonus.Name": "Artisans Guild Manual Bonus",
+  "Config.Books.ArtisanMachinesBonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
   
-  "Config.Books.EnableBigMelons.Name": "Enable Big Melons!",
-  "Config.Books.EnableBigMelons.Description": "If disabled, the Big Melons! book will not be available.",
-  "Config.Books.BigMelonsBonus.Name": "Big Melons! Bonus",
-  "Config.Books.BigMelonsBonus.Description": "Percent chance that crops will form a giant crop overnight.",
+  "Config.Books.EnableGiantCrops.Name": "Enable Big Melons!",
+  "Config.Books.EnableGiantCrops.Description": "If disabled, the Big Melons! book will not be available.",
+  "Config.Books.GiantCropsBonus.Name": "Big Melons! Bonus",
+  "Config.Books.GiantCropsBonus.Description": "Percent chance that crops will form a giant crop overnight.",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",

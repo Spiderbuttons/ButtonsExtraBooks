@@ -12,9 +12,10 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(Farmer), nameof(Farmer.DailyLuck), MethodType.Getter)]
         static void Postfix(Farmer __instance, ref double __result)
         {
+            if (!ModEntry.Config.EnableLuck) return;
             try
             {
-                __result += __instance.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Luck") != 0 ? ModEntry.Config.BeginnersLuckAmount : 0f;
+                __result += __instance.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Luck") != 0 ? ModEntry.Config.LuckAmount : 0f;
             }
             catch (Exception ex)
             {

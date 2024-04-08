@@ -56,7 +56,7 @@ namespace ButtonsExtraBooks
             );
             ContentPatcher.RegisterToken(
                 mod: ModManifest,
-                name: "ConfigDebugBook",
+                name: "ConfigEnableDebugBook",
                 getValue: () =>
                 {
                     return new[]
@@ -65,6 +65,62 @@ namespace ButtonsExtraBooks
                     };
                 }
             );
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "ConfigEnableLuck",
+                getValue: () =>
+                {
+                    return new[]
+                    {
+                        Config.EnableLuck.ToString()
+                    };
+                }
+            );
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "ConfigEnableExtraGifts",
+                getValue: () =>
+                {
+                    return new[]
+                    {
+                        Config.EnableExtraGifts.ToString()
+                    };
+                }
+            );
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "ConfigEnableTreesIgnoreSeason",
+                getValue: () =>
+                {
+                    return new[]
+                    {
+                        Config.EnableTreesIgnoreSeason.ToString()
+                    };
+                }
+            );
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "ConfigEnableArtisanMachines",
+                getValue: () =>
+                {
+                    return new[]
+                    {
+                        Config.EnableArtisanMachines.ToString()
+                    };
+                }
+            );
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "ConfigEnableGiantCrops",
+                getValue: () =>
+                {
+                    return new[]
+                    {
+                        Config.EnableGiantCrops.ToString()
+                    };
+                }
+            );
+            
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
         }

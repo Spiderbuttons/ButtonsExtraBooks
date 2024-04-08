@@ -13,6 +13,7 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(Farmer), nameof(Farmer.updateFriendshipGifts))]
         private static void Postfix(Farmer __instance)
         {
+            if (!ModEntry.Config.EnableExtraGifts) return;
             try
             {
                 if (__instance.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_ExtraGifts") == 0) return;

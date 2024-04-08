@@ -14,6 +14,7 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(Tree), nameof(Tree.GetMaxSizeHere))]
         static void Prefix(ref bool ignoreSeason)
         {
+            if (!ModEntry.Config.EnableTreesIgnoreSeason) return;
             try
             {
                 if (Game1.getAllFarmers().All(farmer => farmer.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_TreesIgnoreSeason") == 0)) return;
@@ -29,6 +30,7 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(Tree), nameof(Tree.IsInSeason))]
         private static void Postfix(ref bool __result)
         {
+            if (!ModEntry.Config.EnableTreesIgnoreSeason) return;
             try
             {
                 foreach (Farmer farmer in Game1.getAllFarmers())

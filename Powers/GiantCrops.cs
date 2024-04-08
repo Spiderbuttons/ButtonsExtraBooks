@@ -20,7 +20,7 @@ namespace ButtonsExtraBooks.Powers
                 bool someoneHasBuff = Game1.getAllFarmers().Any(farmer => farmer.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_GiantCrops") != 0);
                 foreach (var crop in giantCrops)
                 {
-                    crop.Value.Chance = someoneHasBuff ? ModEntry.Config.BigMelonsPercent/100f : 0.01f;
+                    crop.Value.Chance = someoneHasBuff && ModEntry.Config.EnableGiantCrops ? ModEntry.Config.GiantCropsPercent/100f : 0.01f;
                 }
             }
             catch (Exception ex)

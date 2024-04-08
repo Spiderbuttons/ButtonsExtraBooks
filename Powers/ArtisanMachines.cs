@@ -16,6 +16,7 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(StardewValley.Object), nameof(StardewValley.Object.OutputMachine))]
         private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
+            if (!ModEntry.Config.EnableArtisanMachines) return instructions;
             try
             {
                 var code = new List<CodeInstruction>(instructions);
@@ -33,7 +34,7 @@ namespace ButtonsExtraBooks.Powers
                 }
                 
                 // get our ArtisanManualPercentDecrease from Config
-                var artisanManualPercentDecrease = (100.0f - ModEntry.Config.ArtisanManualPercentDecrease)/100.0f;
+                var artisanManualPercentDecrease = (100.0f - ModEntry.Config.ArtisanMachinesPercentDecrease)/100.0f;
                 
                 var instructionsToAdd = new List<CodeInstruction>();
 
