@@ -17,7 +17,8 @@ public sealed class ModConfig
     public bool EnableTreesIgnoreSeason { get; set; } = true;
     
     public bool EnableArtisanMachines { get; set; } = true;
-    public int ArtisanMachinesPercentDecrease { get; set; } = 15;
+    public bool ArtisanMachinesGrangeMustWin { get; set; } = true;
+    public int ArtisanMachinesPercentDecrease { get; set; } = 20;
     
     public bool EnableGiantCrops { get; set; } = true;
     public int GiantCropsPercent { get; set; } = 5;
@@ -37,7 +38,7 @@ public sealed class ModConfig
         EnableExtraGifts = true;
         EnableTreesIgnoreSeason = true;
         EnableArtisanMachines = true;
-        ArtisanMachinesPercentDecrease = 15;
+        ArtisanMachinesPercentDecrease = 20;
         EnableGiantCrops = true;
         GiantCropsPercent = 5;
         DebugBook = false;
@@ -107,10 +108,14 @@ public sealed class ModConfig
             pageId: "Config.Pages.Books",
             pageTitle: i18n.Config_SectionTitle_Books
         );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: i18n.Config_Books_Luck_Title
+        );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_Books_EnableLuck_Name,
-            tooltip: i18n.Config_Books_EnableLuck_Description,
+            name: i18n.Config_General_Enabled_Name,
+            tooltip: i18n.Config_General_Enabled_Description,
             getValue: () => EnableLuck,
             setValue: value => EnableLuck = value
         );
@@ -121,26 +126,45 @@ public sealed class ModConfig
             getValue: () => LuckAmount,
             setValue: value => LuckAmount = value
         );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: i18n.Config_Books_ExtraGifts_Title
+        );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_Books_EnableExtraGifts_Name,
-            tooltip: i18n.Config_Books_EnableExtraGifts_Description,
+            name: i18n.Config_General_Enabled_Name,
+            tooltip: i18n.Config_General_Enabled_Description,
             getValue: () => EnableExtraGifts,
             setValue: value => EnableExtraGifts = value
         );
-        configMenu.AddBoolOption(
+        configMenu.AddSectionTitle(
             mod: ModManifest,
-            name: i18n.Config_Books_EnableTreesIgnoreSeason_Name,
-            tooltip: i18n.Config_Books_EnableTreesIgnoreSeason_Description,
-            getValue: () => EnableTreesIgnoreSeason,
-            setValue: value => EnableTreesIgnoreSeason = value
+            text: i18n.Config_Books_TreesIgnoreSeason_Title
         );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_Books_EnableArtisanMachines_Name,
-            tooltip: i18n.Config_Books_EnableArtisanMachines_Description,
+            name: i18n.Config_General_Enabled_Name,
+            tooltip: i18n.Config_General_Enabled_Description,
+            getValue: () => EnableTreesIgnoreSeason,
+            setValue: value => EnableTreesIgnoreSeason = value
+        );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: i18n.Config_Books_ArtisanMachines_Title
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_General_Enabled_Name,
+            tooltip: i18n.Config_General_Enabled_Description,
             getValue: () => EnableArtisanMachines,
             setValue: value => EnableArtisanMachines = value
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_ArtisanMachinesGrangeMustWin_Name,
+            tooltip: i18n.Config_Books_ArtisanMachinesGrangeMustWin_Description,
+            getValue: () => ArtisanMachinesGrangeMustWin,
+            setValue: value => ArtisanMachinesGrangeMustWin = value
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
@@ -158,10 +182,14 @@ public sealed class ModConfig
             interval: 1,
             formatValue: (value) => $"{value}%"
         );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: i18n.Config_Books_GiantCrops_Title
+        );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_Books_EnableGiantCrops_Name,
-            tooltip: i18n.Config_Books_EnableGiantCrops_Description,
+            name: i18n.Config_General_Enabled_Name,
+            tooltip: i18n.Config_General_Enabled_Description,
             getValue: () => EnableGiantCrops,
             setValue: value => EnableGiantCrops = value
         );

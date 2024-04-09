@@ -1,0 +1,38 @@
+{
+  // UI //
+  "Config.SectionTitle.General": "常规设置",
+  "Config.SectionTitle.Books": "书籍设置",
+  "Config.SectionTitle.Debug": "排错设置",
+  
+  // GENERAL CONFIG //
+  "Config.General.AlwaysAvailable.Name": "书籍始终可获得",
+  "Config.General.AlwaysAvailable.Description": "如果启用，书摊老板将始终提供所有书籍，而无需满足某些要求。",
+
+  "Config.General.Enabled.Name": "Enabled",
+  "Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+  
+  // BOOK SETTINGS //
+  "Config.Books.Luck.Title": "初学者的运气",
+  "Config.Books.LuckBonus.Name": "初学者运气额外奖励",
+  "Config.Books.LuckBonus.Description": "阅读了初学者的运气一书后，增加了多少运气。",
+  
+  "Config.Books.ExtraGifts.Title": "奉献之书",
+  
+  "Config.Books.TreesIgnoreSeason.Title": "冬日之森",
+  
+  "Config.Books.ArtisanMachines.Title": "工匠协会手册",
+  // TODO ///////////////////////
+  "Config.Books.ArtisanMachinesGrangeMustWin.Name": "Grange Display Must Win",
+  "Config.Books.ArtisanMachinesGrangeMustWin.Description": "If enabled, your grange display must place 1st on top of having 6+ artisan goods.",
+  ///////////////////////////////
+  "Config.Books.ArtisanMachinesBonus.Name": "工匠协会手册额外奖励",
+  "Config.Books.ArtisanMachinesBonus.Description": "生产工匠物品的机器加工时间减少百分比。",
+  
+  "Config.Books.GiantCrops.Name": "大甜瓜!",
+  "Config.Books.GiantCropsBonus.Name": "大甜瓜！额外奖励",
+  "Config.Books.GiantCropsBonus.Description": "作物过夜形成巨大作物的几率百分比。",
+  
+  // DEBUG SETTINGS //
+  "Config.Debug.EnableDebugBook.Name": "开启排错之书",
+  "Config.Debug.EnableDebugBook.Description": "如果启用，皮埃尔将提供一本排错书，它将删除此mod授予您的所有能力。"
+}

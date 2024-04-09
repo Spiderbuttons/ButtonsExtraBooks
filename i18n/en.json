@@ -8,26 +8,26 @@
   "Config.General.AlwaysAvailable.Name": "Books Always Available",
   "Config.General.AlwaysAvailable.Description": "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
 
+  "Config.General.Enabled.Name": "Enabled",
+  "Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+
   // BOOK SETTINGS //
-  "Config.Books.EnableLuck.Name": "Enable Beginner's Luck",
-  "Config.Books.EnableLuck.Description": "If disabled, the Beginner's Luck book will not be available.",
-  "Config.Books.LuckBonus.Name": "Beginner's Luck Bonus",
+  "Config.Books.Luck.Title": "Beginner's Luck",
+  "Config.Books.LuckBonus.Name": "Luck Bonus",
   "Config.Books.LuckBonus.Description": "How much luck is added after reading the Beginner's Luck book.",
 
-  "Config.Books.EnableExtraGifts.Name": "Enable Book of Altruism",
-  "Config.Books.EnableExtraGifts.Description": "If disabled, the Book of Altruism will not be available.",
+  "Config.Books.ExtraGifts.Title": "Book of Altruism",
 
-  "Config.Books.EnableTreesIgnoreSeason.Name": "Enable Winter Forestry",
-  "Config.Books.EnableTreesIgnoreSeason.Description": "If disabled, the Winter Forestry book will not be available.",
+  "Config.Books.TreesIgnoreSeason.Title": "Winter Forestry",
 
-  "Config.Books.EnableArtisanMachines.Name": "Enable Artisans Guild Manual",
-  "Config.Books.EnableArtisanMachines.Description": "If disabled, the Artisans Guild Manual will not be available.",
-  "Config.Books.ArtisanMachinesBonus.Name": "Artisans Guild Manual Bonus",
+  "Config.Books.ArtisanMachines.Title": "Artisans Guild Manual",
+  "Config.Books.ArtisanMachinesGrangeMustWin.Name": "Grange Display Must Win",
+  "Config.Books.ArtisanMachinesGrangeMustWin.Description": "If enabled, your grange display must place 1st on top of having 6+ artisan goods.",
+  "Config.Books.ArtisanMachinesBonus.Name": "Machine Speed Bonus",
   "Config.Books.ArtisanMachinesBonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
 
-  "Config.Books.EnableGiantCrops.Name": "Enable Big Melons!",
-  "Config.Books.EnableGiantCrops.Description": "If disabled, the Big Melons! book will not be available.",
-  "Config.Books.GiantCropsBonus.Name": "Big Melons! Bonus",
+  "Config.Books.GiantCrops.Title": "Big Melons!",
+  "Config.Books.GiantCropsBonus.Name": "Giant Crop Chance",
   "Config.Books.GiantCropsBonus.Description": "Percent chance that crops will form a giant crop overnight.",
 
   // DEBUG SETTINGS //
