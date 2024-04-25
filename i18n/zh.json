@@ -1,15 +1,19 @@
 {
   // UI //
   "Config.SectionTitle.General": "常规设置",
-  "Config.SectionTitle.Books": "书籍设置",
+  // TODO //////////////////////////////////////////////////////////
+  "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
+  "Config.SectionTitle.Prices": "Change Book Prices",
+  "Config.SectionTitle.Adjustments": "Adjust Book Powers",
+  //////////////////////////////////////////////////////////////////
   "Config.SectionTitle.Debug": "排错设置",
   
   // GENERAL CONFIG //
   "Config.General.AlwaysAvailable.Name": "书籍始终可获得",
   "Config.General.AlwaysAvailable.Description": "如果启用，书摊老板将始终提供所有书籍，而无需满足某些要求。",
 
-  "Config.General.Enabled.Name": "Enabled",
-  "Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+  "Config.General.Enabled.Name": "启用",
+  "Config.General.Enabled.Description": "如果禁用，本书及其能力将不可用。",
   
   // BOOK SETTINGS //
   "Config.Books.Luck.Title": "初学者的运气",
@@ -21,16 +25,24 @@
   "Config.Books.TreesIgnoreSeason.Title": "冬日之森",
   
   "Config.Books.ArtisanMachines.Title": "工匠协会手册",
-  // TODO ///////////////////////
-  "Config.Books.ArtisanMachinesGrangeMustWin.Name": "Grange Display Must Win",
-  "Config.Books.ArtisanMachinesGrangeMustWin.Description": "If enabled, your grange display must place 1st on top of having 6+ artisan goods.",
-  ///////////////////////////////
+  "Config.Books.ArtisanMachinesGrangeMustWin.Name": "展览是否必须胜出",
+  "Config.Books.ArtisanMachinesGrangeMustWin.Description": "如果启用，你的农庄必须第一并且放置超过6件工匠物品。",
   "Config.Books.ArtisanMachinesBonus.Name": "工匠协会手册额外奖励",
   "Config.Books.ArtisanMachinesBonus.Description": "生产工匠物品的机器加工时间减少百分比。",
   
   "Config.Books.GiantCrops.Name": "大甜瓜!",
   "Config.Books.GiantCropsBonus.Name": "大甜瓜！额外奖励",
   "Config.Books.GiantCropsBonus.Description": "作物过夜形成巨大作物的几率百分比。",
+
+  "Config.Books.Popularity.Title": "友谊202",
+  
+  // TODO //////////////////////////////////////////////////////////
+  "Config.Books.BusDriving.Title": "Bus Driving for Dummies",
+
+  "Config.Books.QiNotebook.Title": "Mr. Qi's Notebook",
+  "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
+  "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
+  //////////////////////////////////////////////////////////////////
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "开启排错之书",

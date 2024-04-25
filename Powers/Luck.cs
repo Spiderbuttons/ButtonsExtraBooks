@@ -15,7 +15,13 @@ namespace ButtonsExtraBooks.Powers
             if (!ModEntry.Config.EnableLuck) return;
             try
             {
-                __result += __instance.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Luck") != 0 ? ModEntry.Config.LuckAmount : 0f;
+                if (__instance.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Luck") == 0) return;
+                double luckToAdd = ModEntry.Config.LuckAmount;
+                while (luckToAdd > 0 && __result + luckToAdd > 0.15)
+                {
+                    luckToAdd -= 0.01;
+                }
+                __result += luckToAdd;
             }
             catch (Exception ex)
             {

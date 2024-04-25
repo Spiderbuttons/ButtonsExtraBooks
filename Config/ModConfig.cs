@@ -10,18 +10,33 @@ public sealed class ModConfig
     public bool AlwaysAvailable { get; set; } = false;
     
     public bool EnableLuck { get; set; } = true;
+    public int LuckPrice { get; set; } = 25000;
     public float LuckAmount { get; set; } = 0.025f;
     
     public bool EnableExtraGifts { get; set; } = true;
+    public  int ExtraGiftsPrice { get; set; } = 50000;
     
     public bool EnableTreesIgnoreSeason { get; set; } = true;
+    public int TreesIgnoreSeasonPrice { get; set; } = 20000;
     
     public bool EnableArtisanMachines { get; set; } = true;
+    public int ArtisanMachinesPrice { get; set; } = 100000;
     public bool ArtisanMachinesGrangeMustWin { get; set; } = true;
     public int ArtisanMachinesPercentDecrease { get; set; } = 20;
     
     public bool EnableGiantCrops { get; set; } = true;
+    public int GiantCropsPrice { get; set; } = 30000;
     public int GiantCropsPercent { get; set; } = 5;
+    
+    public bool EnablePopularity { get; set; } = true;
+    public int PopularityPrice { get; set; } = 35000;
+
+    public bool EnableBusDriving { get; set; } = true;
+    public int BusDrivingPrice { get; set; } = 42500;
+    
+    public bool EnableQiNotebook { get; set; } = true;
+    public int QiNotebookPrice { get; set; } = 10;
+    public float QiNotebookPercent { get; set; } = 1f;
     
     public bool DebugBook { get; set; } = false;
 
@@ -32,22 +47,47 @@ public sealed class ModConfig
 
     private void Init()
     {
+        ResetAllEnabled();
+        ResetAllPrice();
         AlwaysAvailable = false;
-        EnableLuck = true;
         LuckAmount = 0.025f;
-        EnableExtraGifts = true;
-        EnableTreesIgnoreSeason = true;
-        EnableArtisanMachines = true;
         ArtisanMachinesPercentDecrease = 20;
-        EnableGiantCrops = true;
         GiantCropsPercent = 5;
+        QiNotebookPercent = 1f;
         DebugBook = false;
+    }
+
+    public void ResetAllEnabled()
+    {
+        foreach (var property in GetType().GetProperties())
+        {
+            if (property.PropertyType == typeof(bool) && property.Name.StartsWith("Enable"))
+            {
+                property.SetValue(this, true);
+            }
+        }
+    }
+
+    public void ResetAllPrice()
+    {
+        LuckPrice = 25000;
+        ExtraGiftsPrice = 50000;
+        TreesIgnoreSeasonPrice = 20000;
+        ArtisanMachinesPrice = 100000;
+        GiantCropsPrice = 30000;
+        PopularityPrice = 35000;
+        BusDrivingPrice = 42500;
+        QiNotebookPrice = 10;
     }
     
     public bool GetPowerEnabled(string powerName)
     {
-        // return whether the bool property with the same name is enabled in this modconfig class
         return (bool)GetType().GetProperty($"Enable{powerName}")?.GetValue(this)!;
+    }
+    
+    public int GetBookPrice(string bookName)
+    {
+        return (int)GetType().GetProperty($"{bookName}Price")?.GetValue(this)!;
     }
 
     public void SetupConfig(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper, Harmony harmony)
@@ -59,7 +99,9 @@ public sealed class ModConfig
         );
         SetupPages(configMenu, ModManifest, Helper, harmony);
         SetupGeneral(configMenu, ModManifest, Helper, harmony);
-        SetupBooks(configMenu, ModManifest, Helper, harmony);
+        SetupEnableDisable(configMenu, ModManifest);
+        SetupPrices(configMenu, ModManifest);
+        SetupAdjustments(configMenu, ModManifest, harmony);
         SetupDebug(configMenu, ModManifest, Helper, harmony);
     }
     
@@ -73,8 +115,18 @@ public sealed class ModConfig
         );
         configMenu.AddPageLink(
             mod: ModManifest,
-            pageId: "Config.Pages.Books",
-            text: i18n.Config_SectionTitle_Books
+            pageId: "Config.Pages.EnableDisable",
+            text: i18n.Config_SectionTitle_EnableDisable
+        );
+        configMenu.AddPageLink(
+            mod: ModManifest,
+            pageId: "Config.Pages.Prices",
+            text: i18n.Config_SectionTitle_Prices
+        );
+        configMenu.AddPageLink(
+            mod: ModManifest,
+            pageId: "Config.Pages.Adjustments",
+            text: i18n.Config_SectionTitle_Adjustments
         );
         configMenu.AddPageLink(
             mod: ModManifest,
@@ -99,25 +151,63 @@ public sealed class ModConfig
             setValue: value => AlwaysAvailable = value
         );
     }
-    
-    private void SetupBooks(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper,
-        Harmony harmony)
+
+    private void SetupEnableDisable(IGenericModConfigMenuApi configMenu, IManifest ModManifest)
     {
         configMenu.AddPage(
             mod: ModManifest,
-            pageId: "Config.Pages.Books",
-            pageTitle: i18n.Config_SectionTitle_Books
+            pageId: "Config.Pages.EnableDisable",
+            pageTitle: i18n.Config_SectionTitle_EnableDisable
+        );
+        foreach (var property in GetType().GetProperties())
+        {
+            if (property.PropertyType == typeof(bool) && property.Name.StartsWith("Enable"))
+            {
+                string bookName = property.Name.Substring(6);
+                configMenu.AddBoolOption(
+                    mod: ModManifest,
+                    name: () => i18n.GetByKey($"Config.Books.{bookName}.Title")!,
+                    tooltip: i18n.Config_General_Enabled_Description,
+                    getValue: () => (bool)property.GetValue(this)!,
+                    setValue: value => property.SetValue(this, value)
+                );
+            }
+        }
+    }
+    
+    private void SetupPrices(IGenericModConfigMenuApi configMenu, IManifest ModManifest)
+    {
+        configMenu.AddPage(
+            mod: ModManifest,
+            pageId: "Config.Pages.Prices",
+            pageTitle: i18n.Config_SectionTitle_Prices
+        );
+        foreach (var property in GetType().GetProperties())
+        {
+            if (property.PropertyType == typeof(int) && property.Name.EndsWith("Price"))
+            {
+                string bookName = property.Name.Substring(0, property.Name.Length - 5);
+                configMenu.AddNumberOption(
+                    mod: ModManifest,
+                    name: () => i18n.GetByKey($"Config.Books.{bookName}.Title")!,
+                    tooltip: i18n.Config_General_Price_Description,
+                    getValue: () => (int)property.GetValue(this)!,
+                    setValue: value => property.SetValue(this, value)
+                );
+            }
+        }
+    }
+
+    private void SetupAdjustments(IGenericModConfigMenuApi configMenu, IManifest ModManifest, Harmony harmony)
+    {
+        configMenu.AddPage(
+            mod: ModManifest,
+            pageId: "Config.Pages.Adjustments",
+            pageTitle: i18n.Config_SectionTitle_Adjustments
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
             text: i18n.Config_Books_Luck_Title
-        );
-        configMenu.AddBoolOption(
-            mod: ModManifest,
-            name: i18n.Config_General_Enabled_Name,
-            tooltip: i18n.Config_General_Enabled_Description,
-            getValue: () => EnableLuck,
-            setValue: value => EnableLuck = value
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
@@ -128,36 +218,7 @@ public sealed class ModConfig
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: i18n.Config_Books_ExtraGifts_Title
-        );
-        configMenu.AddBoolOption(
-            mod: ModManifest,
-            name: i18n.Config_General_Enabled_Name,
-            tooltip: i18n.Config_General_Enabled_Description,
-            getValue: () => EnableExtraGifts,
-            setValue: value => EnableExtraGifts = value
-        );
-        configMenu.AddSectionTitle(
-            mod: ModManifest,
-            text: i18n.Config_Books_TreesIgnoreSeason_Title
-        );
-        configMenu.AddBoolOption(
-            mod: ModManifest,
-            name: i18n.Config_General_Enabled_Name,
-            tooltip: i18n.Config_General_Enabled_Description,
-            getValue: () => EnableTreesIgnoreSeason,
-            setValue: value => EnableTreesIgnoreSeason = value
-        );
-        configMenu.AddSectionTitle(
-            mod: ModManifest,
             text: i18n.Config_Books_ArtisanMachines_Title
-        );
-        configMenu.AddBoolOption(
-            mod: ModManifest,
-            name: i18n.Config_General_Enabled_Name,
-            tooltip: i18n.Config_General_Enabled_Description,
-            getValue: () => EnableArtisanMachines,
-            setValue: value => EnableArtisanMachines = value
         );
         configMenu.AddBoolOption(
             mod: ModManifest,
@@ -186,13 +247,6 @@ public sealed class ModConfig
             mod: ModManifest,
             text: i18n.Config_Books_GiantCrops_Title
         );
-        configMenu.AddBoolOption(
-            mod: ModManifest,
-            name: i18n.Config_General_Enabled_Name,
-            tooltip: i18n.Config_General_Enabled_Description,
-            getValue: () => EnableGiantCrops,
-            setValue: value => EnableGiantCrops = value
-        );
         configMenu.AddNumberOption(
             mod: ModManifest,
             name: i18n.Config_Books_GiantCropsBonus_Name,
@@ -203,6 +257,21 @@ public sealed class ModConfig
             max: 100,
             interval: 1,
             formatValue: value => $"{value}%"
+        );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: i18n.Config_Books_QiNotebook_Title
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_QiNotebookBonus_Name,
+            tooltip: i18n.Config_Books_QiNotebookBonus_Description,
+            getValue: () => QiNotebookPercent,
+            setValue: value => QiNotebookPercent = value,
+            min: 1,
+            max: 100,
+            interval: 1,
+            formatValue: value => $"{value / 10}%"
         );
     }
     

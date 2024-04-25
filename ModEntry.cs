@@ -1,4 +1,7 @@
-﻿using ButtonsExtraBooks.Config;
+﻿using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using ButtonsExtraBooks.Config;
 using ButtonsExtraBooks.Helpers;
 using ContentPatcher;
 using GenericModConfigMenu;
@@ -40,7 +43,7 @@ namespace ButtonsExtraBooks
             ContentPatcher = Helper.ModRegistry.GetApi<IContentPatcherAPI>("Pathoschild.ContentPatcher");
             if (ContentPatcher == null)
             {
-                ModMonitor.Log("ContentPatcher not found. This mod requires ContentPatcher to function.", LogLevel.Error);
+                ModMonitor.Log("ContentPatcher not found. Button's Extra Books requires ContentPatcher to function.", LogLevel.Error);
                 return;
             }
             ContentPatcher.RegisterToken(
@@ -65,61 +68,32 @@ namespace ButtonsExtraBooks
                     };
                 }
             );
-            ContentPatcher.RegisterToken(
-                mod: ModManifest,
-                name: "ConfigEnableLuck",
-                getValue: () =>
-                {
-                    return new[]
+            
+            foreach (var power in Assembly.GetExecutingAssembly().GetTypes().Where(t => t.Namespace == "ButtonsExtraBooks.Powers" && t.IsClass && !t.IsDefined(typeof(CompilerGeneratedAttribute), false)))
+            {
+                ContentPatcher.RegisterToken(
+                    mod: ModManifest,
+                    name: $"ConfigEnable{power.Name}",
+                    getValue: () =>
                     {
-                        Config.EnableLuck.ToString()
-                    };
-                }
-            );
-            ContentPatcher.RegisterToken(
-                mod: ModManifest,
-                name: "ConfigEnableExtraGifts",
-                getValue: () =>
-                {
-                    return new[]
+                        return new[]
+                        {
+                            Config.GetPowerEnabled(power.Name).ToString()
+                        };
+                    }
+                );
+                ContentPatcher.RegisterToken(
+                    mod: ModManifest,
+                    name: $"ConfigPrice{power.Name}",
+                    getValue: () =>
                     {
-                        Config.EnableExtraGifts.ToString()
-                    };
-                }
-            );
-            ContentPatcher.RegisterToken(
-                mod: ModManifest,
-                name: "ConfigEnableTreesIgnoreSeason",
-                getValue: () =>
-                {
-                    return new[]
-                    {
-                        Config.EnableTreesIgnoreSeason.ToString()
-                    };
-                }
-            );
-            ContentPatcher.RegisterToken(
-                mod: ModManifest,
-                name: "ConfigEnableArtisanMachines",
-                getValue: () =>
-                {
-                    return new[]
-                    {
-                        Config.EnableArtisanMachines.ToString()
-                    };
-                }
-            );
-            ContentPatcher.RegisterToken(
-                mod: ModManifest,
-                name: "ConfigEnableGiantCrops",
-                getValue: () =>
-                {
-                    return new[]
-                    {
-                        Config.EnableGiantCrops.ToString()
-                    };
-                }
-            );
+                        return new[]
+                        {
+                            Config.GetBookPrice(power.Name).ToString()
+                        };
+                    }
+                );
+            }
             
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
