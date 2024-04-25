@@ -16,11 +16,11 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(GameLocation), nameof(GameLocation.monsterDrop))]
         private static void Postfix(GameLocation __instance, Monster monster, int x, int y, Farmer who)
         {
-            if (!ModEntry.Config.EnableQiNotebook) return;
+            if (!ModEntry.Config.EnableQiNotebook || Game1.player.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Luck") == 0) return;
             try
             {
                 
-                if (Game1.netWorldState.Value.GoldenWalnutsFound <= 100)
+                if (Game1.netWorldState.Value.GoldenWalnutsFound >= 100)
                 {
                     Loggers.Log((ModEntry.Config.QiNotebookPercent / 1000).ToString());
                     if (Game1.random.NextDouble() < (ModEntry.Config.QiNotebookPercent / 1000) + (double)((float)who.LuckLevel * 0.002f))
