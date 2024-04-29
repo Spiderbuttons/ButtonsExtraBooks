@@ -15,4 +15,9 @@ public class Loggers
             Log($"{i}: {code[i].opcode} {code[i].operand}", LogLevel.Debug);
         }
     }
+
+    public static void ILCode(CodeInstruction code)
+    {
+        Log($"{code.opcode} {code.operand}", LogLevel.Debug);
+    }
 }

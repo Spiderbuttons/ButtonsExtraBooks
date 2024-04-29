@@ -42,6 +42,8 @@
   "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
   "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
 
+  "Config.Books.PetGifts.Title": "Pawsitive Reinforcement",
+
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
   "Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."

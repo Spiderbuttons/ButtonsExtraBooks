@@ -38,6 +38,9 @@ public sealed class ModConfig
     public int QiNotebookPrice { get; set; } = 10;
     public float QiNotebookPercent { get; set; } = 1f;
     
+    public bool EnablePetGifts { get; set; } = true;
+    public int PetGiftsPrice { get; set; } = 15000;
+    
     public bool DebugBook { get; set; } = false;
 
     public ModConfig()
@@ -78,6 +81,7 @@ public sealed class ModConfig
         PopularityPrice = 35000;
         BusDrivingPrice = 42500;
         QiNotebookPrice = 10;
+        PetGiftsPrice = 15000;
     }
     
     public bool GetPowerEnabled(string powerName)

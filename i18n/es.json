@@ -1,11 +1,9 @@
 {
   // UI //
   "Config.SectionTitle.General": "Ajustes generales",
-  // TODO /////////////////////////////////////////////////////////
-  "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
-  "Config.SectionTitle.Prices": "Change Book Prices",
-  "Config.SectionTitle.Adjustments": "Adjust Book Powers",
-  /////////////////////////////////////////////////////////////////
+  "Config.SectionTitle.EnableDisable": "Activar / Desactivar libros",
+  "Config.SectionTitle.Prices": "Cambiar los precios de los libros",
+  "Config.SectionTitle.Adjustments": "Ajustar los poderes de los libros",
   "Config.SectionTitle.Debug": "Ajustes de depuración",
 
   // GENERAL CONFIG //
@@ -36,13 +34,13 @@
 
   "Config.Books.Popularity.Title": "Amistad 202",
   
-  // TODO /////////////////////////////////////////////////////////
-  "Config.Books.BusDriving.Title": "Bus Driving for Dummies",
+  "Config.Books.BusDriving.Title": "Conducción de autobús para principiantes",
 
-  "Config.Books.QiNotebook.Title": "Mr. Qi's Notebook",
-  "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
-  "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
-  //////////////////////////////////////////////////////////////////
+  "Config.Books.QiNotebook.Title": "El cuaderno del Señor Qi",
+  "Config.Books.QiNotebookBonus.Name": "Probabilidad de Gema Qi",
+  "Config.Books.QiNotebookBonus.Description": "Porcentaje de probabilidad de que una gema Qi caiga además de las probabilidades habituales.",
+
+  "Config.Books.PetGifts.Title": "Refuerzo positivo",
 
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "Habilitar libro de depuración",

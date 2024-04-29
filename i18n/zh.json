@@ -1,11 +1,9 @@
 {
   // UI //
   "Config.SectionTitle.General": "常规设置",
-  // TODO //////////////////////////////////////////////////////////
-  "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
-  "Config.SectionTitle.Prices": "Change Book Prices",
-  "Config.SectionTitle.Adjustments": "Adjust Book Powers",
-  //////////////////////////////////////////////////////////////////
+  "Config.SectionTitle.EnableDisable": "启用/禁用书籍",
+  "Config.SectionTitle.Prices": "更改书籍价格",
+  "Config.SectionTitle.Adjustments": "调整书籍能力",
   "Config.SectionTitle.Debug": "排错设置",
   
   // GENERAL CONFIG //
@@ -36,13 +34,15 @@
 
   "Config.Books.Popularity.Title": "友谊202",
   
-  // TODO //////////////////////////////////////////////////////////
-  "Config.Books.BusDriving.Title": "Bus Driving for Dummies",
+  "Config.Books.BusDriving.Title": "傻瓜式巴士驾驶手册",
 
-  "Config.Books.QiNotebook.Title": "Mr. Qi's Notebook",
-  "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
-  "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
-  //////////////////////////////////////////////////////////////////
+  "Config.Books.QiNotebook.Title": "齐先生的笔记本",
+  "Config.Books.QiNotebookBonus.Name": "齐钻概率",
+  "Config.Books.QiNotebookBonus.Description": "调整齐钻的概率。",
+
+  // TODO ///////////////////////////////////////////////////////
+  "Config.Books.PetGifts.Title": "Pawsitive Reinforcement",
+  ///////////////////////////////////////////////////////////////
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "开启排错之书",

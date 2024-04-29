@@ -1,11 +1,9 @@
 {
   // UI //
   "Config.SectionTitle.General": "Paramètres généraux",
-  // TODO ////////////////////////////////////////////////////////////////
-  "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
-  "Config.SectionTitle.Prices": "Change Book Prices",
-  "Config.SectionTitle.Adjustments": "Adjust Book Powers",
-  ////////////////////////////////////////////////////////////////////////
+  "Config.SectionTitle.EnableDisable": "Activer / Désactiver les livres",
+  "Config.SectionTitle.Prices": "Changer le prix des livres",
+  "Config.SectionTitle.Adjustments": "Régler les pouvoirs des livres",
   "Config.SectionTitle.Debug": "Paramètres de débogage",
   
   // GENERAL CONFIG //
@@ -36,13 +34,13 @@
   
   "Config.Books.Popularity.Title": "Amitiés 202",
   
-  // TODO ////////////////////////////////////////////////////////////////
-  "Config.Books.BusDriving.Title": "Bus Driving for Dummies",
+  "Config.Books.BusDriving.Title": "La conduite du bus pour les nuls",
 
-  "Config.Books.QiNotebook.Title": "Mr. Qi's Notebook",
-  "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
-  "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
-  ////////////////////////////////////////////////////////////////////////
+  "Config.Books.QiNotebook.Title": "Carnet de M. Qi",
+  "Config.Books.QiNotebookBonus.Name": "Chance Gemmes Qi",
+  "Config.Books.QiNotebookBonus.Description": "Pourcentage de chance d'obtenir une Qemme Qi en plus des chances habituelles.",
+
+  "Config.Books.PetGifts.Title": "Renforcement Patte-ibulaire",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "Activer Livre de Débogage",

@@ -1,11 +1,9 @@
 {
   // UI //
   "Config.SectionTitle.General": "基本設定",
-  // TODO ///////////////////////////////////////////////////////////
-  "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
-  "Config.SectionTitle.Prices": "Change Book Prices",
-  "Config.SectionTitle.Adjustments": "Adjust Book Powers",
-  ///////////////////////////////////////////////////////////////////
+  "Config.SectionTitle.EnableDisable": "本の有効化",
+  "Config.SectionTitle.Prices": "本の販売価格",
+  "Config.SectionTitle.Adjustments": "本の力の調整",
   "Config.SectionTitle.Debug": "デバッグ設定",
   
   // GENERAL CONFIG //
@@ -36,13 +34,13 @@
   
   "Config.Books.Popularity.Title": "親友のつくり方",
   
-  // TODO ///////////////////////////////////////////////////////////
-  "Config.Books.BusDriving.Title": "Bus Driving for Dummies",
+  "Config.Books.BusDriving.Title": "バスの運転マニュアル",
 
-  "Config.Books.QiNotebook.Title": "Mr. Qi's Notebook",
-  "Config.Books.QiNotebookBonus.Name": "Qi Gem Chance",
-  "Config.Books.QiNotebookBonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
-  ///////////////////////////////////////////////////////////////////
+  "Config.Books.QiNotebook.Title": "ミスターQiのノート",
+  "Config.Books.QiNotebookBonus.Name": "Qiジェムのドロップボーナス値。",
+  "Config.Books.QiNotebookBonus.Description": "モンスターを倒した時にドロップするQiジェムのドロップボーナス値。",
+  
+  "Config.Books.PetGifts.Title": "ぺっとのきもち",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",
