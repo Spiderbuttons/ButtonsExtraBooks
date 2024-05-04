@@ -47,6 +47,8 @@
   
   // TODO /////////////////////////////////////////////////////
   "Config.Books.CheatCodes.Title": "Secret Codes",
+  "Config.Books.CheatCodesRequirement.Name": "Junimo Kart Deaths Required",
+  "Config.Books.CheatCodesRequirement.Description": "The number of times you must die in Junimo Kart before the Secret Codes book becomes available.",
   "Config.Books.CheatCodesBonus.Name": "Extra Lives",
   "Config.Books.CheatCodesBonus.Description": "The number of extra lives you start Junimo Kart with.",
   

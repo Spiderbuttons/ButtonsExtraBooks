@@ -35,5 +35,19 @@ namespace ButtonsExtraBooks.Powers
                 Loggers.Log("Error in ButtonsExtraBooks_CheatCodes.restartLevel_Postfix: \n" + ex, LogLevel.Error);
             }
         }
+        
+        [HarmonyPatch(typeof(MineCart), nameof(MineCart.Die))]
+        private static void Postfix()
+        {
+            if (!ModEntry.Config.EnableCheatCodes) return;
+            try
+            {
+                Game1.player.stats.Increment("Spiderbuttons.ButtonsExtraBooks_JunimoDeaths");
+            }
+            catch (Exception ex)
+            {
+                Loggers.Log("Error in ButtonsExtraBooks_CheatCodes.Die_Postfix: \n" + ex, LogLevel.Error);
+            }
+        }
     }
 }

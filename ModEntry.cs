@@ -25,7 +25,7 @@ namespace ButtonsExtraBooks
         {
             i18n.Init(helper.Translation);
             Config = helper.ReadConfig<ModConfig>();
-            ModMonitor = this.Monitor;
+            ModMonitor = Monitor;
             ModHelper = helper;
             var harmony = new Harmony(base.ModManifest.UniqueID);
             Harmony = harmony;
@@ -97,6 +97,18 @@ namespace ButtonsExtraBooks
                     }
                 );
             }
+            
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "ConfigCheatCodesRequirement",
+                getValue: () =>
+                {
+                    return new[]
+                    {
+                        Config.CheatCodesRequirement.ToString()
+                    };
+                }
+            );
             
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
