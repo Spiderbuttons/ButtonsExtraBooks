@@ -23,7 +23,7 @@ namespace ButtonsExtraBooks.Powers
             {
                 if (new_game)
                 {
-                    ___livesLeft = 4;
+                    ___livesLeft = 3 + ModEntry.Config.CheatCodesLives;
                     ____collectedFruit.Clear();
                     ___score = 0;
                     ___levelsBeat = 0;

@@ -47,6 +47,8 @@
 
   // TODO /////////////////////////////////////////////////////
   "Config.Books.CheatCodes.Title": "Secret Codes",
+  "Config.Books.CheatCodesBonus.Name": "Extra Lives",
+  "Config.Books.CheatCodesBonus.Description": "The number of extra lives you start Junimo Kart with.",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",

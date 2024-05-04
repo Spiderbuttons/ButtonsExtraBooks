@@ -43,6 +43,7 @@ public sealed class ModConfig
     
     public bool EnableCheatCodes { get; set; } = true;
     public int CheatCodesPrice { get; set; } = 65536;
+    public int CheatCodesLives { get; set; } = 1;
     
     public bool DebugBook { get; set; } = false;
 
@@ -60,6 +61,7 @@ public sealed class ModConfig
         ArtisanMachinesPercentDecrease = 20;
         GiantCropsPercent = 5;
         QiNotebookPercent = 1f;
+        CheatCodesLives = 1;
         DebugBook = false;
     }
 
@@ -280,6 +282,20 @@ public sealed class ModConfig
             max: 100,
             interval: 1,
             formatValue: value => $"{value / 10}%"
+        );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: i18n.Config_Books_CheatCodes_Title
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_CheatCodesBonus_Name,
+            tooltip: i18n.Config_Books_CheatCodesBonus_Description,
+            getValue: () => CheatCodesLives,
+            setValue: value => CheatCodesLives = value,
+            min: 1,
+            max: 100,
+            interval: 1
         );
     }
     
