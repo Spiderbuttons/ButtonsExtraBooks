@@ -44,6 +44,8 @@
 
   "Config.Books.PetGifts.Title": "Pawsitive Reinforcement",
 
+  "Config.Books.CheatCodes.Title": "Secret Codes",
+
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
   "Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."

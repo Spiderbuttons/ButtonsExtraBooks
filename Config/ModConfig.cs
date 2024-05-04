@@ -41,6 +41,9 @@ public sealed class ModConfig
     public bool EnablePetGifts { get; set; } = true;
     public int PetGiftsPrice { get; set; } = 15000;
     
+    public bool EnableCheatCodes { get; set; } = true;
+    public int CheatCodesPrice { get; set; } = 65536;
+    
     public bool DebugBook { get; set; } = false;
 
     public ModConfig()
@@ -82,6 +85,7 @@ public sealed class ModConfig
         BusDrivingPrice = 42500;
         QiNotebookPrice = 10;
         PetGiftsPrice = 15000;
+        CheatCodesPrice = 65536;
     }
     
     public bool GetPowerEnabled(string powerName)

@@ -44,6 +44,9 @@
 
   "Config.Books.PetGifts.Title": "반려동물 보강법",
 
+  // TODO /////////////////////////////////////////////////////
+  "Config.Books.CheatCodes.Title": "Secret Codes",
+
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "디버그 책 활성화",
   "Config.Debug.EnableDebugBook.Description": "활성화되면 이 모드에서 추가된 모든 책과 관련 능력을 제거하는 디버그 책을 피에르에게서 구매할 수 있습니다."

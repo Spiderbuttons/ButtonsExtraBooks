@@ -12,6 +12,9 @@
 
   "Config.General.Enabled.Name": "启用",
   "Config.General.Enabled.Description": "如果禁用，本书及其能力将不可用。",
+
+  // TODO /////////////////////////////////////////////////////
+  "Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
   
   // BOOK SETTINGS //
   "Config.Books.Luck.Title": "初学者的运气",
@@ -28,7 +31,7 @@
   "Config.Books.ArtisanMachinesBonus.Name": "工匠协会手册额外奖励",
   "Config.Books.ArtisanMachinesBonus.Description": "生产工匠物品的机器加工时间减少百分比。",
   
-  "Config.Books.GiantCrops.Name": "大甜瓜!",
+  "Config.Books.GiantCrops.Title": "大甜瓜!",
   "Config.Books.GiantCropsBonus.Name": "大甜瓜！额外奖励",
   "Config.Books.GiantCropsBonus.Description": "作物过夜形成巨大作物的几率百分比。",
 
@@ -39,10 +42,11 @@
   "Config.Books.QiNotebook.Title": "齐先生的笔记本",
   "Config.Books.QiNotebookBonus.Name": "齐钻概率",
   "Config.Books.QiNotebookBonus.Description": "调整齐钻的概率。",
+  
+  "Config.Books.PetGifts.Title": "强化爪爪",
 
-  // TODO ///////////////////////////////////////////////////////
-  "Config.Books.PetGifts.Title": "Pawsitive Reinforcement",
-  ///////////////////////////////////////////////////////////////
+  // TODO /////////////////////////////////////////////////////
+  "Config.Books.CheatCodes.Title": "Secret Codes",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "开启排错之书",

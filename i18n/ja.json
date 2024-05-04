@@ -12,6 +12,9 @@
   
   "Config.General.Enabled.Name": "有効",
   "Config.General.Enabled.Description": "無効にすると、MOD本とその効果は利用できなくなる。",
+
+  // TODO /////////////////////////////////////////////////////
+  "Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
   
   // BOOK SETTINGS //
   "Config.Books.Luck.Title": "ビギナーズラック",
@@ -41,6 +44,9 @@
   "Config.Books.QiNotebookBonus.Description": "モンスターを倒した時にドロップするQiジェムのドロップボーナス値。",
   
   "Config.Books.PetGifts.Title": "ぺっとのきもち",
+
+  // TODO /////////////////////////////////////////////////////
+  "Config.Books.CheatCodes.Title": "Secret Codes",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",

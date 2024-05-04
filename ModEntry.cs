@@ -16,6 +16,8 @@ namespace ButtonsExtraBooks
     internal sealed class ModEntry : Mod
     {
         internal static IMonitor ModMonitor { get; private set; } = null!;
+        
+        internal static IModHelper ModHelper { get; private set; } = null!;
         internal static Harmony Harmony { get; private set; } = null!;
         internal static ModConfig Config { get; private set; } = null!;
         internal static IContentPatcherAPI ContentPatcher { get; private set; } = null!;
@@ -24,6 +26,7 @@ namespace ButtonsExtraBooks
             i18n.Init(helper.Translation);
             Config = helper.ReadConfig<ModConfig>();
             ModMonitor = this.Monitor;
+            ModHelper = helper;
             var harmony = new Harmony(base.ModManifest.UniqueID);
             Harmony = harmony;
             harmony.PatchAll();
