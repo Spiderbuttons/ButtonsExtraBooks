@@ -46,7 +46,7 @@
   "Config.Books.PetGifts.Title": "Renforcement Patte-ibulaire",
   
   // TODO /////////////////////////////////////////////////////
-  "Config.Books.CheatCodes.Title": "Secret Codes",
+  "Config.Books.CheatCodes.Title": "Secret Codes for Arcade Machines",
   "Config.Books.CheatCodesRequirement.Name": "Junimo Kart Deaths Required",
   "Config.Books.CheatCodesRequirement.Description": "The number of times you must die in Junimo Kart before the Secret Codes book becomes available.",
   "Config.Books.CheatCodesBonus.Name": "Extra Lives",
