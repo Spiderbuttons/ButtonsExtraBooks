@@ -22,7 +22,7 @@ public sealed class ModConfig
     public bool EnableArtisanMachines { get; set; } = true;
     public int ArtisanMachinesPrice { get; set; } = 100000;
     public bool ArtisanMachinesGrangeMustWin { get; set; } = true;
-    public int ArtisanMachinesPercentDecrease { get; set; } = 20;
+    public int ArtisanMachinesPercentDecrease { get; set; } = 10;
     
     public bool EnableGiantCrops { get; set; } = true;
     public int GiantCropsPrice { get; set; } = 30000;
@@ -59,7 +59,7 @@ public sealed class ModConfig
         ResetAllPrice();
         AlwaysAvailable = false;
         LuckAmount = 0.025f;
-        ArtisanMachinesPercentDecrease = 20;
+        ArtisanMachinesPercentDecrease = 10;
         GiantCropsPercent = 5;
         QiNotebookPercent = 1f;
         CheatCodesRequirement = 30;
