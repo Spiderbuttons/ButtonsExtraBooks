@@ -12,9 +12,8 @@
   
   "Config.General.Enabled.Name": "有効",
   "Config.General.Enabled.Description": "無効にすると、MOD本とその効果は利用できなくなる。",
-
-  // TODO /////////////////////////////////////////////////////
-  "Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
+  
+  "Config.General.Price.Description": "本を他の手段で購入せず、直接店で購入した場合の価格。整数値のみ。",
   
   // BOOK SETTINGS //
   "Config.Books.Luck.Title": "ビギナーズラック",
@@ -44,13 +43,12 @@
   "Config.Books.QiNotebookBonus.Description": "モンスターを倒した時にドロップするQiジェムのドロップボーナス値。",
   
   "Config.Books.PetGifts.Title": "ぺっとのきもち",
-
-  // TODO /////////////////////////////////////////////////////
-  "Config.Books.CheatCodes.Title": "Secret Codes for Arcade Machines",
-  "Config.Books.CheatCodesRequirement.Name": "Junimo Kart Deaths Required",
-  "Config.Books.CheatCodesRequirement.Description": "The number of times you must die in Junimo Kart before the Secret Codes book becomes available.",
-  "Config.Books.CheatCodesBonus.Name": "Extra Lives",
-  "Config.Books.CheatCodesBonus.Description": "The number of extra lives you start Junimo Kart with.",
+  
+  "Config.Books.CheatCodes.Title": "ジュニモカートの秘密コード",
+  "Config.Books.CheatCodesRequirement.Name": "秘密コードの購入条件",
+  "Config.Books.CheatCodesRequirement.Description": "ジュニモカートで秘密コードの購入に必要なゲームオーバー数。",
+  "Config.Books.CheatCodesBonus.Name": "ライフ数",
+  "Config.Books.CheatCodesBonus.Description": "ジュニモカートを始めるときのライフ数。",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",

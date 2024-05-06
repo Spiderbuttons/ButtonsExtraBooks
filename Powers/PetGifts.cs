@@ -42,7 +42,6 @@ namespace ButtonsExtraBooks.Powers
                 }
                 foreach (PetGift gift in gifts)
                 {
-                    Loggers.Log(totalWeight.ToString());
                     if (gift.MinimumFriendshipThreshold > __instance.friendshipTowardFarmer.Value)
                     {
                         continue;
@@ -50,7 +49,6 @@ namespace ButtonsExtraBooks.Powers
                     totalWeight -= gift.Weight;
                     if (totalWeight <= 0f)
                     {
-                        Loggers.Log(gift.QualifiedItemID);
                         Item i = ItemQueryResolver.TryResolveRandomItem(gift.QualifiedItemID, null);
                         if (i != null && !i.Name.Contains("Error"))
                         {
