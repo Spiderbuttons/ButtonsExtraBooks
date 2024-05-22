@@ -20,7 +20,7 @@ namespace ButtonsExtraBooks.Powers
     {
         public static void showJunimoText(JunimoHarvester junimo, string text, int delay = 0)
         {
-            if (!Utils.AnyoneHasPower("JunimoScrap") || new Random().Next(10) != 0) return;
+            if (!Utils.PlayerHasPower("JunimoScrap") || new Random().Next(10) != 0) return;
             string currentlyShownText = ModEntry.ModHelper.Reflection
                 .GetField<string>(junimo, "textAboveHead").GetValue();
             if (currentlyShownText != null) return;
