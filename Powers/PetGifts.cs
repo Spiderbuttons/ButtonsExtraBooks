@@ -32,14 +32,7 @@ namespace ButtonsExtraBooks.Powers
                         totalWeight += gift2.Weight;
                     }
                 }
-                if (Game1.getAllFarmers().Any(f => f.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_PetGifts") != 0))
-                {
-                    totalWeight = Utility.RandomFloat(Utility.RandomFloat(0f, totalWeight), totalWeight);
-                }
-                else
-                {
-                    totalWeight = Utility.RandomFloat(0f, totalWeight);
-                }
+                totalWeight = Utility.RandomFloat(Utils.AnyoneHasPower("PetGifts") ? Utility.RandomFloat(0f, totalWeight) : 0f, totalWeight);
                 foreach (PetGift gift in gifts)
                 {
                     if (gift.MinimumFriendshipThreshold > __instance.friendshipTowardFarmer.Value)
@@ -65,7 +58,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_PetGifts.TryGetGiftItem_Transpiler: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_PetGifts.TryGetGiftItem_Prefix: \n" + ex);
                 return true;
             }
         }

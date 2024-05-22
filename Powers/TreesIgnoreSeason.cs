@@ -20,14 +20,12 @@ namespace ButtonsExtraBooks.Powers
             if (!ModEntry.Config.EnableTreesIgnoreSeason || __result == null) return;
             try
             {
-                if (Game1.getAllFarmers().All(farmer =>
-                        farmer.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_TreesIgnoreSeason") == 0))
+                if (!Utils.AnyoneHasPower("TreesIgnoreSeason"))
                 {
-                    if (__instance.modData.ContainsKey("Spiderbuttons.ButtonsExtraBooks_Book_TreesIgnoreSeason"))
-                    {
-                        __instance.modData.Remove("Spiderbuttons.ButtonsExtraBooks_Book_TreesIgnoreSeason");
-                        ModEntry.ModHelper.Reflection.GetMethod(typeof(Tree), "ClearCache").Invoke();
-                    }
+                    if (!__instance.modData.ContainsKey("Spiderbuttons.ButtonsExtraBooks_Book_TreesIgnoreSeason"))
+                        return;
+                    __instance.modData.Remove("Spiderbuttons.ButtonsExtraBooks_Book_TreesIgnoreSeason");
+                    ModEntry.ModHelper.Reflection.GetMethod(typeof(Tree), "ClearCache").Invoke();
                 }
                 else
                 {
@@ -37,7 +35,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_TreesIgnoreSeason.GetData_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_TreesIgnoreSeason.GetData_Postfix: \n" + ex);
             }
         }
     }

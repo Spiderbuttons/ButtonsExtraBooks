@@ -16,7 +16,7 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(GameLocation), nameof(GameLocation.monsterDrop))]
         private static void Postfix(GameLocation __instance, Monster monster, int x, int y, Farmer who)
         {
-            if (!ModEntry.Config.EnableQiNotebook || who.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_QiNotebook") == 0) return;
+            if (!ModEntry.Config.EnableQiNotebook || !Utils.PlayerHasPower(who, "QiNotebook")) return;
             try
             {
                 
@@ -30,7 +30,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_QiNotebook.monsterDrop_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_QiNotebook.monsterDrop_Postfix: \n" + ex);
             }
         }
         

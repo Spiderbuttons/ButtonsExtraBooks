@@ -33,7 +33,6 @@ namespace ButtonsExtraBooks.Powers
                     }
                 }
                 
-                // get our ArtisanManualPercentDecrease from Config
                 var artisanManualPercentDecrease = (100.0f - ModEntry.Config.ArtisanMachinesPercentDecrease)/100.0f;
                 
                 var instructionsToAdd = new List<CodeInstruction>();
@@ -91,7 +90,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_ArtisanMachines.OutputMachine_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_ArtisanMachines.OutputMachine_Postfix: \n" + ex);
                 return instructions;
             }
         }

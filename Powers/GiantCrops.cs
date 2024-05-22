@@ -12,20 +12,32 @@ namespace ButtonsExtraBooks.Powers
     [HarmonyPatch]
     static class GiantCrops
     {
+        static Dictionary<string, float> giantCropReserve = new();
+        
         [HarmonyPatch(typeof(Crop), nameof(Crop.TryGetGiantCrops))]
         static void Postfix(ref IReadOnlyList<KeyValuePair<string, GiantCropData>> giantCrops)
         {
-            try
+            if (!ModEntry.Config.EnableGiantCrops) return;
+            if (giantCropReserve.Count == 0)
             {
-                bool someoneHasBuff = Game1.getAllFarmers().Any(farmer => farmer.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_GiantCrops") != 0);
                 foreach (var crop in giantCrops)
                 {
-                    crop.Value.Chance = someoneHasBuff && ModEntry.Config.EnableGiantCrops ? ModEntry.Config.GiantCropsPercent/100f : 0.01f;
+                    giantCropReserve.Add(crop.Key, crop.Value.Chance);
+                }
+            }
+            try
+            {
+                foreach (var crop in giantCrops)
+                {
+                    float oldChance = giantCropReserve.GetValueOrDefault(crop.Key, 0.01f);
+                    crop.Value.Chance = Utils.AnyoneHasPower("GiantCrops")
+                        ? ModEntry.Config.GiantCropsPercent / 100f
+                        : oldChance;
                 }
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_Luck.GiantCrops_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_Luck.GiantCrops_Postfix: \n" + ex);
             }
         }
     }

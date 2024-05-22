@@ -16,11 +16,12 @@ namespace ButtonsExtraBooks
     internal sealed class ModEntry : Mod
     {
         internal static IMonitor ModMonitor { get; private set; } = null!;
-        
+
         internal static IModHelper ModHelper { get; private set; } = null!;
         internal static Harmony Harmony { get; private set; } = null!;
         internal static ModConfig Config { get; private set; } = null!;
         internal static IContentPatcherAPI ContentPatcher { get; private set; } = null!;
+
         public override void Entry(IModHelper helper)
         {
             i18n.Init(helper.Translation);
@@ -34,21 +35,24 @@ namespace ButtonsExtraBooks
             helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked;
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
         }
-        
+
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
         {
             if (!Context.IsWorldReady) return;
-            if (Game1.player.stats.Get("Spiderbuttons.ButtonsExtraBooks_Debug_RemoveAll") != 0) RemovePowers.RemoveAll();
+            if (Game1.player.stats.Get("Spiderbuttons.ButtonsExtraBooks_Debug_RemoveAll") != 0)
+                RemovePowers.RemoveAll();
         }
-        
+
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
             ContentPatcher = Helper.ModRegistry.GetApi<IContentPatcherAPI>("Pathoschild.ContentPatcher");
             if (ContentPatcher == null)
             {
-                ModMonitor.Log("ContentPatcher not found. Button's Extra Books requires ContentPatcher to function.", LogLevel.Error);
+                ModMonitor.Log("ContentPatcher not found. Button's Extra Books requires ContentPatcher to function.",
+                    LogLevel.Error);
                 return;
             }
+
             ContentPatcher.RegisterToken(
                 mod: ModManifest,
                 name: "ConfigAlwaysAvailable",
@@ -71,8 +75,10 @@ namespace ButtonsExtraBooks
                     };
                 }
             );
-            
-            foreach (var power in Assembly.GetExecutingAssembly().GetTypes().Where(t => t.Namespace == "ButtonsExtraBooks.Powers" && t.IsClass && !t.IsDefined(typeof(CompilerGeneratedAttribute), false)))
+
+            foreach (var power in Assembly.GetExecutingAssembly().GetTypes().Where(t =>
+                         t.Namespace == "ButtonsExtraBooks.Powers" && t.IsClass &&
+                         !t.IsDefined(typeof(CompilerGeneratedAttribute), false)))
             {
                 ContentPatcher.RegisterToken(
                     mod: ModManifest,
@@ -97,7 +103,7 @@ namespace ButtonsExtraBooks
                     }
                 );
             }
-            
+
             ContentPatcher.RegisterToken(
                 mod: ModManifest,
                 name: "ConfigCheatCodesRequirement",
@@ -109,7 +115,20 @@ namespace ButtonsExtraBooks
                     };
                 }
             );
-            
+
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "HasCoffeePower",
+                getValue: () =>
+                {
+                    return Context.IsWorldReady
+                        ? new[]
+                        {
+                            Game1.player.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Coffee") > 0 ? "true" : "false"
+                        }
+                        : null;
+                }
+            );
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
         }

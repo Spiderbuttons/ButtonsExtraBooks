@@ -29,8 +29,7 @@ namespace ButtonsExtraBooks.Patches
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_ArtisanGrangeDisplay.judgeGrange_Postfix: \n" + ex,
-                    LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_ArtisanGrangeDisplay.judgeGrange_Postfix: \n" + ex);
             }
         }
     }

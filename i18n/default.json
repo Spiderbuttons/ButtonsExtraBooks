@@ -1,5 +1,5 @@
 {
-  // UI //
+  // CONFIG PAGES //
   "Config.SectionTitle.General": "General Settings",
   "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
   "Config.SectionTitle.Prices": "Change Book Prices",
@@ -15,7 +15,7 @@
   
   "Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
   
-  // BOOK SETTINGS //
+  // BOOK CONFIG //
   "Config.Books.Luck.Title": "Beginner's Luck",
   "Config.Books.LuckBonus.Name": "Luck Bonus",
   "Config.Books.LuckBonus.Description": "How much luck is added after reading the Beginner's Luck book.",
@@ -49,6 +49,22 @@
   "Config.Books.CheatCodesRequirement.Description": "The number of times you must die in Junimo Kart before the Secret Codes book becomes available.",
   "Config.Books.CheatCodesBonus.Name": "Extra Lives",
   "Config.Books.CheatCodesBonus.Description": "The number of extra lives you start Junimo Kart with.",
+  
+  "Config.Books.JunimoScrapbook.Title": "Junimo Scrapbook",
+  
+  "Config.Books.Carols.Title": "Book of Carols",
+  
+  "Config.Books.Coffee.Title": "The Strongest Brew",
+  
+  "Config.Books.Sketchbook.Title": "Children's Sketchbook",
+  
+  // MISC. TEXT //
+  "JunimoScrapbook.Harvest": "{0} {1}!#*munch*#*nibble*#Is for me?#Oooh!",
+    // "{0} {1}" is "[Adjective] [Noun]" e.g. "Yummy Parsnip!" Put them in the order that makes sense for your language! (I understand it might not be correct 100% of the time regardless, I'm sorry!)
+  
+  "JunimoScrapbook.DroppedItem": "Oops...#Uh oh!#Sorry!#Sorry...#Too much!",
+  "JunimoScrapbook.ExitHut": "Cute farm!#Love it here!#Paradise!#A beautiful day!#Good morning!#Rise and shine!#Got any raisins?#Hello, world!#*yawn*",
+  "JunimoScrapbook.CropAdjectives": "Yummy#Tasty#Delicious#Juicy#Big#Squishy#Fresh#Ripe",
   
   // DEBUG SETTINGS //
   "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",

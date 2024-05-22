@@ -24,7 +24,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_ExtraGifts.updateFriendshipGifts_Prefix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_ExtraGifts.updateFriendshipGifts_Prefix: \n" + ex);
             }
         }
     }

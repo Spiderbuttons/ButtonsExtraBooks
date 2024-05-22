@@ -16,7 +16,7 @@ namespace ButtonsExtraBooks.Powers
             if (!ModEntry.Config.EnablePopularity) return;
             try
             {
-                if (Game1.player.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Popularity") == 0) return;
+                if (Utils.PlayerHasPower("Popularity")) return;
                 if (Utility.TryGetRandom(Game1.player.friendshipData, out var whichFriend, out var friendship) && Game1.random.NextBool((double)(friendship.Points / 250) * 0.1) && Game1.player.spouse != whichFriend && DataLoader.Mail(Game1.content).ContainsKey(whichFriend))
                 {
                     Game1.mailbox.Add(whichFriend);
@@ -24,7 +24,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_Luck.DailyLuck_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_Luck.DailyLuck_Postfix: \n" + ex);
             }
         }
     }

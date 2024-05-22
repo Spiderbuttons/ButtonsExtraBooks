@@ -59,7 +59,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_BusDriving.draw_Transpiler: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_BusDriving.draw_Transpiler: \n" + ex);
                 return instructions;
             }
         }
@@ -107,7 +107,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_BusDriving.answerDialogue_Transpiler: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_BusDriving.answerDialogue_Transpiler: \n" + ex);
                 return instructions;
             }
         }

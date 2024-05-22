@@ -36,7 +36,7 @@ public sealed class ModConfig
     
     public bool EnableQiNotebook { get; set; } = true;
     public int QiNotebookPrice { get; set; } = 10;
-    public float QiNotebookPercent { get; set; } = 1f;
+    public float QiNotebookPercent { get; set; } = 10f;
     
     public bool EnablePetGifts { get; set; } = true;
     public int PetGiftsPrice { get; set; } = 15000;
@@ -45,6 +45,18 @@ public sealed class ModConfig
     public int CheatCodesPrice { get; set; } = 65536;
     public int CheatCodesRequirement { get; set; } = 30;
     public int CheatCodesLives { get; set; } = 1;
+    
+    public bool EnableJunimoScrap { get; set; } = true;
+    public int JunimoScrapPrice { get; set; } = 25000;
+    
+    public bool EnableCarols { get; set; } = true;
+    public int CarolsPrice { get; set; } = 10000;
+    
+    public bool EnableCoffee { get; set; } = true;
+    public int CoffeePrice { get; set; } = 75000;
+    
+    public bool EnableSketchbook { get; set; } = true;
+    public int SketchbookPrice { get; set; } = 30000;
     
     public bool DebugBook { get; set; } = false;
 
@@ -61,7 +73,7 @@ public sealed class ModConfig
         LuckAmount = 0.025f;
         ArtisanMachinesPercentDecrease = 10;
         GiantCropsPercent = 5;
-        QiNotebookPercent = 1f;
+        QiNotebookPercent = 10f;
         CheatCodesRequirement = 30;
         CheatCodesLives = 1;
         DebugBook = false;
@@ -90,6 +102,10 @@ public sealed class ModConfig
         QiNotebookPrice = 10;
         PetGiftsPrice = 15000;
         CheatCodesPrice = 65536;
+        JunimoScrapPrice = 25000;
+        CarolsPrice = 10000;
+        CoffeePrice = 75000;
+        SketchbookPrice = 30000;
     }
     
     public bool GetPowerEnabled(string powerName)
@@ -178,7 +194,7 @@ public sealed class ModConfig
                 string bookName = property.Name.Substring(6);
                 configMenu.AddBoolOption(
                     mod: ModManifest,
-                    name: () => i18n.GetByKey($"Config.Books.{bookName}.Title")!,
+                    name: () => i18n.GetByKey($"Config.Books.{bookName}.Title"),
                     tooltip: i18n.Config_General_Enabled_Description,
                     getValue: () => (bool)property.GetValue(this)!,
                     setValue: value => property.SetValue(this, value)

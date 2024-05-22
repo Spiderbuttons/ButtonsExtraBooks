@@ -15,7 +15,7 @@ namespace ButtonsExtraBooks.Powers
             if (!ModEntry.Config.EnableLuck) return;
             try
             {
-                if (__instance.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_Luck") == 0) return;
+                if (!Utils.PlayerHasPower("Luck")) return;
                 double luckToAdd = ModEntry.Config.LuckAmount;
                 while (luckToAdd > 0 && __result + luckToAdd > 0.15)
                 {
@@ -25,7 +25,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_Luck.DailyLuck_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_Luck.DailyLuck_Postfix: \n" + ex);
             }
         }
     }

@@ -32,7 +32,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_CheatCodes.restartLevel_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_CheatCodes.restartLevel_Postfix: \n" + ex);
             }
         }
         
@@ -46,7 +46,7 @@ namespace ButtonsExtraBooks.Powers
             }
             catch (Exception ex)
             {
-                Loggers.Log("Error in ButtonsExtraBooks_CheatCodes.Die_Postfix: \n" + ex, LogLevel.Error);
+                Log.Error("Error in ButtonsExtraBooks_CheatCodes.Die_Postfix: \n" + ex);
             }
         }
     }
