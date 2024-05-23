@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using ButtonsExtraBooks.Config;
@@ -22,6 +24,8 @@ namespace ButtonsExtraBooks
         internal static IModHelper ModHelper { get; private set; } = null!;
         internal static Harmony Harmony { get; private set; } = null!;
         internal static ModConfig Config { get; private set; } = null!;
+
+        internal static Dictionary<string, Dictionary<string, string>> ContentPackI18n = new();
         internal static IContentPatcherAPI ContentPatcher { get; private set; } = null!;
 
         public override void Entry(IModHelper helper)
@@ -35,9 +39,11 @@ namespace ButtonsExtraBooks
             harmony.PatchAll();
 
             helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked;
+            helper.Events.GameLoop.UpdateTicked += this.InitializeTranslationsFromCP;
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
             helper.Events.GameLoop.DayEnding += JunimoScrap.OnDayEnding;
             helper.Events.Display.MenuChanged += this.OnMenuChange;
+            helper.Events.Content.LocaleChanged += this.InitializeTranslationsFromCP;
         }
 
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
@@ -47,13 +53,26 @@ namespace ButtonsExtraBooks
                 RemovePowers.RemoveAll();
         }
 
+        private void InitializeTranslationsFromCP<T>(object sender, T e)
+        {
+            if (!ContentPatcher.IsConditionsApiReady) return;
+            string lang = LocalizedContentManager.CurrentLanguageCode.ToString();
+            if (lang == "mod") lang = LocalizedContentManager.CurrentModLanguage.LanguageCode;
+            if (ContentPackI18n.ContainsKey(lang)) return;
+            var i18nStrings =
+                Helper.GameContent.Load<Dictionary<string, string>>(
+                    $"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/{lang}");
+            if (i18nStrings == null) return;
+            ContentPackI18n.TryAdd(lang, i18nStrings);
+            Helper.Events.GameLoop.UpdateTicked -= InitializeTranslationsFromCP;
+        }
+
         private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
             ContentPatcher = Helper.ModRegistry.GetApi<IContentPatcherAPI>("Pathoschild.ContentPatcher");
             if (ContentPatcher == null)
             {
-                ModMonitor.Log("ContentPatcher not found. Button's Extra Books requires ContentPatcher to function.",
-                    LogLevel.Error);
+                Log.Error("ContentPatcher not found. Button's Extra Books requires ContentPatcher to function.");
                 return;
             }
 
@@ -133,10 +152,11 @@ namespace ButtonsExtraBooks
                         : null;
                 }
             );
+            
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
         }
-        
+
         private void OnMenuChange(object sender, MenuChangedEventArgs e)
         {
             if (e.NewMenu is not LetterViewerMenu letter)

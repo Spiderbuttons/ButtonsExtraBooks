@@ -1,7 +1,10 @@
-﻿using System.Net.Mime;
+﻿using System;
+using System.Net.Mime;
+using ButtonsExtraBooks.Helpers;
 using GenericModConfigMenu;
 using HarmonyLib;
 using StardewModdingAPI;
+using StardewValley;
 
 namespace ButtonsExtraBooks.Config;
 
@@ -121,6 +124,29 @@ public sealed class ModConfig
         return (int)GetType().GetProperty($"{bookName}Price")?.GetValue(this)!;
     }
 
+    public string GetLanguageCode()
+    {
+        return LocalizedContentManager.CurrentLanguageCode.ToString() != "mod" ? LocalizedContentManager.CurrentLanguageCode.ToString() : LocalizedContentManager.CurrentModLanguage.LanguageCode;
+    }
+    
+    public Func<string> TryGetI18n(string key)
+    {
+        return () =>
+        {
+            Log.Info($"Trying to get i18n for {key} and language code {GetLanguageCode()}");
+            if (ModEntry.ContentPackI18n.TryGetValue(GetLanguageCode(), out var i18nStrings))
+            {
+                Log.Info("Found language code");
+                if (i18nStrings.TryGetValue(key, out var i18nString))
+                {
+                    return i18nString;
+                }
+            }
+            
+            return "Missing translation key!";
+        };
+    }
+
     public void SetupConfig(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper, Harmony harmony)
     {
         configMenu.Register(
@@ -238,7 +264,8 @@ public sealed class ModConfig
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: i18n.Config_Books_Luck_Title
+            text: TryGetI18n("Luck.Book.Name")
+            // text: i18n.Config_Books_Luck_Title
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
