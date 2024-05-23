@@ -1,0 +1,87 @@
+{
+	// POWER LIST //
+	"Power.Luck.Name": "初学者的运气",
+	"Power.Luck.Description": "永久性增加你的少量运气属性。",
+
+	"Power.ExtraGifts.Name": "奉献之书",
+	"Power.ExtraGifts.Description": "现在玩家可以每日给予村民一份礼物。",
+
+	"Power.TreesIgnoreSeason.Name": "冬日之森",
+	"Power.TreesIgnoreSeason.Description": "树木将会在冬日生长",
+	
+	"Power.ArtisanMachines.Name": "工匠协会手册",
+	"Power.ArtisanMachines.Description": "机器生存工匠物品的速度要快得多。",
+	
+	"Power.GiantCrops.Name": "大甜瓜",
+	"Power.GiantCrops.Description": "巨大作物过夜成长的几率更高。",
+	
+	"Power.Popularity.Name": "友谊202",
+	"Power.Popularity.Description": "你的朋友更有可能通过邮件给你送礼物。",
+	
+	"Power.BusDriving.Name": "傻瓜式巴士驾驶手册",
+	"Power.BusDriving.Description": "你可以自己开车去卡利科沙漠。",
+
+	"Power.QiNotebook.Name": "齐先生的笔记本",
+	"Power.QiNoteBook.Description": "增加发现齐钻的概率。",
+	
+	"Power.PetGifts.Name": "强化爪爪",
+	"Power.PetGifts.Description": "你的宠物更有可能给你带来更好的礼物。",
+	
+	"Power.CheatCodes.Name": "街机密码",
+	"Power.CheatCodes.Description": "祝尼魔赛车关卡模式从更多的生命数开始。",
+	
+	// BOOK ITEMS //
+	"Book.Luck.Name": "初学者的运气",
+	"Book.Luck.Description": "阅读这本书可以永久地、小幅地增加你的每日幸运。",
+	"Book.Luck.Message": "You feel luckier!",
+
+	"Book.ExtraGifts.Name": "奉献之书",
+	"Book.ExtraGifts.Description": "阅读这本书后，你可以每日给予村民一份礼物。",
+	"Book.ExtraGifts.Message": "You're a real people pleaser!",
+
+	"Book.TreesIgnoreSeason.Name": "冬日之森",
+	"Book.TreesIgnoreSeason.Description": "这本书可以教会你如何在冬季种植树木。",
+	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
+	
+	"Book.ArtisanMachines.Name": "工匠协会手册",
+	"Book.ArtisanMachines.Description": "本书中包含的技术将帮助您更快地生产工匠物品。",
+	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
+	
+	"Book.GiantCrops.Name": "大甜瓜!",
+	"Book.GiantCrops.Description": "读完这本书后，你将更有可能生长出巨大作物。",
+	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
+	
+	"Book.Popularity.Name": "友谊202",
+	"Book.Popularity.Description": "你的朋友更有可能给你送礼物。",
+	"Book.Popularity.Message": "Your friends love you!",
+	
+	"Book.BusDriving.Name": "傻瓜式巴士驾驶手册",
+	"Book.BusDriving.Description": "这本书或多或少地包含了驾驶公交车所需的所有信息。",
+	"Book.BusDriving.Message": "You've learned how to drive!",
+
+	"Book.QiNotebook.Name": "齐先生的笔记本",
+	"Book.QiNotebook.Description": "这本笔记将帮助你寻找到更多随机的齐钻。",
+	"Book.QiNotebook.Message": '"Good luck, kid."',
+	
+	"Book.PetGifts.Name": "强化爪爪",
+	"Book.PetGifts.Description": "这本书将教你如何训练你的宠物给你带来更好的礼物。",
+	"Book.PetGifts.Message": "Your pet REALLY loves you!",
+	
+	"Book.CheatCodes.Name": "街机密码",
+	"Book.CheatCodes.Description": "你确信，这本书的某个地方有条可以帮你通关祝尼魔赛车的代码。",
+	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
+	
+	// MAIL //
+	"Mail.ArtisanGrange.Text": "芬吉尔共和国工匠协会非常骄傲的认可您对于高品质工匠物品的奉献。为了表示对您最近在星露谷展览会展览的感谢，我们随信附赠一本手册，希望能帮助你更高效的利用机器。",
+	"Mail.ArtisanGrange.Title": "工匠协会",
+	
+	// MISC DIALOGUE CHANGES //
+	"Dialogue.EnoughGifts": "你今天已经给予了 {0} 足够多的礼物了!",
+	
+	// DEBUG //
+	"Debug.Book.RemoveAll.Name": "BEB能力消除",
+	"Debug.Book.RemoveAll.Description": "消除button的额外书籍赋予你的所有权力，并退还你相应的书籍。",
+	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
+}
+
+// Thank you useplay and Icy1998666 on Nexusmods!

@@ -1,0 +1,301 @@
+{
+	"Changes": [
+		// BEGINNER'S LUCK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Luck": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceLuck}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Luck",
+					"ItemId": "(O){{ModId}}_Book_Luck",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck}}"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck": true
+			},
+		},
+		
+		// BOOK OF ALTRUISM //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_ExtraGifts": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceExtraGifts}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_ExtraGifts",
+					"ItemId": "(O){{ModId}}_Book_ExtraGifts",
+					"Condition": 'ANY "YEAR 3" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
+			},
+		},
+		
+		// WINTER FORESTRY //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_TreesIgnoreSeason": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceTreesIgnoreSeason}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_TreesIgnoreSeason",
+					"ItemId": "(O){{ModId}}_Book_TreesIgnoreSeason",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason}}",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason": true
+			},
+		},
+		
+		// ARTISANS GUILD MANUAL //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_ArtisanMachines": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceArtisanMachines}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_ArtisanMachines",
+					"ItemId": "(O){{ModId}}_Book_ArtisanMachines",
+					"Condition": 'ANY "PLAYER_HAS_MAIL Any {{ModId}}_Mail_ArtisanGrange Received" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines": true
+			},
+		},
+
+		// BIG MELONS! //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_GiantCrops": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceGiantCrops}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_GiantCrops",
+					"ItemId": "(O){{ModId}}_Book_GiantCrops",
+					"Condition": 'ANY "YEAR 2" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
+			},
+		},
+
+		// FRIENDSHIP 202 //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Popularity": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPricePopularity}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Popularity",
+					"ItemId": "(O){{ModId}}_Book_Popularity",
+					"Condition": 'ANY "PLAYER_STAT Current Book_Friendship 1" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
+			},
+		},
+
+		// BUS DRIVING FOR DUMMIES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_BusDriving": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceBusDriving}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_BusDriving",
+					"ItemId": "(O){{ModId}}_Book_BusDriving",
+					"Condition": 'ANY "IS_COMMUNITY_CENTER_COMPLETE" "IS_JOJA_MART_COMPLETE" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableBusDriving": true
+			},
+		},
+
+		// MR. QI'S NOTEBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "QiGemShop", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_QiNotebook": {
+					"TradeItemId": "(O)858",
+					"TradeItemAmount": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceQiNotebook}}",
+					"Price": -1,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "None",
+					"Id": "(O){{ModId}}_Book_QiNotebook",
+					"ItemId": "(O){{ModId}}_Book_QiNotebook",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
+			},
+		},
+
+		// PAWSITIVE REINFORCEMENT //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_PetGifts": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPricePetGifts}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_PetGifts",
+					"ItemId": "(O){{ModId}}_Book_PetGifts",
+					"Condition": 'ANY "YEAR 2" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePetGifts": true
+			},
+		},
+
+		// SECRET CODES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_CheatCodes": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceCheatCodes}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_CheatCodes",
+					"ItemId": "(O){{ModId}}_Book_CheatCodes",
+					"Condition": 'ANY "PLAYER_STAT Current {{ModId}}_JunimoDeaths {{Spiderbuttons.ButtonsExtraBooksCore/ConfigCheatCodesRequirement}}" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCheatCodes": true
+			},
+		},
+		
+		// JUNIMO SCRAPBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_JunimoScrap": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceJunimoScrap}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_JunimoScrap",
+					"ItemId": "(O){{ModId}}_Book_JunimoScrap",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableJunimoScrap": true
+			},
+		},
+		
+		// BOOK OF CAROLS //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Carols": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceCarols}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Carols",
+					"ItemId": "(O){{ModId}}_Book_Carols",
+					"Condition": 'ANY "SEASON winter" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCarols": true
+			},
+		},
+		
+		// THE STRONGEST BREW //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Coffee": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceCoffee}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Coffee",
+					"ItemId": "(O){{ModId}}_Book_Coffee",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCoffee}}"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCoffee": true
+			},
+		},
+		
+		// CHILDS SKETCHBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Sketchbook": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceSketchbook}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Sketchbook",
+					"ItemId": "(O){{ModId}}_Book_Sketchbook",
+					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook}}"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook": true
+			},
+		},
+		
+		// BEB POWER REMOVAL //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "SeedShop", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_DebugRemoveAll": {
+					"Price": 50,
+					"Id": "(O){{ModId}}_Debug_RemoveAll",
+					"ItemId": "(O){{ModId}}_Debug_RemoveAll"
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableDebugBook": true
+			},
+		},
+	]
+}

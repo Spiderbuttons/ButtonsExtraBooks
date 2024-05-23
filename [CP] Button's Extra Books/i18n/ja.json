@@ -1,0 +1,89 @@
+{
+	// POWER LIST //
+	"Power.Luck.Name": "ビギナーズラック",
+	"Power.Luck.Description": "運のステータスが永続的にわずかに上昇する。",
+	
+	"Power.ExtraGifts.Name": "利他主義の本",
+	"Power.ExtraGifts.Description": "村人は週に2つ以上の贈り物を受け取る。",
+	
+	"Power.TreesIgnoreSeason.Name": "冬の林業",
+	"Power.TreesIgnoreSeason.Description": "木が一年中成長する。",
+	
+	"Power.ArtisanMachines.Name": "職人ギルドのマニュアル",
+	"Power.ArtisanMachines.Description": "生産設備での加工品をより早く生産する。",
+	
+	"Power.GiantCrops.Name": "大きなメロン！",
+	"Power.GiantCrops.Description": "作物が一夜にして巨大になる確率を高める。",
+	
+	"Power.Popularity.Name": "親友のつくり方",
+	"Power.Popularity.Description": "仲良くなった住民からプレゼントが送られてくる確率を高める。",
+	
+	"Power.BusDriving.Name": "バスの運転マニュアル",
+	"Power.BusDriving.Description": "自分でバスを運転し、カリコ砂漠まで行くことができる。",
+
+	"Power.QiNotebook.Name": "ミスターQiのノート",
+	"Power.QiNoteBook.Description": "モンスターを倒した時にQiジェムが見つかる確率を高める。",
+	
+	"Power.PetGifts.Name": "ぺっとのきもち",
+	"Power.PetGifts.Description": "ペットから貰えるアイテムのレア率を高める。",
+
+	// TODO /////////////////////////////////////////////////
+	"Power.CheatCodes.Name": "ジュニモカートの秘密コード",
+	"Power.CheatCodes.Description": "ジュニモカートをプログレスモードで起動して、より多くのライフでスタートしよう。",
+	
+	// BOOK ITEMS //
+	"Book.Luck.Name": "ビギナーズラック",
+	"Book.Luck.Description": "この本を読めば、運のステータスが永続的に少し上昇する。",
+	"Book.Luck.Message": "You feel luckier!",
+	
+	"Book.ExtraGifts.Name": "利他主義の本",
+	"Book.ExtraGifts.Description": "この本を読めば、村人たちはあなたから週に2回以上の贈り物を受け取るようになるだろう。",
+	"Book.ExtraGifts.Message": "You're a real people pleaser!",
+	
+	"Book.TreesIgnoreSeason.Name": "冬の林業",
+	"Book.TreesIgnoreSeason.Description": "この本を読めば、冬の季節に樹木を育てる方法を学ぶことができる。",
+	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
+	
+	"Book.ArtisanMachines.Name": "職人ギルドのマニュアル",
+	"Book.ArtisanMachines.Description": "本に掲載されているテクニックを使えば、職人技を駆使した商品をより早く作ることができるだろう。",
+	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
+	
+	"Book.GiantCrops.Name": "大きなメロン！",
+	"Book.GiantCrops.Description": "この本を読めば、巨大な作物ができる可能性が高まるだろう。",
+	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
+	
+	"Book.Popularity.Name": "親友のつくり方",
+	"Book.Popularity.Description": "仲良くなった住民からプレゼントが送られてくる可能性が高まるだろう。",
+	"Book.Popularity.Message": "Your friends love you!",
+	
+	"Book.BusDriving.Name": "バスの運転マニュアル",
+	"Book.BusDriving.Description": "この本には、バスを運転するのに必要なすべての情報が、ざっくりと書かれている。",
+	"Book.BusDriving.Message": "You've learned how to drive!",
+
+	"Book.QiNotebook.Name": "ミスターQiのノート",
+	"Book.QiNotebook.Description": "これらのメモは、あなたがQiジェムを見つけるのに役立ちます。",
+	"Book.QiNotebook.Message": '"Good luck, kid."',
+	
+	"Book.PetGifts.Name": "ぺっとのきもち",
+	"Book.PetGifts.Description": "この本には、ペットから貰えるアイテムが良くなるしつけ方法が書かれている。",
+	"Book.PetGifts.Message": "Your pet REALLY loves you!",
+
+	// TODO ///////////////////////////////////////////////////////////
+	"Book.CheatCodes.Name": "ジュニモカートの秘密コード",
+	"Book.CheatCodes.Description": "この本のどこかに、ジュニモカートのライフを調整するコードが書かれている。",
+	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
+	
+	// MAIL //
+	"Mail.ArtisanGrange.Text": "ファーンギル共和国職人ギルドは、皆様の職人技による高品質な商品へのこだわりを誇りに思います。先日のスターデューバレーまつりでの展示に感謝の意を表し、加工設備をより効率的に活用するためのマニュアルを同封いたします。",
+	"Mail.ArtisanGrange.Title": "職人ギルド",
+	
+	// MISC DIALOGUE CHANGES //
+	"Dialogue.EnoughGifts": "もう{0}には十分にプレゼントを贈りました！",
+	
+	// DEBUG //
+	"Debug.Book.RemoveAll.Name": "Button's Extra Booksの力を除去",
+	"Debug.Book.RemoveAll.Description": "Button's Extra Booksによって与えられたすべての力を削除し、対応する本の代金を返金する。",
+	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
+}
+
+// Thank you mitekano23 on Nexusmods!

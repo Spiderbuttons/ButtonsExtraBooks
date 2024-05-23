@@ -1,0 +1,99 @@
+{
+	// POWER LIST //
+	"Power.Luck.Name": "Sorte de Principiante",
+	"Power.Luck.Description": "Aumenta permanentemente a sorte.",
+
+	"Power.ExtraGifts.Name": "Livro do Altruísmo",
+	"Power.ExtraGifts.Description": "Aldeões aceitarão mais de dois presentes por semana.",
+
+	"Power.TreesIgnoreSeason.Name": "Silvicultura de Inverno",
+	"Power.TreesIgnoreSeason.Description": "Árvores crescem durante o ano todo.",
+	
+	// TODO ///////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////
+	"Power.ArtisanMachines.Name": "Artisans Guild Manual",
+	"Power.ArtisanMachines.Description": "Machines produce artisan goods much quicker.",
+	
+	"Power.GiantCrops.Name": "Big Melons",
+	"Power.GiantCrops.Description": "Giant crops have a higher chance of growing overnight.",
+
+	"Power.Popularity.Name": "Friendship 202",
+	"Power.Popularity.Description": "Your friends are more likely to send you gifts in the mail.",
+
+	"Power.BusDriving.Name": "Bus Driving for Dummies",
+	"Power.BusDriving.Description": "You can drive the bus to Calico Desert yourself.",
+
+	"Power.QiNotebook.Name": "Mr. Qi's Notebook",
+	"Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
+
+	"Power.PetGifts.Name": "Pawsitive Reinforcement",
+	"Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
+	
+	"Power.CheatCodes.Name": "Secret Codes for Arcade Machines",
+	"Power.CheatCodes.Description": "Start with more lives in Junimo Kart progress mode.",
+	///////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////////
+
+	// BOOK ITEMS //
+	"Book.Luck.Name": "Sorte de Principiante",
+	"Book.Luck.Description": "Leia este livro para obter um pequeno aumento permanente em sua sorte.",
+	"Book.Luck.Message": "You feel luckier!",
+
+	"Book.ExtraGifts.Name": "Livro do Altruísmo",
+	"Book.ExtraGifts.Description": "Depois de ler este livro, os aldeões aceitarão mais de dois presentes de você por semana.",
+	"Book.ExtraGifts.Message": "You're a real people pleaser!",
+
+	"Book.TreesIgnoreSeason.Name": "Silvicultura de Inverno",
+	"Book.TreesIgnoreSeason.Description": "A leitura deste livro irá ensiná-lo a cultivar árvores durante o inverno.",
+	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
+	
+	// TODO ////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////
+	"Book.ArtisanMachines.Name": "Artisans Guild Manual",
+	"Book.ArtisanMachines.Description": "The techniques contained within this book will help you produce artisan goods much quicker.",
+	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
+	
+	"Book.GiantCrops.Name": "Big Melons!",
+	"Book.GiantCrops.Description": "You will be more likely to grow giant crops after reading this book.",
+	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
+
+	"Book.Popularity.Name": "Friendship 202",
+	"Book.Popularity.Description": "Your friends will be more likely to send you gifts.",
+	"Book.Popularity.Message": "Your friends love you!",
+
+	"Book.BusDriving.Name": "Bus Driving for Dummies",
+	"Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
+	"Book.BusDriving.Message": "You've learned how to drive!",
+
+	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
+	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
+	"Book.QiNotebook.Message": '"Good luck, kid."',
+	
+	"Book.PetGifts.Name": "Pawsitive Reinforcement",
+	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
+	"Book.PetGifts.Message": "Your pet REALLY loves you!",
+	
+	"Book.CheatCodes.Name": "Secret Codes for Arcade Machines",
+	"Book.CheatCodes.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
+	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
+	
+	// MAIL //
+	"Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",
+	"Mail.ArtisanGrange.Title": "Artisans Guild",
+	////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////
+
+	// MISC DIALOGUE CHANGES //
+	"Dialogue.EnoughGifts": "Você já deu presentes demais para {0} por enquanto! Chega.",
+	
+	// DEBUG //
+	////////////////////////////////////////////////////////////////////////
+	// TODO ////////////////////////////////////////////////////////////////
+	"Debug.Book.RemoveAll.Name": "BEB Power Removal",
+	"Debug.Book.RemoveAll.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
+	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
+	////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////
+}
+
+// Thank you Onemix on Nexusmods!

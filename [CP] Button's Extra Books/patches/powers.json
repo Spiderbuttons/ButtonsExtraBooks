@@ -1,0 +1,308 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Spiderbuttons.SpecialPowerUtilities/PowerTabs",
+			"Entries": {
+				"{{ModId}}": {
+					"TabDisplayName": "Button's Extra Books",
+					"IconPath": "Mods/{{ModId}}/Icons/PowersTab",
+				}
+			}
+		},
+	
+		// BEGINNER'S LUCK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Luck": {
+					"DisplayName": "{{i18n: Power.Luck.Name}}",
+					"Description": "{{i18n: Power.Luck.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 16,
+						"Y": 0,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Luck 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck": true
+			},
+		},
+		
+		// BOOK OF ALTRUISM //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_ExtraGifts": {
+					"DisplayName": "{{i18n: Power.ExtraGifts.Name}}",
+					"Description": "{{i18n: Power.ExtraGifts.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 32,
+						"Y": 0,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_ExtraGifts 1",
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
+			},
+		},
+		
+		// WINTER FORESTRY //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_TreesIgnoreSeason": {
+					"DisplayName": "{{i18n: Power.TreesIgnoreSeason.Name}}",
+					"Description": "{{i18n: Power.TreesIgnoreSeason.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 48,
+						"Y": 0,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_TreesIgnoreSeason 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason": true
+			},
+		},
+		
+		// ARTISANS GUILD MANUAL //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_ArtisanMachines": {
+					"DisplayName": "{{i18n: Power.ArtisanMachines.Name}}",
+					"Description": "{{i18n: Power.ArtisanMachines.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 64,
+						"Y": 0,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_ArtisanMachines 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines": true
+			},
+		},
+
+		// BIG MELONS! //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_GiantCrops": {
+					"DisplayName": "{{i18n: Power.GiantCrops.Name}}",
+					"Description": "{{i18n: Power.GiantCrops.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 80,
+						"Y": 0,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_GiantCrops 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
+			},
+		},
+
+		// FRIENDSHIP 202 //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Popularity": {
+					"DisplayName": "{{i18n: Power.Popularity.Name}}",
+					"Description": "{{i18n: Power.Popularity.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 96,
+						"Y": 0,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Popularity 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
+			},
+		},
+
+		// BUS DRIVING FOR DUMMIES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_BusDriving": {
+					"DisplayName": "{{i18n: Power.BusDriving.Name}}",
+					"Description": "{{i18n: Power.BusDriving.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 0,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_BusDriving 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableBusDriving": true
+			},
+		},
+
+		// MR. QI'S NOTEBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_QiNotebook": {
+					"DisplayName": "{{i18n: Power.QiNotebook.Name}}",
+					"Description": "{{i18n: Power.QiNotebook.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 16,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_QiNotebook 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
+			},
+		},
+
+		// PAWSITIVE REINFORCEMENT //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_PetGifts": {
+					"DisplayName": "{{i18n: Power.PetGifts.Name}}",
+					"Description": "{{i18n: Power.PetGifts.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 32,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_PetGifts 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePetGifts": true
+			},
+		},
+
+		// SECRET CODES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_CheatCodes": {
+					"DisplayName": "{{i18n: Power.CheatCodes.Name}}",
+					"Description": "{{i18n: Power.CheatCodes.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 48,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_CheatCodes 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCheatCodes": true
+			},
+		},
+		
+		// JUNIMO SCRAPBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_JunimoScrap": {
+					"DisplayName": "{{i18n: Power.JunimoScrap.Name}}",
+					"Description": "{{i18n: Power.JunimoScrap.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 64,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_JunimoScrap 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableJunimoScrap": true
+			},
+		},
+		
+		// BOOK OF CAROLS //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Carols": {
+					"DisplayName": "{{i18n: Power.Carols.Name}}",
+					"Description": "{{i18n: Power.Carols.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 80,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Carols 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCarols": true
+			},
+		},
+		
+		// THE STRONGEST BREW //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Coffee": {
+					"DisplayName": "{{i18n: Power.Coffee.Name}}",
+					"Description": "{{i18n: Power.Coffee.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 96,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Coffee 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCoffee": true
+			},
+		},
+		
+		// CHILDS SKETCHBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Sketchbook": {
+					"DisplayName": "{{i18n: Power.Sketchbook.Name}}",
+					"Description": "{{i18n: Power.Sketchbook.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 112,
+						"Y": 16,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Sketchbook 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook": true
+			},
+		},
+	]
+}

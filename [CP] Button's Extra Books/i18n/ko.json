@@ -1,0 +1,89 @@
+{
+	// POWER LIST //
+	"Power.Luck.Name": "초심자의 행운",
+	"Power.Luck.Description": "행운수치가 영구적으로 조금 향상됩니다.",
+
+	"Power.ExtraGifts.Name": "이타주의 : 당신을 바꾸는 힘",
+	"Power.ExtraGifts.Description": "마을 사람들은 일주일에 두 개 이상의 선물을 받을 수 있습니다.",
+
+	"Power.TreesIgnoreSeason.Name": "겨울 산림학",
+	"Power.TreesIgnoreSeason.Description": "나무는 일년 내내 자랍니다.",
+	
+	"Power.ArtisanMachines.Name": "장인 조합 지침서",
+	"Power.ArtisanMachines.Description": "설비가 장인 제작품을 훨씬 빨리 생산합니다.",
+	
+	"Power.GiantCrops.Name": "거대한 멜론",
+	"Power.GiantCrops.Description": "거대 작물이 하룻밤 사이에 성장할 가능성이 더 높아집니다.",
+	
+	"Power.Popularity.Name": "우정 202",
+	"Power.Popularity.Description": "마을 사람들이 당신에게 우편으로 선물을 보낼 가능성이 더 높습니다.",
+
+	"Power.BusDriving.Name": "초보자용 버스 운전 교본",
+	"Power.BusDriving.Description": "직접 버스를 운전해서 칼리코 사막까지 갈 수 있습니다.",
+
+	"Power.QiNotebook.Name": "미스터 치의 노트",
+	"Power.QiNoteBook.Description": "무작위로 치의 보석을 찾을 확률이 더 늘어납니다.",
+
+	"Power.PetGifts.Name": "반려동물 보강법",
+	"Power.PetGifts.Description": "반려동물이 더 좋은 선물을 가져올 가능성이 더 커집니다.",
+
+	// TODO /////////////////////////////////////////////////
+	"Power.CheatCodes.Name": "Secret Codes for Arcade Machines",
+	"Power.CheatCodes.Description": "Start with more lives in Junimo Kart progress mode.",
+	
+	// BOOK ITEMS //
+	"Book.Luck.Name": "초심자의 행운",
+	"Book.Luck.Description": "이 책을 읽으면 운이 조금 더 좋아집니다.",
+	"Book.Luck.Message": "You feel luckier!",
+
+	"Book.ExtraGifts.Name": "이타주의 : 당신을 바꾸는 힘",
+	"Book.ExtraGifts.Description": "이 책을 읽은 후, 마을 사람들에게 선물을 매주 두 개 이상 주는 법을 알게 됩니다.",
+	"Book.ExtraGifts.Message": "You're a real people pleaser!",
+
+	"Book.TreesIgnoreSeason.Name": "겨울 산림학",
+	"Book.TreesIgnoreSeason.Description": "이 책을 읽으면 겨울동안 나무를 기르는 방법에 대해 배울 수 있습니다.",
+	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
+	
+	"Book.ArtisanMachines.Name": "장인 조합 지침서",
+	"Book.ArtisanMachines.Description": "이 책에는 장인 제작품을 더 빠르게 생산할 수 있는 기술들이 적혀있습니다.",
+	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
+	
+	"Book.GiantCrops.Name": "거대한 멜론!",
+	"Book.GiantCrops.Description": "이 책을 읽은 후, 거대 작물을 키우는 데 더 쉬울 것입니다.",
+	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
+	
+	"Book.Popularity.Name": "우정 202",
+	"Book.Popularity.Description": "이 책을 읽으면 마을 사람들에게 우편으로 선물을 받을 가능성이 더 높아집니다.",
+	"Book.Popularity.Message": "Your friends love you!",
+
+	"Book.BusDriving.Name": "초보자용 버스 운전 교본",
+	"Book.BusDriving.Description": "이 책에는 버스를 운전하는 데 필요한 모든 정보가 담겨 있습니다.",
+	"Book.BusDriving.Message": "You've learned how to drive!",
+
+	"Book.QiNotebook.Name": "미스터 치의 노트",
+	"Book.QiNotebook.Description": "이 노트를 읽으면 치 보석을 더 많이 찾을 수 있게 됩니다.",
+	"Book.QiNotebook.Message": '"Good luck, kid."',
+	
+	"Book.PetGifts.Name": "반려동물 보강법",
+	"Book.PetGifts.Description": "이 책은 반려동물을 훈련시켜서 더 좋은 선물을 가져다주게 하는 방법을 가르쳐 줄 것입니다.",
+	"Book.PetGifts.Message": "Your pet REALLY loves you!",
+
+	// TODO ///////////////////////////////////////////////////////////
+	"Book.CheatCodes.Name": "Secret Codes for Arcade Machines",
+	"Book.CheatCodes.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
+	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
+	
+	// MAIL //
+	"Mail.ArtisanGrange.Text": "저희 펀길 공화국의 장인 조합은 귀하가 양질의 장인 생산품을 만든 것에 대한 헌신과 노고를 인정하는바, 저희는 귀하를 자랑스럽게 여기고 있습니다. 최근 스타듀밸리 박람회에서 귀하의 장인 생산품 전시에 감사를 표하기 위해, 귀하가 장비를 좀 더 효율적으로 활용할 수 있도록 도와줄 지침서를 동봉했습니다.",
+	"Mail.ArtisanGrange.Title": "장인 조합",
+
+	// MISC DIALOGUE CHANGES //
+	"Dialogue.EnoughGifts": "이미 {0}한테 충분히 선물을 주었습니다.",
+	
+	// DEBUG //
+	"Debug.Book.RemoveAll.Name": "BEB 능력 제거",
+	"Debug.Book.RemoveAll.Description": "Button's Extra Books로 부여된 모든 능력을 제거하고, 해당 책들을 환급합니다.",
+	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
+}
+
+// Thank you hongdel and yunminxx on Nexusmods!

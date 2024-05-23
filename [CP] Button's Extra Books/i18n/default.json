@@ -1,0 +1,74 @@
+{
+	// BOOKS AND POWERS //
+	"Luck.Book.Name": "Beginner's Luck",
+	"Luck.Book.Description": "Read this book to gain a permanent, minor increase to your luck stat.",
+	"Luck.Book.Message": "You feel luckier!",
+	"Luck.Power.Description": "Luck stat permanently increased by a minor amount.",
+	
+	"ExtraGifts.Book.Name": "Book of Altruism",
+	"ExtraGifts.Book.Description": "After reading this book, villagers will accept more than two gifts per week from you.",
+	"ExtraGifts.Book.Message": "You're a real people pleaser!",
+	"ExtraGifts.Power.Description": "Villagers will accept more than two gifts per week.",
+	
+	"TreesIgnoreSeason.Book.Name": "Winter Forestry",
+	"TreesIgnoreSeason.Book.Description": "Reading this book will teach you how to grow trees during the winter season.",
+	"TreesIgnoreSeason.Book.Message": "Silviculture+!",
+	"TreesIgnoreSeason.Power.Description": "Trees grow year-round.",
+	
+	"ArtisanMachines.Book.Name": "Artisans Guild Manual",
+	"ArtisanMachines.Book.Description": "The techniques contained within this book will help you produce artisan goods much quicker.",
+	"ArtisanMachines.Book.Message": "Your artisanal machines are now more efficient!",
+	"ArtisanMachines.Power.Description": "Machines produce artisan goods much quicker.",
+	
+	"GiantCrops.Book.Name": "Big Melons!",
+	"GiantCrops.Book.Description": "You will be more likely to grow giant crops after reading this book.",
+	"GiantCrops.Book.Message": "You've learned the secrets of giant crops!",
+	"GiantCrops.Power.Description": "Giant crops have a higher chance of growing overnight.",
+	
+	"Popularity.Book.Name": "Friendship 202",
+	"Popularity.Book.Description": "Your friends will be more likely to send you gifts.",
+	"Popularity.Book.Message": "Your friends love you!",
+	"Popularity.Power.Description": "Your friends are more likely to send you gifts in the mail.",
+	
+	"BusDriving.Book.Name": "Bus Driving for Dummies",
+	"BusDriving.Book.Description": "This book contains all the information you need to drive a bus, more or less.",
+	"BusDriving.Book.Message": "You've learned how to drive!",
+	"BusDriving.Power.Description": "You can drive the bus to Calico Desert yourself.",
+	
+	"QiNotebook.Book.Name": "Mr. Qi's Notebook",
+	"QiNotebook.Book.Description": "These notes will help you find more random Qi gems.",
+	"QiNotebook.Book.Message": '"Good luck, kid."',
+	"QiNotebook.Power.Description": "Increased odds of finding random Qi gems.",
+	
+	"PetGifts.Book.Name": "Pawsitive Reinforcement",
+	"PetGifts.Book.Description": "This book will teach you how to train your pets to bring you better gifts.",
+	"PetGifts.Book.Message": "Your pet REALLY loves you!",
+	"PetGifts.Power.Description": "Your pets are more likely to bring you better gifts.",
+	
+	"CheatCodes.Book.Name": "Secret Codes for Arcade Machines",
+	"CheatCodes.Book.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
+	"CheatCodes.Book.Message": "Up, up, down down, left, right...",
+	"CheatCodes.Power.Description": "Start with more lives in Junimo Kart progress mode.",
+	
+	"JunimoScrap.Book.Name": "Junimo Scrapbook",
+	"JunimoScrap.Book.Description": "Your Junimos have filled this book with memories.",
+	"JunimoScrap.Book.Message": "You are now closer to your Junimos!",
+	"JunimoScrap.Power.Descriptions": "Your Junimos are chattier and will send you letters.",
+	
+	// MAIL //
+	"Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",
+	"Mail.ArtisanGrange.Title": "Artisans Guild",
+	
+	"Mail.JunimoScrap.Crop.Text": "We worked soooo hard to grow these extra crops for you! Thank you for trusting us with your farm!",
+	"Mail.JunimoScrap.Gem.Text": "Look what we found when we were digging in the dirt! It's so shiny... but we think you might want it more than us!",
+	"Mail.JunimoScrap.Item.Text": "We found this! We don't know how useful it will be to you, but... we hope you're proud of us anyway!",
+	"Mail.JunimoScrap.Title": "Letter From Your Junimos",
+	
+	// MISC DIALOGUE CHANGES //
+	"Dialogue.EnoughGifts": "You've given {0} enough gifts for now!",
+	
+	// DEBUG //
+	"Debug.Book.RemoveAll.Name": "BEB Power Removal",
+	"Debug.Book.RemoveAll.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
+	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
+}

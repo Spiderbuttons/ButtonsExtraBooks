@@ -1,0 +1,33 @@
+{
+	"Changes": [
+		// COFFEE //
+		{
+			"Action": "EditData",
+            "Target": "Data/Objects",
+			"TargetField": [ "395", "Buffs" ],
+            "Fields": {
+				"Drink": {
+					"Duration": 360
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/HasCoffeePower": true
+			},
+		},
+	
+		// TRIPLE SHOT ESPRESSO //
+		{
+			"Action": "EditData",
+            "Target": "Data/Objects",
+			"TargetField": [ "253", "Buffs" ],
+            "Fields": {
+				"Drink": {
+					"Duration": 1080
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/HasCoffeePower": true
+			},
+		},
+	]
+}

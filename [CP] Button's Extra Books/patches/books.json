@@ -1,0 +1,454 @@
+{
+	"Changes": [
+		// BEGINNER'S LUCK //
+		{
+			"Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Book_Luck": {
+                    "Name": "{{ModId}}_Book_Luck",
+                    "DisplayName": "{{i18n: Book.Luck.Name}}",
+                    "Description": "{{i18n: Book.Luck.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 1,
+					"ContextTags": [
+						"color_green",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Luck.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#267F00"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck": true
+			},
+		},
+		
+		// BOOK OF ALTRUISM //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_ExtraGifts": {
+                    "Name": "{{ModId}}_Book_ExtraGifts",
+                    "DisplayName": "{{i18n: Book.ExtraGifts.Name}}",
+                    "Description": "{{i18n: Book.ExtraGifts.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 2,
+					"ContextTags": [
+						"color_white",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.ExtraGifts.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#F0CDF2"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
+			},
+		},
+		
+		// WINTER FORESTRY //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_TreesIgnoreSeason": {
+                    "Name": "{{ModId}}_Book_TreesIgnoreSeason",
+                    "DisplayName": "{{i18n: Book.TreesIgnoreSeason.Name}}",
+                    "Description": "{{i18n: Book.TreesIgnoreSeason.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 3,
+					"ContextTags": [
+						"color_light_cyan",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.TreesIgnoreSeason.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#B8E0DB"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason": true
+			},
+		},
+		
+		// ARTISANS GUILD MANUAL //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_ArtisanMachines": {
+                    "Name": "{{ModId}}_Book_ArtisanMachines",
+                    "DisplayName": "{{i18n: Book.ArtisanMachines.Name}}",
+                    "Description": "{{i18n: Book.ArtisanMachines.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 4,
+					"ContextTags": [
+						"color_brown",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.ArtisanMachines.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#824343"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableArtisanMachines": true
+			},
+		},
+
+		// BIG MELONS! //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_GiantCrops": {
+					"Name": "{{ModId}}_Book_GiantCrops",
+					"DisplayName": "{{i18n: Book.GiantCrops.Name}}",
+					"Description": "{{i18n: Book.GiantCrops.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 5,
+					"ContextTags": [
+						"color_dark_purple",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.GiantCrops.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#8D386C"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableGiantCrops": true
+			},
+		},
+
+		// FRIENDSHIP 202 //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_Popularity": {
+					"Name": "{{ModId}}_Book_Popularity",
+					"DisplayName": "{{i18n: Book.Popularity.Name}}",
+					"Description": "{{i18n: Book.Popularity.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 6,
+					"ContextTags": [
+						"color_pink",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Popularity.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#E298D5"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
+			},
+		},
+
+		// BUS DRIVING FOR DUMMIES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_BusDriving": {
+					"Name": "{{ModId}}_Book_BusDriving",
+					"DisplayName": "{{i18n: Book.BusDriving.Name}}",
+					"Description": "{{i18n: Book.BusDriving.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 8,
+					"ContextTags": [
+						"color_yellow",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.BusDriving.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#FFDA00"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePopularity": true
+			},
+		},
+
+		// MR. QI'S NOTEBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_QiNotebook": {
+					"Name": "{{ModId}}_Book_QiNotebook",
+					"DisplayName": "{{i18n: Book.QiNotebook.Name}}",
+					"Description": "{{i18n: Book.QiNotebook.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 9,
+					"ContextTags": [
+						"color_cyan",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.QiNotebook.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#30C2FF"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableQiNotebook": true
+			},
+		},
+
+		// PAWSITIVE REINFORCEMENT //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_PetGifts": {
+					"Name": "{{ModId}}_Book_PetGifts",
+					"DisplayName": "{{i18n: Book.PetGifts.Name}}",
+					"Description": "{{i18n: Book.PetGifts.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 10,
+					"ContextTags": [
+						"color_gray",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.PetGifts.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#888687"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnablePetGifts": true
+			},
+		},
+
+		// SECRET CODES //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_CheatCodes": {
+					"Name": "{{ModId}}_Book_CheatCodes",
+					"DisplayName": "{{i18n: Book.CheatCodes.Name}}",
+					"Description": "{{i18n: Book.CheatCodes.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 11,
+					"ContextTags": [
+						"color_green",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.CheatCodes.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#306832"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCheatCodes": true
+			},
+		},
+		
+		// JUNIMO SCRAPBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_JunimoScrap": {
+					"Name": "{{ModId}}_Book_JunimoScrap",
+					"DisplayName": "{{i18n: Book.JunimoScrap.Name}}",
+					"Description": "{{i18n: Book.JunimoScrap.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 12,
+					"ContextTags": [
+						"color_dark_green",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.JunimoScrap.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#36672F"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableJunimoScrap": true
+			},
+		},
+
+		
+		// BOOK OF CAROLS //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_Carols": {
+					"Name": "{{ModId}}_Book_Carols",
+					"DisplayName": "{{i18n: Book.Carols.Name}}",
+					"Description": "{{i18n: Book.Carols.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 13,
+					"ContextTags": [
+						"color_dark_red",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Carols.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#8D0401"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCarols": true
+			},
+		},
+		
+		// THE STRONGEST BREW //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_Coffee": {
+					"Name": "{{ModId}}_Book_Coffee",
+					"DisplayName": "{{i18n: Book.Coffee.Name}}",
+					"Description": "{{i18n: Book.Coffee.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 14,
+					"ContextTags": [
+						"color_dark_brown",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Coffee.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#5F422C"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCoffee": true
+			},
+		},
+		
+		// CHILDS SKETCHBOOK //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_Sketchbook": {
+					"Name": "{{ModId}}_Book_Sketchbook",
+					"DisplayName": "{{i18n: Book.Sketchbook.Name}}",
+					"Description": "{{i18n: Book.Sketchbook.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 15,
+					"ContextTags": [
+						"color_green",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Sketchbook.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#159922"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook": true
+			},
+		},
+		
+		// BEB POWER REMOVAL //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Debug_RemoveAll": {
+                    "Name": "{{ModId}}_Debug_RemoveAll",
+                    "DisplayName": "{{i18n: Debug.Book.RemoveAll.Name}}",
+                    "Description": "{{i18n: Debug.Book.RemoveAll.Description}}",
+                    "Type": "asdf",
+                    "Category": -102,
+                    "Price": 50,
+                    "Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 0,
+					"ContextTags": [
+						"color_dark_pink",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Debug.Book.RemoveAll.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#E246CE"
+					},
+				},	
+            },
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableDebugBook": true
+			},
+		}
+	]
+}

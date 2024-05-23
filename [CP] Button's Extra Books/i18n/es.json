@@ -1,0 +1,89 @@
+{
+    // POWER LIST //
+    "Power.Luck.Name": "Suerte del principiante",
+    "Power.Luck.Description": "La estadística de suerte aumentó permanentemente en una pequeña cantidad.",
+    
+    "Power.ExtraGifts.Name": "Libro del altruismo",
+    "Power.ExtraGifts.Description": "Los aldeanos aceptarán más de dos regalos por semana.",
+    
+    "Power.TreesIgnoreSeason.Name": "Bosques de invierno",
+    "Power.TreesIgnoreSeason.Description": "Los árboles crecen durante todo el año.",
+	
+	"Power.ArtisanMachines.Name": "Manual del gremio de artesanos",
+	"Power.ArtisanMachines.Description": "Las máquinas producen productos artesanales mucho más rápido.",
+	
+	"Power.GiantCrops.Name": "Melones grandes",
+	"Power.GiantCrops.Description": "Los cultivos gigantes tienen más posibilidades de crecer durante la noche.",
+  
+    "Power.Popularity.Name": "Amistad 202",
+    "Power.Popularity.Description": "Es más probable que tus amigos te envíen regalos.",
+  
+    "Power.BusDriving.Name": "Conducción de autobús para principiantes",
+    "Power.BusDriving.Description": "Tú mismo puedes conducir el autobús hasta el desierto Calico.",
+  
+    "Power.QiNotebook.Name": "El cuaderno del Señor Qi",
+    "Power.QiNoteBook.Description": "Mayores probabilidades de encontrar gemas Qi.",
+  
+    "Power.PetGifts.Name": "Refuerzo positivo",
+    "Power.PetGifts.Description": "Es más probable que tus mascotas te brinden mejores regalos.",
+  
+    // TODO /////////////////////////////////////////////////
+    "Power.CheatCodes.Name": "Secret Codes for Arcade Machines",
+    "Power.CheatCodes.Description": "Start with more lives in Junimo Kart progress mode.",
+    
+    // BOOK ITEMS //
+    "Book.Luck.Name": "Suerte del principiante",
+    "Book.Luck.Description": "Leer este libro aumentará la estadística de suerte permanentemente en una pequeña cantidad.",
+    "Book.Luck.Message": "You feel luckier!",
+    
+    "Book.ExtraGifts.Name": "Libro del altruismo",
+    "Book.ExtraGifts.Description": "Después de leer este libro, los aldeanos aceptarán más de dos regalos por semana.",
+    "Book.ExtraGifts.Message": "You're a real people pleaser!",
+    
+    "Book.TreesIgnoreSeason.Name": "Bosques de invierno",
+    "Book.TreesIgnoreSeason.Description": "Leer este libro le enseñará a cultivar árboles durante la temporada de invierno.",
+    "Book.TreesIgnoreSeason.Message": "Silviculture+!",
+	
+	"Book.ArtisanMachines.Name": "Manual del gremio de artesanos",
+	"Book.ArtisanMachines.Description": "Las técnicas contenidas en este libro le ayudarán a producir productos artesanales mucho más rápidamente.",
+    "Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
+	
+	"Book.GiantCrops.Name": "Melones grandes!",
+	"Book.GiantCrops.Description": "Después de leer este libro será más probable que obtengas cosechas gigantes.",
+    "Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
+  
+    "Book.Popularity.Name": "Amistad 202",
+    "Book.Popularity.Description": "Es más probable que tus amigos te envíen regalos.",
+    "Book.Popularity.Message": "Your friends love you!",
+  
+    "Book.BusDriving.Name": "Conducción de autobús para principiantes",
+    "Book.BusDriving.Description": "Este libro contiene la información que necesitas para aprender a conducir un autobús.",
+    "Book.BusDriving.Message": "You've learned how to drive!",
+  
+    "Book.QiNotebook.Name": "El cuaderno del Señor Qi",
+    "Book.QiNotebook.Description": "Estas notas te ayudarán a encontrar más gemas Qi.",
+    "Book.QiNotebook.Message": '"Good luck, kid."',
+  
+    "Book.PetGifts.Name": "Refuerzo positivo",
+    "Book.PetGifts.Description": "Este libro le enseñará cómo entrenar a sus mascotas para que le brinden mejores regalos.",
+    "Book.PetGifts.Message": "Your pet REALLY loves you!",
+  
+    // TODO //////////////////////////////////////
+    "Book.CheatCodes.Name": "Secret Codes for Arcade Machines",
+    "Book.CheatCodes.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
+    "Book.CheatCodes.Message": "Up, up, down down, left, right...",
+  
+	// MAIL //
+	"Mail.ArtisanGrange.Text": "El Gremio de Artesanos de la República Ferngill se enorgullece de reconocer su compromiso con los productos artesanales de calidad. Como muestra de nuestro agradecimiento por su reciente exhibición en la Feria de Stardew Valley, adjuntamos un manual que esperamos le ayude a utilizar su maquinaria de una manera más eficiente.",
+	"Mail.ArtisanGrange.Title": "Gremio de artesanos",
+    
+    // MISC DIALOGUE CHANGES //
+    "Dialogue.EnoughGifts": "Has dado {0} ¡Suficientes regalos por ahora!",
+	
+	// DEBUG //
+	"Debug.Book.RemoveAll.Name": "Eliminación de beneficios BEB", 
+    "Debug.Book.RemoveAll.Description": "Elimina todos los beneficios que te otorgan los libros del mod y te devuelve sus libros correspondientes.",
+    "Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
+}
+
+// Thank you CarlosRojasCu on Nexusmods!
