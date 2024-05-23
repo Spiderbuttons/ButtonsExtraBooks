@@ -3,12 +3,14 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using ButtonsExtraBooks.Config;
 using ButtonsExtraBooks.Helpers;
+using ButtonsExtraBooks.Powers;
 using ContentPatcher;
 using GenericModConfigMenu;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
+using StardewValley.Menus;
 
 namespace ButtonsExtraBooks
 {
@@ -34,6 +36,8 @@ namespace ButtonsExtraBooks
 
             helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked;
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
+            helper.Events.GameLoop.DayEnding += JunimoScrap.OnDayEnding;
+            helper.Events.Display.MenuChanged += this.OnMenuChange;
         }
 
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
@@ -131,6 +135,24 @@ namespace ButtonsExtraBooks
             );
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
+        }
+        
+        private void OnMenuChange(object sender, MenuChangedEventArgs e)
+        {
+            if (e.NewMenu is not LetterViewerMenu letter)
+                return;
+            switch (letter.mailTitle)
+            {
+                case "Spiderbuttons.ButtonsExtraBooks_Mail_JunimoScrap_Crop":
+                    letter.itemsToGrab[0].item = JunimoScrap.randomCropInSeason();
+                    break;
+                case "Spiderbuttons.ButtonsExtraBooks_Mail_JunimoScrap_Gem":
+                    letter.itemsToGrab[0].item = JunimoScrap.randomGem();
+                    break;
+                case "Spiderbuttons.ButtonsExtraBooks_Mail_JunimoScrap_Item":
+                    letter.itemsToGrab[0].item = JunimoScrap.randomItem();
+                    break;
+            }
         }
     }
 }

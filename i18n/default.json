@@ -51,6 +51,8 @@
   "Config.Books.CheatCodesBonus.Description": "The number of extra lives you start Junimo Kart with.",
   
   "Config.Books.JunimoScrapbook.Title": "Junimo Scrapbook",
+  "Config.Books.JunimoScrapbookRandom.Name": "Random Junimo Items",
+  "Config.Books.JunimoScrapbookRandom.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
   
   "Config.Books.Carols.Title": "Book of Carols",
   

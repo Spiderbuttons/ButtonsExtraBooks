@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
+using ButtonsExtraBooks.Config;
 using HarmonyLib;
 using StardewValley;
 using StardewModdingAPI;
 using ButtonsExtraBooks.Helpers;
+using StardewModdingAPI.Events;
 using StardewValley.Buildings;
 using StardewValley.Characters;
 using StardewValley.Extensions;
 using StardewValley.GameData.Objects;
+using StardewValley.Menus;
 using StardewValley.TerrainFeatures;
 using StardewValley.TokenizableStrings;
 
@@ -18,6 +21,66 @@ namespace ButtonsExtraBooks.Powers
     [HarmonyPatch]
     static class JunimoScrap
     {
+        private static readonly Dictionary<Season, List<string>> seasonalCrops = new();
+        
+        public static void OnDayEnding(object sender, DayEndingEventArgs e)
+        {
+            if (!ModEntry.Config.EnableJunimoScrap || !Utils.PlayerHasPower("JunimoScrap")) return;
+            Random rng = new Random();
+            if (rng.Next(20) != 0) return;
+            List<string> letterOptions = ["Crop", "Gem"];
+            if (ModEntry.Config.JunimoRandomItems) letterOptions.Add("Item");
+            Game1.mailbox.Add($"Spiderbuttons.ButtonsExtraBooks_Mail_JunimoScrap_{rng.ChooseFrom(letterOptions)}");
+        }
+        
+        public static Item randomCropInSeason()
+        {
+            if (seasonalCrops.Count == 0)
+            {
+                foreach (var crop in Game1.cropData)
+                {
+                    foreach (var season in crop.Value.Seasons)
+                    {
+                        if (!seasonalCrops.ContainsKey(season)) seasonalCrops[season] = new List<string>();
+                        seasonalCrops[season].Add(crop.Value.HarvestItemId);
+                    }
+                }
+            }
+            
+            if (seasonalCrops.TryGetValue(Game1.season, out var crops))
+            {
+                string cropId = crops[new Random().Next(crops.Count)];
+                Item randomCrop = ItemRegistry.Create(cropId);
+                // pick a number that is either 1, 2, or 4
+                randomCrop.Quality = new Random().Choose(1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4);
+                randomCrop.Stack = new Random().Next(3, 8);
+                return randomCrop;
+            }
+            return null;
+        }
+
+        public static Item randomGem()
+        {
+            // store the keys of items with category == -2
+            List<string> gems = Game1.objectData.Keys
+                .Where(key => Game1.objectData[key].Category == -2)
+                .ToList();
+            string gemId = gems[new Random().Next(gems.Count)];
+            Log.Warn(gemId);
+            Item randomGem = ItemRegistry.Create(gemId);
+            randomGem.Stack = new Random().Next(1, 4);
+            return randomGem;
+        }
+
+        // This will likely give some strange items sometimes that you're not supposed to be able to get. That's why it's fun! (And locked behind an opt-in config setting.)
+        public static Item randomItem()
+        {
+            List<string> items = Game1.objectData.Keys.ToList();
+            string itemId = items[new Random().Next(items.Count)];
+            Item randomItem = ItemRegistry.Create(itemId);
+            return randomItem;
+        }
+        
         public static void showJunimoText(JunimoHarvester junimo, string text, int delay = 0)
         {
             if (!Utils.PlayerHasPower("JunimoScrap") || new Random().Next(10) != 0) return;

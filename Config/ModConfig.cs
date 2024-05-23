@@ -48,6 +48,7 @@ public sealed class ModConfig
     
     public bool EnableJunimoScrap { get; set; } = true;
     public int JunimoScrapPrice { get; set; } = 25000;
+    public bool JunimoRandomItems { get; set; } = false;
     
     public bool EnableCarols { get; set; } = true;
     public int CarolsPrice { get; set; } = 10000;
@@ -72,10 +73,12 @@ public sealed class ModConfig
         AlwaysAvailable = false;
         LuckAmount = 0.025f;
         ArtisanMachinesPercentDecrease = 10;
+        ArtisanMachinesGrangeMustWin = true;
         GiantCropsPercent = 5;
         QiNotebookPercent = 10f;
         CheatCodesRequirement = 30;
         CheatCodesLives = 1;
+        JunimoRandomItems = false;
         DebugBook = false;
     }
 
@@ -324,6 +327,17 @@ public sealed class ModConfig
             min: 1,
             max: 100,
             interval: 1
+        );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: i18n.Config_Books_JunimoScrapbook_Title
+        );
+        configMenu.AddBoolOption(
+            mod: ModManifest,
+            name: i18n.Config_Books_JunimoScrapbookRandom_Name,
+            tooltip: i18n.Config_Books_JunimoScrapbookRandom_Description,
+            getValue: () => JunimoRandomItems,
+            setValue: value => JunimoRandomItems = value
         );
     }
     
