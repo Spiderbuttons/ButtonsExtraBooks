@@ -26,6 +26,7 @@ namespace ButtonsExtraBooks
         internal static ModConfig Config { get; private set; } = null!;
 
         internal static Dictionary<string, Dictionary<string, string>> ContentPackI18n = new();
+        
         internal static IContentPatcherAPI ContentPatcher { get; private set; } = null!;
 
         public override void Entry(IModHelper helper)
