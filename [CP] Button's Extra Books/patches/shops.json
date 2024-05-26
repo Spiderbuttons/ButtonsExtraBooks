@@ -12,7 +12,6 @@
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_Luck",
 					"ItemId": "(O){{ModId}}_Book_Luck",
-					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableLuck}}"
 				}
 			},
 			"When": {
@@ -52,7 +51,6 @@
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_TreesIgnoreSeason",
 					"ItemId": "(O){{ModId}}_Book_TreesIgnoreSeason",
-					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableTreesIgnoreSeason}}",
 				}
 			},
 			"When": {
@@ -253,7 +251,6 @@
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_Coffee",
 					"ItemId": "(O){{ModId}}_Book_Coffee",
-					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableCoffee}}"
 				}
 			},
 			"When": {
@@ -273,7 +270,6 @@
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_Sketchbook",
 					"ItemId": "(O){{ModId}}_Book_Sketchbook",
-					"Condition": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook}}"
 				}
 			},
 			"When": {

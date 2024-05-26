@@ -17,8 +17,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_Luck": {
-					"DisplayName": "{{i18n: Power.Luck.Name}}",
-					"Description": "{{i18n: Power.Luck.Description}}",
+					"DisplayName": "{{i18n: Luck.Book.Name}}",
+					"Description": "{{i18n: Luck.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 16,
@@ -38,8 +38,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_ExtraGifts": {
-					"DisplayName": "{{i18n: Power.ExtraGifts.Name}}",
-					"Description": "{{i18n: Power.ExtraGifts.Description}}",
+					"DisplayName": "{{i18n: ExtraGifts.Book.Name}}",
+					"Description": "{{i18n: ExtraGifts.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 32,
@@ -59,8 +59,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_TreesIgnoreSeason": {
-					"DisplayName": "{{i18n: Power.TreesIgnoreSeason.Name}}",
-					"Description": "{{i18n: Power.TreesIgnoreSeason.Description}}",
+					"DisplayName": "{{i18n: TreesIgnoreSeason.Book.Name}}",
+					"Description": "{{i18n: TreesIgnoreSeason.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 48,
@@ -80,8 +80,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_ArtisanMachines": {
-					"DisplayName": "{{i18n: Power.ArtisanMachines.Name}}",
-					"Description": "{{i18n: Power.ArtisanMachines.Description}}",
+					"DisplayName": "{{i18n: ArtisanMachines.Book.Name}}",
+					"Description": "{{i18n: ArtisanMachines.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 64,
@@ -101,8 +101,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_GiantCrops": {
-					"DisplayName": "{{i18n: Power.GiantCrops.Name}}",
-					"Description": "{{i18n: Power.GiantCrops.Description}}",
+					"DisplayName": "{{i18n: GiantCrops.Book.Name}}",
+					"Description": "{{i18n: GiantCrops.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 80,
@@ -122,8 +122,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_Popularity": {
-					"DisplayName": "{{i18n: Power.Popularity.Name}}",
-					"Description": "{{i18n: Power.Popularity.Description}}",
+					"DisplayName": "{{i18n: Popularity.Book.Name}}",
+					"Description": "{{i18n: Popularity.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 96,
@@ -143,8 +143,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_BusDriving": {
-					"DisplayName": "{{i18n: Power.BusDriving.Name}}",
-					"Description": "{{i18n: Power.BusDriving.Description}}",
+					"DisplayName": "{{i18n: BusDriving.Book.Name}}",
+					"Description": "{{i18n: BusDriving.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 0,
@@ -164,8 +164,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_QiNotebook": {
-					"DisplayName": "{{i18n: Power.QiNotebook.Name}}",
-					"Description": "{{i18n: Power.QiNotebook.Description}}",
+					"DisplayName": "{{i18n: QiNotebook.Book.Name}}",
+					"Description": "{{i18n: QiNotebook.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 16,
@@ -185,8 +185,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_PetGifts": {
-					"DisplayName": "{{i18n: Power.PetGifts.Name}}",
-					"Description": "{{i18n: Power.PetGifts.Description}}",
+					"DisplayName": "{{i18n: PetGifts.Book.Name}}",
+					"Description": "{{i18n: PetGifts.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 32,
@@ -206,8 +206,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_CheatCodes": {
-					"DisplayName": "{{i18n: Power.CheatCodes.Name}}",
-					"Description": "{{i18n: Power.CheatCodes.Description}}",
+					"DisplayName": "{{i18n: CheatCodes.Book.Name}}",
+					"Description": "{{i18n: CheatCodes.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 48,
@@ -227,8 +227,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_JunimoScrap": {
-					"DisplayName": "{{i18n: Power.JunimoScrap.Name}}",
-					"Description": "{{i18n: Power.JunimoScrap.Description}}",
+					"DisplayName": "{{i18n: JunimoScrap.Book.Name}}",
+					"Description": "{{i18n: JunimoScrap.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 64,
@@ -248,8 +248,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_Carols": {
-					"DisplayName": "{{i18n: Power.Carols.Name}}",
-					"Description": "{{i18n: Power.Carols.Description}}",
+					"DisplayName": "{{i18n: Carols.Book.Name}}",
+					"Description": "{{i18n: Carols.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 80,
@@ -269,8 +269,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_Coffee": {
-					"DisplayName": "{{i18n: Power.Coffee.Name}}",
-					"Description": "{{i18n: Power.Coffee.Description}}",
+					"DisplayName": "{{i18n: Coffee.Book.Name}}",
+					"Description": "{{i18n: Coffee.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 96,
@@ -290,8 +290,8 @@
 			"Target": "Data/Powers",
 			"Entries": {
 				"{{ModId}}_Power_Sketchbook": {
-					"DisplayName": "{{i18n: Power.Sketchbook.Name}}",
-					"Description": "{{i18n: Power.Sketchbook.Description}}",
+					"DisplayName": "{{i18n: Sketchbook.Book.Name}}",
+					"Description": "{{i18n: Sketchbook.Power.Description}}",
 					"TexturePath": "Mods/{{ModId}}/Books",
 					"TexturePosition": {
 						"X": 112,

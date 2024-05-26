@@ -7,8 +7,8 @@
             "Entries": {
                 "{{ModId}}_Book_Luck": {
                     "Name": "{{ModId}}_Book_Luck",
-                    "DisplayName": "{{i18n: Book.Luck.Name}}",
-                    "Description": "{{i18n: Book.Luck.Description}}",
+                    "DisplayName": "{{i18n: Luck.Book.Name}}",
+                    "Description": "{{i18n: Luck.Book.Description}}",
                     "Type": "asdf",
                     "Category": -102,
                     "Price": 500,
@@ -20,7 +20,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Luck.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Luck.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#267F00"
 					},
 				},
@@ -37,8 +37,8 @@
 			"Entries": {
 				"{{ModId}}_Book_ExtraGifts": {
                     "Name": "{{ModId}}_Book_ExtraGifts",
-                    "DisplayName": "{{i18n: Book.ExtraGifts.Name}}",
-                    "Description": "{{i18n: Book.ExtraGifts.Description}}",
+                    "DisplayName": "{{i18n: ExtraGifts.Book.Name}}",
+                    "Description": "{{i18n: ExtraGifts.Book.Description}}",
                     "Type": "asdf",
                     "Category": -102,
                     "Price": 500,
@@ -50,7 +50,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.ExtraGifts.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: ExtraGifts.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#F0CDF2"
 					},
 				},
@@ -67,8 +67,8 @@
 			"Entries": {
 				"{{ModId}}_Book_TreesIgnoreSeason": {
                     "Name": "{{ModId}}_Book_TreesIgnoreSeason",
-                    "DisplayName": "{{i18n: Book.TreesIgnoreSeason.Name}}",
-                    "Description": "{{i18n: Book.TreesIgnoreSeason.Description}}",
+                    "DisplayName": "{{i18n: TreesIgnoreSeason.Book.Name}}",
+                    "Description": "{{i18n: TreesIgnoreSeason.Book.Description}}",
                     "Type": "asdf",
                     "Category": -102,
                     "Price": 500,
@@ -80,7 +80,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.TreesIgnoreSeason.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: TreesIgnoreSeason.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#B8E0DB"
 					},
 				},
@@ -97,8 +97,8 @@
 			"Entries": {
 				"{{ModId}}_Book_ArtisanMachines": {
                     "Name": "{{ModId}}_Book_ArtisanMachines",
-                    "DisplayName": "{{i18n: Book.ArtisanMachines.Name}}",
-                    "Description": "{{i18n: Book.ArtisanMachines.Description}}",
+                    "DisplayName": "{{i18n: ArtisanMachines.Book.Name}}",
+                    "Description": "{{i18n: ArtisanMachines.Book.Description}}",
                     "Type": "asdf",
                     "Category": -102,
                     "Price": 500,
@@ -110,7 +110,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.ArtisanMachines.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: ArtisanMachines.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#824343"
 					},
 				},
@@ -127,8 +127,8 @@
 			"Entries": {
 				"{{ModId}}_Book_GiantCrops": {
 					"Name": "{{ModId}}_Book_GiantCrops",
-					"DisplayName": "{{i18n: Book.GiantCrops.Name}}",
-					"Description": "{{i18n: Book.GiantCrops.Description}}",
+					"DisplayName": "{{i18n: GiantCrops.Book.Name}}",
+					"Description": "{{i18n: GiantCrops.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -140,7 +140,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.GiantCrops.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: GiantCrops.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#8D386C"
 					},
 				},
@@ -157,8 +157,8 @@
 			"Entries": {
 				"{{ModId}}_Book_Popularity": {
 					"Name": "{{ModId}}_Book_Popularity",
-					"DisplayName": "{{i18n: Book.Popularity.Name}}",
-					"Description": "{{i18n: Book.Popularity.Description}}",
+					"DisplayName": "{{i18n: Popularity.Book.Name}}",
+					"Description": "{{i18n: Popularity.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -170,7 +170,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Popularity.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Popularity.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#E298D5"
 					},
 				},
@@ -187,8 +187,8 @@
 			"Entries": {
 				"{{ModId}}_Book_BusDriving": {
 					"Name": "{{ModId}}_Book_BusDriving",
-					"DisplayName": "{{i18n: Book.BusDriving.Name}}",
-					"Description": "{{i18n: Book.BusDriving.Description}}",
+					"DisplayName": "{{i18n: BusDriving.Book.Name}}",
+					"Description": "{{i18n: BusDriving.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -200,7 +200,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.BusDriving.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: BusDriving.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#FFDA00"
 					},
 				},
@@ -217,8 +217,8 @@
 			"Entries": {
 				"{{ModId}}_Book_QiNotebook": {
 					"Name": "{{ModId}}_Book_QiNotebook",
-					"DisplayName": "{{i18n: Book.QiNotebook.Name}}",
-					"Description": "{{i18n: Book.QiNotebook.Description}}",
+					"DisplayName": "{{i18n: QiNotebook.Book.Name}}",
+					"Description": "{{i18n: QiNotebook.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -230,7 +230,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.QiNotebook.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: QiNotebook.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#30C2FF"
 					},
 				},
@@ -247,8 +247,8 @@
 			"Entries": {
 				"{{ModId}}_Book_PetGifts": {
 					"Name": "{{ModId}}_Book_PetGifts",
-					"DisplayName": "{{i18n: Book.PetGifts.Name}}",
-					"Description": "{{i18n: Book.PetGifts.Description}}",
+					"DisplayName": "{{i18n: PetGifts.Book.Name}}",
+					"Description": "{{i18n: PetGifts.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -260,7 +260,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.PetGifts.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: PetGifts.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#888687"
 					},
 				},
@@ -277,8 +277,8 @@
 			"Entries": {
 				"{{ModId}}_Book_CheatCodes": {
 					"Name": "{{ModId}}_Book_CheatCodes",
-					"DisplayName": "{{i18n: Book.CheatCodes.Name}}",
-					"Description": "{{i18n: Book.CheatCodes.Description}}",
+					"DisplayName": "{{i18n: CheatCodes.Book.Name}}",
+					"Description": "{{i18n: CheatCodes.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -290,7 +290,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.CheatCodes.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: CheatCodes.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#306832"
 					},
 				},
@@ -307,8 +307,8 @@
 			"Entries": {
 				"{{ModId}}_Book_JunimoScrap": {
 					"Name": "{{ModId}}_Book_JunimoScrap",
-					"DisplayName": "{{i18n: Book.JunimoScrap.Name}}",
-					"Description": "{{i18n: Book.JunimoScrap.Description}}",
+					"DisplayName": "{{i18n: JunimoScrap.Book.Name}}",
+					"Description": "{{i18n: JunimoScrap.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -320,7 +320,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.JunimoScrap.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: JunimoScrap.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#36672F"
 					},
 				},
@@ -338,8 +338,8 @@
 			"Entries": {
 				"{{ModId}}_Book_Carols": {
 					"Name": "{{ModId}}_Book_Carols",
-					"DisplayName": "{{i18n: Book.Carols.Name}}",
-					"Description": "{{i18n: Book.Carols.Description}}",
+					"DisplayName": "{{i18n: Carols.Book.Name}}",
+					"Description": "{{i18n: Carols.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -351,7 +351,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Carols.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Carols.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#8D0401"
 					},
 				},
@@ -368,8 +368,8 @@
 			"Entries": {
 				"{{ModId}}_Book_Coffee": {
 					"Name": "{{ModId}}_Book_Coffee",
-					"DisplayName": "{{i18n: Book.Coffee.Name}}",
-					"Description": "{{i18n: Book.Coffee.Description}}",
+					"DisplayName": "{{i18n: Coffee.Book.Name}}",
+					"Description": "{{i18n: Coffee.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -381,7 +381,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Coffee.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Coffee.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#5F422C"
 					},
 				},
@@ -398,8 +398,8 @@
 			"Entries": {
 				"{{ModId}}_Book_Sketchbook": {
 					"Name": "{{ModId}}_Book_Sketchbook",
-					"DisplayName": "{{i18n: Book.Sketchbook.Name}}",
-					"Description": "{{i18n: Book.Sketchbook.Description}}",
+					"DisplayName": "{{i18n: Sketchbook.Book.Name}}",
+					"Description": "{{i18n: Sketchbook.Book.Description}}",
 					"Type": "asdf",
 					"Category": -102,
 					"Price": 500,
@@ -411,7 +411,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Book.Sketchbook.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Sketchbook.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#159922"
 					},
 				},
@@ -428,8 +428,8 @@
 			"Entries": {
 				"{{ModId}}_Debug_RemoveAll": {
                     "Name": "{{ModId}}_Debug_RemoveAll",
-                    "DisplayName": "{{i18n: Debug.Book.RemoveAll.Name}}",
-                    "Description": "{{i18n: Debug.Book.RemoveAll.Description}}",
+                    "DisplayName": "{{i18n: Debug.RemoveAll.Book.Name}}",
+                    "Description": "{{i18n: Debug.RemoveAll.Book.Description}}",
                     "Type": "asdf",
                     "Category": -102,
                     "Price": 50,
@@ -441,7 +441,7 @@
 						"spu_book_colour"
 					],
 					"CustomFields": {
-						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Debug.Book.RemoveAll.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Debug.RemoveAll.Book.Message}}",
 						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#E246CE"
 					},
 				},	
