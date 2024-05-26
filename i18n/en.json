@@ -90,14 +90,14 @@
 	"Dialogue.JunimoScrap.Harvest.4": "Is for me?", // The grammar is wrong on purpose!
 	"Dialogue.JunimoScrap.Harvest.5": "Oooh!",
 
-	"Dialogue.JunimoScrap.CropAdjectives.1": "Yummy",
-	"Dialogue.JunimoScrap.CropAdjectives.2": "Juicy",
-	"Dialogue.JunimoScrap.CropAdjectives.3": "Delicious",
-	"Dialogue.JunimoScrap.CropAdjectives.4": "Tasty",
-	"Dialogue.JunimoScrap.CropAdjectives.5": "Big",
-	"Dialogue.JunimoScrap.CropAdjectives.6": "Squishy",
-	"Dialogue.JunimoScrap.CropAdjectives.7": "Fresh",
-	"Dialogue.JunimoScrap.CropAdjectives.8": "Ripe",
+	"Dialogue.JunimoScrap.CropAdjective.1": "Yummy",
+	"Dialogue.JunimoScrap.CropAdjective.2": "Juicy",
+	"Dialogue.JunimoScrap.CropAdjective.3": "Delicious",
+	"Dialogue.JunimoScrap.CropAdjective.4": "Tasty",
+	"Dialogue.JunimoScrap.CropAdjective.5": "Big",
+	"Dialogue.JunimoScrap.CropAdjective.6": "Squishy",
+	"Dialogue.JunimoScrap.CropAdjective.7": "Fresh",
+	"Dialogue.JunimoScrap.CropAdjective.8": "Ripe",
 
 	"Dialogue.JunimoScrap.DroppedItem.1": "Oops...",
 	"Dialogue.JunimoScrap.DroppedItem.2": "Uh oh!",

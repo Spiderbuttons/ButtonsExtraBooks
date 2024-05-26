@@ -90,14 +90,14 @@
 	/* TODO */ "Dialogue.JunimoScrap.Harvest.4": "Is for me?", // The grammar is wrong on purpose!
 	/* TODO */ "Dialogue.JunimoScrap.Harvest.5": "Oooh!",
 
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.1": "Yummy",
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.2": "Juicy",
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.3": "Delicious",
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.4": "Tasty",
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.5": "Big",
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.6": "Squishy",
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.7": "Fresh",
-	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.8": "Ripe",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.1": "Yummy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.2": "Juicy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.3": "Delicious",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.4": "Tasty",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.5": "Big",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.6": "Squishy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.7": "Fresh",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.8": "Ripe",
 
 	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.1": "Oops...",
 	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.2": "Uh oh!",
