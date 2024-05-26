@@ -47,7 +47,7 @@
 	
 	"CheatCodes.Book.Name": "Secret Codes for Arcade Machines",
 	"CheatCodes.Book.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
-	"CheatCodes.Book.Message": "Up, up, down down, left, right...",
+	"CheatCodes.Book.Message": "Up, up, down, down, left, right...",
 	"CheatCodes.Power.Description": "Start with more lives in Junimo Kart progress mode.",
 	
 	"JunimoScrap.Book.Name": "Junimo Scrapbook",
@@ -131,7 +131,7 @@
 	"Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
 	
 	"Config.Luck.Bonus.Name": "Luck Bonus",
-	"Config.Luck.Bonus.Description": "The amount added to your daily luck.",
+	"Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 	
 	"Config.ArtisanMachines.GrangeMustWin.Name": "Grange Display Must Win",
 	"Config.ArtisanMachines.GrangeMustWin.Description": "If enabled, your grange display must place 1st as well as include 6+ artisan goods.",
@@ -156,4 +156,7 @@
 	"Debug.RemoveAll.Book.Name": "BEB Power Removal",
 	"Debug.RemoveAll.Book.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
 	"Debug.RemoveAll.Book.Message": "You've lost all of Button's powers!",
+
+	"Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
+	"Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."
 }

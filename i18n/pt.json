@@ -1,99 +1,161 @@
 {
-	// POWER LIST //
-	"Power.Luck.Name": "Sorte de Principiante",
-	"Power.Luck.Description": "Aumenta permanentemente a sorte.",
+	// BOOKS AND POWERS //
+	"Luck.Book.Name": "Sorte de Principiante",
+	"Luck.Book.Description": "Leia este livro para obter um pequeno aumento permanente em sua sorte.",
+	/* TODO */ "Luck.Book.Message": "You feel luckier!",
+	"Luck.Power.Description": "Aumenta permanentemente a sorte.",
 
-	"Power.ExtraGifts.Name": "Livro do Altruísmo",
-	"Power.ExtraGifts.Description": "Aldeões aceitarão mais de dois presentes por semana.",
+	"ExtraGifts.Book.Name": "Livro do Altruísmo",
+	"ExtraGifts.Book.Description": "Depois de ler este livro, os aldeões aceitarão mais de dois presentes de você por semana.",
+	/* TODO */ "ExtraGifts.Book.Message": "You're a real people pleaser!",
+	"ExtraGifts.Power.Description": "Aldeões aceitarão mais de dois presentes por semana.",
 
-	"Power.TreesIgnoreSeason.Name": "Silvicultura de Inverno",
-	"Power.TreesIgnoreSeason.Description": "Árvores crescem durante o ano todo.",
-	
-	// TODO ///////////////////////////////////////////////////
-	///////////////////////////////////////////////////////////
-	"Power.ArtisanMachines.Name": "Artisans Guild Manual",
-	"Power.ArtisanMachines.Description": "Machines produce artisan goods much quicker.",
-	
-	"Power.GiantCrops.Name": "Big Melons",
-	"Power.GiantCrops.Description": "Giant crops have a higher chance of growing overnight.",
+	"TreesIgnoreSeason.Book.Name": "Silvicultura de Inverno",
+	"TreesIgnoreSeason.Book.Description": "A leitura deste livro irá ensiná-lo a cultivar árvores durante o inverno.",
+	/* TODO */ "TreesIgnoreSeason.Book.Message": "Silviculture+!",
+	"TreesIgnoreSeason.Power.Description": "Árvores crescem durante o ano todo.",
 
-	"Power.Popularity.Name": "Friendship 202",
-	"Power.Popularity.Description": "Your friends are more likely to send you gifts in the mail.",
+	/* TODO */ "ArtisanMachines.Book.Name": "Artisans Guild Manual",
+	/* TODO */ "ArtisanMachines.Book.Description": "The techniques contained within this book will help you produce artisan goods much quicker.",
+	/* TODO */ "ArtisanMachines.Book.Message": "Your artisanal machines are now more efficient!",
+	/* TODO */ "ArtisanMachines.Power.Description": "Machines produce artisan goods much quicker.",
 
-	"Power.BusDriving.Name": "Bus Driving for Dummies",
-	"Power.BusDriving.Description": "You can drive the bus to Calico Desert yourself.",
+	/* TODO */ "GiantCrops.Book.Name": "Big Melons!",
+	/* TODO */ "GiantCrops.Book.Description": "You will be more likely to grow giant crops after reading this book.",
+	/* TODO */ "GiantCrops.Book.Message": "You've learned the secrets of giant crops!",
+	/* TODO */ "GiantCrops.Power.Description": "Giant crops have a higher chance of growing overnight.",
 
-	"Power.QiNotebook.Name": "Mr. Qi's Notebook",
-	"Power.QiNoteBook.Description": "Increased odds of finding random Qi gems.",
+	/* TODO */ "Popularity.Book.Name": "Friendship 202",
+	/* TODO */ "Popularity.Book.Description": "Your friends will be more likely to send you gifts.",
+	/* TODO */ "Popularity.Book.Message": "Your friends love you!",
+	/* TODO */ "Popularity.Power.Description": "Your friends are more likely to send you gifts in the mail.",
 
-	"Power.PetGifts.Name": "Pawsitive Reinforcement",
-	"Power.PetGifts.Description": "Your pets are more likely to bring you better gifts.",
-	
-	"Power.CheatCodes.Name": "Secret Codes for Arcade Machines",
-	"Power.CheatCodes.Description": "Start with more lives in Junimo Kart progress mode.",
-	///////////////////////////////////////////////////////////
-	///////////////////////////////////////////////////////////
+	/* TODO */ "BusDriving.Book.Name": "Bus Driving for Dummies",
+	/* TODO */ "BusDriving.Book.Description": "This book contains all the information you need to drive a bus, more or less.",
+	/* TODO */ "BusDriving.Book.Message": "You've learned how to drive!",
+	/* TODO */ "BusDriving.Power.Description": "You can drive the bus to Calico Desert yourself.",
 
-	// BOOK ITEMS //
-	"Book.Luck.Name": "Sorte de Principiante",
-	"Book.Luck.Description": "Leia este livro para obter um pequeno aumento permanente em sua sorte.",
-	"Book.Luck.Message": "You feel luckier!",
+	/* TODO */ "QiNotebook.Book.Name": "Mr. Qi's Notebook",
+	/* TODO */ "QiNotebook.Book.Description": "These notes will help you find more random Qi gems.",
+	/* TODO */ "QiNotebook.Book.Message": '"Good luck, kid."',
+	/* TODO */ "QiNotebook.Power.Description": "Increased odds of finding random Qi gems.",
 
-	"Book.ExtraGifts.Name": "Livro do Altruísmo",
-	"Book.ExtraGifts.Description": "Depois de ler este livro, os aldeões aceitarão mais de dois presentes de você por semana.",
-	"Book.ExtraGifts.Message": "You're a real people pleaser!",
+	/* TODO */ "PetGifts.Book.Name": "Pawsitive Reinforcement",
+	/* TODO */ "PetGifts.Book.Description": "This book will teach you how to train your pets to bring you better gifts.",
+	/* TODO */ "PetGifts.Book.Message": "Your pet REALLY loves you!",
+	/* TODO */ "PetGifts.Power.Description": "Your pets are more likely to bring you better gifts.",
 
-	"Book.TreesIgnoreSeason.Name": "Silvicultura de Inverno",
-	"Book.TreesIgnoreSeason.Description": "A leitura deste livro irá ensiná-lo a cultivar árvores durante o inverno.",
-	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
-	
-	// TODO ////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////
-	"Book.ArtisanMachines.Name": "Artisans Guild Manual",
-	"Book.ArtisanMachines.Description": "The techniques contained within this book will help you produce artisan goods much quicker.",
-	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
-	
-	"Book.GiantCrops.Name": "Big Melons!",
-	"Book.GiantCrops.Description": "You will be more likely to grow giant crops after reading this book.",
-	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
+	/* TODO */ "CheatCodes.Book.Name": "Secret Codes for Arcade Machines",
+	/* TODO */ "CheatCodes.Book.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
+	/* TODO */ "CheatCodes.Book.Message": "Up, up, down down, left, right...",
+	/* TODO */ "CheatCodes.Power.Description": "Start with more lives in Junimo Kart progress mode.",
 
-	"Book.Popularity.Name": "Friendship 202",
-	"Book.Popularity.Description": "Your friends will be more likely to send you gifts.",
-	"Book.Popularity.Message": "Your friends love you!",
+	/* TODO */ "JunimoScrap.Book.Name": "Junimo Scrapbook",
+	/* TODO */ "JunimoScrap.Book.Description": "Your Junimos have filled this book with memories.",
+	/* TODO */ "JunimoScrap.Book.Message": "You are now closer to your Junimos!",
+	/* TODO */ "JunimoScrap.Power.Description": "Your Junimos are chattier and will send you letters.",
 
-	"Book.BusDriving.Name": "Bus Driving for Dummies",
-	"Book.BusDriving.Description": "This book contains all the information you need to drive a bus, more or less.",
-	"Book.BusDriving.Message": "You've learned how to drive!",
+	/* TODO */ "Carols.Book.Name": "Book of Carols",
+	/* TODO */ "Carols.Book.Description": "TBD.",
+	/* TODO */ "Carols.Book.Message": "You've learned some seasonal carols!",
+	/* TODO */ "Carols.Power.Description": "TBD.",
 
-	"Book.QiNotebook.Name": "Mr. Qi's Notebook",
-	"Book.QiNotebook.Description": "These notes will help you find more random Qi gems.",
-	"Book.QiNotebook.Message": '"Good luck, kid."',
-	
-	"Book.PetGifts.Name": "Pawsitive Reinforcement",
-	"Book.PetGifts.Description": "This book will teach you how to train your pets to bring you better gifts.",
-	"Book.PetGifts.Message": "Your pet REALLY loves you!",
-	
-	"Book.CheatCodes.Name": "Secret Codes for Arcade Machines",
-	"Book.CheatCodes.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
-	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
+	/* TODO */ "Coffee.Book.Name": "The Strongest Brew",
+	/* TODO */ "Coffee.Book.Description": "Read this book to take your caffeine consumption to the next level.",
+	/* TODO */ "Coffee.Book.Message": "You're practically a barista now!",
+	/* TODO */ "Coffee.Power.Description": "Coffee drinks now last three times longer.",
+
+	/* TODO */ "Sketchbook.Book.Name": "Children's Sketchbook",
+	/* TODO */ "Sketchbook.Book.Description": "There's a lot of farming-related drawings in this book. Some pages are covered in real dirt.",
+	/* TODO */ "Sketchbook.Book.Message": "You feel like a role model!",
+	/* TODO */ "Sketchbook.Power.Description": "Artifact spots may contain better items.",
 	
 	// MAIL //
-	"Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",
-	"Mail.ArtisanGrange.Title": "Artisans Guild",
-	////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////
+	/* TODO */ "Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",
+	/* TODO */ "Mail.ArtisanGrange.Title": "Artisans Guild",
+
+	/* TODO */ "Mail.JunimoScrap.Crop.Text": "We worked soooo hard to grow these extra crops for you! Thank you for trusting us with your farm!",
+	/* TODO */ "Mail.JunimoScrap.Gem.Text": "Look what we found when we were digging in the dirt! It's so shiny... but we think you might want it more than us!",
+	/* TODO */ "Mail.JunimoScrap.Item.Text": "We found this! We don't know how useful it will be to you, but... we hope you're proud of us anyway!",
+	/* TODO */ "Mail.JunimoScrap.Title": "Letter From Your Junimos",
 
 	// MISC DIALOGUE CHANGES //
 	"Dialogue.EnoughGifts": "Você já deu presentes demais para {0} por enquanto! Chega.",
+
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.A": "{0} {1}!",
+	// "{0} {1}!" is "[Adjective] [Noun]!" e.g. "Yummy Parsnip!" Please put them in the order that would make sense for your language! (I understand it might not be correct 100% of the time regardless. I'm sorry!)
+
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.B": "*munch*",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.C": "*nibble*",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.D": "Is for me?", // The grammar is wrong on purpose!
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.E": "Oooh!",
+
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.A": "Yummy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.B": "Juicy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.C": "Delicious",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.D": "Tasty",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.E": "Big",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.F": "Squishy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.G": "Fresh",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.H": "Ripe",
+
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.A": "Oops...",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.B": "Uh oh!",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.C": "Sorry!",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.D": "Sorry...",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.E": "Too much!",
+
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.A": "Cute farm!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.B": "Love it here!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.C": "Paradise!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.D": "A beautiful day!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.E": "Good morning!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.F": "Rise and shine!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.G": "Got any raisins?",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.H": "Hello, world!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.I": "*yawn*",
+
+	// CONFIG //
+	/* TODO */ "Config.SectionTitle.General": "General Settings",
+	/* TODO */ "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
+	/* TODO */ "Config.SectionTitle.Prices": "Change Book Prices",
+	/* TODO */ "Config.SectionTitle.Adjustments": "Adjust Book Powers",
+	/* TODO */ "Config.SectionTitle.Debug": "Debug Settings",
+
+	/* TODO */ "Config.General.AlwaysAvailable.Name": "Books Always Available",
+	/* TODO */ "Config.General.AlwaysAvailable.Description": "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
+
+	/* TODO */ "Config.General.Enabled.Name": "Enabled",
+	/* TODO */ "Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+
+	/* TODO */ "Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
+
+	/* TODO */ "Config.Luck.Bonus.Name": "Luck Bonus",
+	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
+
+	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Name": "Grange Display Must Win",
+	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Description": "If enabled, your grange display must place 1st as well as include 6+ artisan goods.",
+	/* TODO */ "Config.ArtisanMachines.Bonus.Name": "Machine Speed Bonus",
+	/* TODO */ "Config.ArtisanMachines.Bonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
+
+	/* TODO */ "Config.GiantCrops.Bonus.Name": "Giant Crop Chance",
+	/* TODO */ "Config.GiantCrops.Bonus.Description": "The percent chance that crops will become a giant crop overnight.",
+
+	/* TODO */ "Config.QiNotebook.Bonus.Name": "Qi Gem Chance",
+	/* TODO */ "Config.QiNotebook.Bonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
+
+	/* TODO */ "Config.CheatCodes.Requirement.Name": "Junimo Kart Deaths Required",
+	/* TODO */ "Config.CheatCodes.Requirement.Description": "The number of times you must die in Junimo Kart before the Secret Codes book becomes available.",
+	/* TODO */ "Config.CheatCodes.Bonus.Name": "Extra Lives",
+	/* TODO */ "Config.CheatCodes.Bonus.Description": "The number of extra lives you start with in Junimo Kart progress mode.",
+
+	/* TODO */ "Config.JunimoScrap.RandomItems.Name": "Random Junimo Items",
+	/* TODO */ "Config.JunimoScrap.RandomItems.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
 	
 	// DEBUG //
-	////////////////////////////////////////////////////////////////////////
-	// TODO ////////////////////////////////////////////////////////////////
-	"Debug.Book.RemoveAll.Name": "BEB Power Removal",
-	"Debug.Book.RemoveAll.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
-	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
-	////////////////////////////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////////////////
+	/* TODO */ "Debug.RemoveAll.Book.Name": "BEB Power Removal",
+	/* TODO */ "Debug.RemoveAll.Book.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
+	/* TODO */ "Debug.RemoveAll.Book.Message": "You've lost all of Button's powers!",
 }
 
 // Thank you Onemix on Nexusmods!

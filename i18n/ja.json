@@ -1,89 +1,162 @@
 {
-	// POWER LIST //
-	"Power.Luck.Name": "ビギナーズラック",
-	"Power.Luck.Description": "運のステータスが永続的にわずかに上昇する。",
-	
-	"Power.ExtraGifts.Name": "利他主義の本",
-	"Power.ExtraGifts.Description": "村人は週に2つ以上の贈り物を受け取る。",
-	
-	"Power.TreesIgnoreSeason.Name": "冬の林業",
-	"Power.TreesIgnoreSeason.Description": "木が一年中成長する。",
-	
-	"Power.ArtisanMachines.Name": "職人ギルドのマニュアル",
-	"Power.ArtisanMachines.Description": "生産設備での加工品をより早く生産する。",
-	
-	"Power.GiantCrops.Name": "大きなメロン！",
-	"Power.GiantCrops.Description": "作物が一夜にして巨大になる確率を高める。",
-	
-	"Power.Popularity.Name": "親友のつくり方",
-	"Power.Popularity.Description": "仲良くなった住民からプレゼントが送られてくる確率を高める。",
-	
-	"Power.BusDriving.Name": "バスの運転マニュアル",
-	"Power.BusDriving.Description": "自分でバスを運転し、カリコ砂漠まで行くことができる。",
+	// BOOKS AND POWERS //
+	"Luck.Book.Name": "ビギナーズラック",
+	"Luck.Book.Description": "この本を読めば、運のステータスが永続的に少し上昇する。",
+	/* TODO */ "Luck.Book.Message": "You feel luckier!",
+	"Luck.Power.Description": "運のステータスが永続的にわずかに上昇する。",
 
-	"Power.QiNotebook.Name": "ミスターQiのノート",
-	"Power.QiNoteBook.Description": "モンスターを倒した時にQiジェムが見つかる確率を高める。",
-	
-	"Power.PetGifts.Name": "ぺっとのきもち",
-	"Power.PetGifts.Description": "ペットから貰えるアイテムのレア率を高める。",
+	"ExtraGifts.Book.Name": "利他主義の本",
+	"ExtraGifts.Book.Description": "この本を読めば、村人たちはあなたから週に2回以上の贈り物を受け取るようになるだろう。",
+	/* TODO */ "ExtraGifts.Book.Message": "You're a real people pleaser!",
+	"ExtraGifts.Power.Description": "村人は週に2つ以上の贈り物を受け取る。",
 
-	// TODO /////////////////////////////////////////////////
-	"Power.CheatCodes.Name": "ジュニモカートの秘密コード",
-	"Power.CheatCodes.Description": "ジュニモカートをプログレスモードで起動して、より多くのライフでスタートしよう。",
-	
-	// BOOK ITEMS //
-	"Book.Luck.Name": "ビギナーズラック",
-	"Book.Luck.Description": "この本を読めば、運のステータスが永続的に少し上昇する。",
-	"Book.Luck.Message": "You feel luckier!",
-	
-	"Book.ExtraGifts.Name": "利他主義の本",
-	"Book.ExtraGifts.Description": "この本を読めば、村人たちはあなたから週に2回以上の贈り物を受け取るようになるだろう。",
-	"Book.ExtraGifts.Message": "You're a real people pleaser!",
-	
-	"Book.TreesIgnoreSeason.Name": "冬の林業",
-	"Book.TreesIgnoreSeason.Description": "この本を読めば、冬の季節に樹木を育てる方法を学ぶことができる。",
-	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
-	
-	"Book.ArtisanMachines.Name": "職人ギルドのマニュアル",
-	"Book.ArtisanMachines.Description": "本に掲載されているテクニックを使えば、職人技を駆使した商品をより早く作ることができるだろう。",
-	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
-	
-	"Book.GiantCrops.Name": "大きなメロン！",
-	"Book.GiantCrops.Description": "この本を読めば、巨大な作物ができる可能性が高まるだろう。",
-	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
-	
-	"Book.Popularity.Name": "親友のつくり方",
-	"Book.Popularity.Description": "仲良くなった住民からプレゼントが送られてくる可能性が高まるだろう。",
-	"Book.Popularity.Message": "Your friends love you!",
-	
-	"Book.BusDriving.Name": "バスの運転マニュアル",
-	"Book.BusDriving.Description": "この本には、バスを運転するのに必要なすべての情報が、ざっくりと書かれている。",
-	"Book.BusDriving.Message": "You've learned how to drive!",
+	"TreesIgnoreSeason.Book.Name": "冬の林業",
+	"TreesIgnoreSeason.Book.Description": "この本を読めば、冬の季節に樹木を育てる方法を学ぶことができる。",
+	/* TODO */ "TreesIgnoreSeason.Book.Message": "Silviculture+!",
+	"TreesIgnoreSeason.Power.Description": "木が一年中成長する。",
 
-	"Book.QiNotebook.Name": "ミスターQiのノート",
-	"Book.QiNotebook.Description": "これらのメモは、あなたがQiジェムを見つけるのに役立ちます。",
-	"Book.QiNotebook.Message": '"Good luck, kid."',
-	
-	"Book.PetGifts.Name": "ぺっとのきもち",
-	"Book.PetGifts.Description": "この本には、ペットから貰えるアイテムが良くなるしつけ方法が書かれている。",
-	"Book.PetGifts.Message": "Your pet REALLY loves you!",
+	"ArtisanMachines.Book.Name": "職人ギルドのマニュアル",
+	"ArtisanMachines.Book.Description": "本に掲載されているテクニックを使えば、職人技を駆使した商品をより早く作ることができるだろう。",
+	/* TODO */ "ArtisanMachines.Book.Message": "Your artisanal machines are now more efficient!",
+	"ArtisanMachines.Power.Description": "生産設備での加工品をより早く生産する。",
 
-	// TODO ///////////////////////////////////////////////////////////
-	"Book.CheatCodes.Name": "ジュニモカートの秘密コード",
-	"Book.CheatCodes.Description": "この本のどこかに、ジュニモカートのライフを調整するコードが書かれている。",
-	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
-	
+	"GiantCrops.Book.Name": "大きなメロン！",
+	"GiantCrops.Book.Description": "この本を読めば、巨大な作物ができる可能性が高まるだろう。",
+	/* TODO */ "GiantCrops.Book.Message": "You've learned the secrets of giant crops!",
+	"GiantCrops.Power.Description": "作物が一夜にして巨大になる確率を高める。",
+
+	"Popularity.Book.Name": "親友のつくり方",
+	"Popularity.Book.Description": "仲良くなった住民からプレゼントが送られてくる可能性が高まるだろう。",
+	/* TODO */ "Popularity.Book.Message": "Your friends love you!",
+	"Popularity.Power.Description": "仲良くなった住民からプレゼントが送られてくる確率を高める。",
+
+	"BusDriving.Book.Name": "バスの運転マニュアル",
+	"BusDriving.Book.Description": "この本には、バスを運転するのに必要なすべての情報が、ざっくりと書かれている。",
+	/* TODO */ "BusDriving.Book.Message": "You've learned how to drive!",
+	"BusDriving.Power.Description": "自分でバスを運転し、カリコ砂漠まで行くことができる。",
+
+	"QiNotebook.Book.Name": "ミスターQiのノート",
+	"QiNotebook.Book.Description": "これらのメモは、あなたがQiジェムを見つけるのに役立ちます。",
+	/* TODO */ "QiNotebook.Book.Message": '"Good luck, kid."',
+	"QiNotebook.Power.Description": "モンスターを倒した時にQiジェムが見つかる確率を高める。",
+
+	"PetGifts.Book.Name": "ぺっとのきもち",
+	"PetGifts.Book.Description": "この本には、ペットから貰えるアイテムが良くなるしつけ方法が書かれている。",
+	/* TODO */ "PetGifts.Book.Message": "Your pet REALLY loves you!",
+	"PetGifts.Power.Description": "ペットから貰えるアイテムのレア率を高める。",
+
+	"CheatCodes.Book.Name": "ジュニモカートの秘密コード",
+	"CheatCodes.Book.Description": "この本のどこかに、ジュニモカートのライフを調整するコードが書かれている。",
+	/* TODO */ "CheatCodes.Book.Message": "Up, up, down down, left, right...",
+	"CheatCodes.Power.Description": "ジュニモカートをプログレスモードで起動して、より多くのライフでスタートしよう。",
+
+	/* TODO */ "JunimoScrap.Book.Name": "Junimo Scrapbook",
+	/* TODO */ "JunimoScrap.Book.Description": "Your Junimos have filled this book with memories.",
+	/* TODO */ "JunimoScrap.Book.Message": "You are now closer to your Junimos!",
+	/* TODO */ "JunimoScrap.Power.Description": "Your Junimos are chattier and will send you letters.",
+
+	/* TODO */ "Carols.Book.Name": "Book of Carols",
+	/* TODO */ "Carols.Book.Description": "TBD.",
+	/* TODO */ "Carols.Book.Message": "You've learned some seasonal carols!",
+	/* TODO */ "Carols.Power.Description": "TBD.",
+
+	/* TODO */ "Coffee.Book.Name": "The Strongest Brew",
+	/* TODO */ "Coffee.Book.Description": "Read this book to take your caffeine consumption to the next level.",
+	/* TODO */ "Coffee.Book.Message": "You're practically a barista now!",
+	/* TODO */ "Coffee.Power.Description": "Coffee drinks now last three times longer.",
+
+	/* TODO */ "Sketchbook.Book.Name": "Children's Sketchbook",
+	/* TODO */ "Sketchbook.Book.Description": "There's a lot of farming-related drawings in this book. Some pages are covered in real dirt.",
+	/* TODO */ "Sketchbook.Book.Message": "You feel like a role model!",
+	/* TODO */ "Sketchbook.Power.Description": "Artifact spots may contain better items.",
+
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "ファーンギル共和国職人ギルドは、皆様の職人技による高品質な商品へのこだわりを誇りに思います。先日のスターデューバレーまつりでの展示に感謝の意を表し、加工設備をより効率的に活用するためのマニュアルを同封いたします。",
 	"Mail.ArtisanGrange.Title": "職人ギルド",
-	
-	// MISC DIALOGUE CHANGES //
-	"Dialogue.EnoughGifts": "もう{0}には十分にプレゼントを贈りました！",
-	
-	// DEBUG //
-	"Debug.Book.RemoveAll.Name": "Button's Extra Booksの力を除去",
-	"Debug.Book.RemoveAll.Description": "Button's Extra Booksによって与えられたすべての力を削除し、対応する本の代金を返金する。",
-	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
-}
 
-// Thank you mitekano23 on Nexusmods!
+	/* TODO */ "Mail.JunimoScrap.Crop.Text": "We worked soooo hard to grow these extra crops for you! Thank you for trusting us with your farm!",
+	/* TODO */ "Mail.JunimoScrap.Gem.Text": "Look what we found when we were digging in the dirt! It's so shiny... but we think you might want it more than us!",
+	/* TODO */ "Mail.JunimoScrap.Item.Text": "We found this! We don't know how useful it will be to you, but... we hope you're proud of us anyway!",
+	/* TODO */ "Mail.JunimoScrap.Title": "Letter From Your Junimos",
+
+	// MISC DIALOGUE //
+	"Dialogue.EnoughGifts": "もう{0}には十分にプレゼントを贈りました！",
+
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.A": "{0} {1}!",
+	// "{0} {1}!" is "[Adjective] [Noun]!" e.g. "Yummy Parsnip!" Please put them in the order that would make sense for your language! (I understand it might not be correct 100% of the time regardless. I'm sorry!)
+
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.B": "*munch*",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.C": "*nibble*",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.D": "Is for me?", // The grammar is wrong on purpose!
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.E": "Oooh!",
+
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.A": "Yummy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.B": "Juicy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.C": "Delicious",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.D": "Tasty",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.E": "Big",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.F": "Squishy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.G": "Fresh",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.H": "Ripe",
+
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.A": "Oops...",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.B": "Uh oh!",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.C": "Sorry!",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.D": "Sorry...",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.E": "Too much!",
+
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.A": "Cute farm!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.B": "Love it here!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.C": "Paradise!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.D": "A beautiful day!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.E": "Good morning!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.F": "Rise and shine!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.G": "Got any raisins?",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.H": "Hello, world!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.I": "*yawn*",
+
+	// CONFIG //
+	"Config.SectionTitle.General": "基本設定",
+	"Config.SectionTitle.EnableDisable": "本の有効化",
+	"Config.SectionTitle.Prices": "本の販売価格",
+	"Config.SectionTitle.Adjustments": "本の力の調整",
+	"Config.SectionTitle.Debug": "デバッグ設定",
+
+	"Config.General.AlwaysAvailable.Name": "本がいつでも入手可能",
+	"Config.General.AlwaysAvailable.Description": "有効にすると、特定の条件を満たさなくても、すべての本が常に書店から入手できるようになる。",
+
+	"Config.General.Enabled.Name": "有効",
+	"Config.General.Enabled.Description": "無効にすると、MOD本とその効果は利用できなくなる。",
+
+	"Config.General.Price.Description": "本を他の手段で購入せず、直接店で購入した場合の価格。整数値のみ。",
+
+	"Config.Luck.Bonus.Name": "幸運ボーナス",
+	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
+
+	"Config.ArtisanMachines.GrangeMustWin.Name": "品評会での優勝",
+	"Config.ArtisanMachines.GrangeMustWin.Description": "有効にすると、入手には品評会で6つ以上の加工品で1位を取る必要がある。",
+	"Config.ArtisanMachines.Bonus.Name": "設備の生産速度",
+	"Config.ArtisanMachines.Bonus.Description": "加工品を生産する設備の加工時間の減少率。",
+
+	"Config.GiantCrops.Bonus.Name": "巨大な作物の発生率",
+	"Config.GiantCrops.Bonus.Description": "作物が一夜にして巨大な作物を形成する確率。",
+
+	"Config.QiNotebook.Bonus.Name": "Qiジェムのドロップボーナス値。",
+	"Config.QiNotebook.Bonus.Description": "モンスターを倒した時にドロップするQiジェムのドロップボーナス値。",
+
+	"Config.CheatCodes.Requirement.Name": "秘密コードの購入条件",
+	"Config.CheatCodes.Requirement.Description": "ジュニモカートで秘密コードの購入に必要なゲームオーバー数。",
+	"Config.CheatCodes.Bonus.Name": "ライフ数",
+	"Config.CheatCodes.Bonus.Description": "ジュニモカートを始めるときのライフ数。",
+
+	/* TODO */ "Config.JunimoScrap.RandomItems.Name": "Random Junimo Items",
+	/* TODO */ "Config.JunimoScrap.RandomItems.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
+
+	// DEBUG //
+	"Debug.RemoveAll.Book.Name": "Button's Extra Booksの力を除去",
+	"Debug.RemoveAll.Book.Description": "Button's Extra Booksによって与えられたすべての力を削除し、対応する本の代金を返金する。",
+	/* TODO */ "Debug.RemoveAll.Book.Message": "You've lost all of Button's powers!",
+
+	"Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",
+	"Config.Debug.EnableDebugBook.Description": "有効にすると、ピエールからデバッグブックが入手できるようになり、このMODによって付与された力をすべて取り除くことができる。"
+}

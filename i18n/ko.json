@@ -1,89 +1,162 @@
 {
-	// POWER LIST //
-	"Power.Luck.Name": "초심자의 행운",
-	"Power.Luck.Description": "행운수치가 영구적으로 조금 향상됩니다.",
+	// BOOKS AND POWERS //
+	/* TODO */ "Luck.Book.Name": "Beginner's Luck",
+	/* TODO */ "Luck.Book.Description": "Read this book to gain a permanent, minor increase to your luck stat.",
+	/* TODO */ "Luck.Book.Message": "You feel luckier!",
+	/* TODO */ "Luck.Power.Description": "Luck stat permanently increased by a minor amount.",
 
-	"Power.ExtraGifts.Name": "이타주의 : 당신을 바꾸는 힘",
-	"Power.ExtraGifts.Description": "마을 사람들은 일주일에 두 개 이상의 선물을 받을 수 있습니다.",
+	/* TODO */ "ExtraGifts.Book.Name": "Book of Altruism",
+	/* TODO */ "ExtraGifts.Book.Description": "After reading this book, villagers will accept more than two gifts per week from you.",
+	/* TODO */ "ExtraGifts.Book.Message": "You're a real people pleaser!",
+	/* TODO */ "ExtraGifts.Power.Description": "Villagers will accept more than two gifts per week.",
 
-	"Power.TreesIgnoreSeason.Name": "겨울 산림학",
-	"Power.TreesIgnoreSeason.Description": "나무는 일년 내내 자랍니다.",
-	
-	"Power.ArtisanMachines.Name": "장인 조합 지침서",
-	"Power.ArtisanMachines.Description": "설비가 장인 제작품을 훨씬 빨리 생산합니다.",
-	
-	"Power.GiantCrops.Name": "거대한 멜론",
-	"Power.GiantCrops.Description": "거대 작물이 하룻밤 사이에 성장할 가능성이 더 높아집니다.",
-	
-	"Power.Popularity.Name": "우정 202",
-	"Power.Popularity.Description": "마을 사람들이 당신에게 우편으로 선물을 보낼 가능성이 더 높습니다.",
+	/* TODO */ "TreesIgnoreSeason.Book.Name": "Winter Forestry",
+	/* TODO */ "TreesIgnoreSeason.Book.Description": "Reading this book will teach you how to grow trees during the winter season.",
+	/* TODO */ "TreesIgnoreSeason.Book.Message": "Silviculture+!",
+	/* TODO */ "TreesIgnoreSeason.Power.Description": "Trees grow year-round.",
 
-	"Power.BusDriving.Name": "초보자용 버스 운전 교본",
-	"Power.BusDriving.Description": "직접 버스를 운전해서 칼리코 사막까지 갈 수 있습니다.",
+	/* TODO */ "ArtisanMachines.Book.Name": "Artisans Guild Manual",
+	/* TODO */ "ArtisanMachines.Book.Description": "The techniques contained within this book will help you produce artisan goods much quicker.",
+	/* TODO */ "ArtisanMachines.Book.Message": "Your artisanal machines are now more efficient!",
+	/* TODO */ "ArtisanMachines.Power.Description": "Machines produce artisan goods much quicker.",
 
-	"Power.QiNotebook.Name": "미스터 치의 노트",
-	"Power.QiNoteBook.Description": "무작위로 치의 보석을 찾을 확률이 더 늘어납니다.",
+	/* TODO */ "GiantCrops.Book.Name": "Big Melons!",
+	/* TODO */ "GiantCrops.Book.Description": "You will be more likely to grow giant crops after reading this book.",
+	/* TODO */ "GiantCrops.Book.Message": "You've learned the secrets of giant crops!",
+	/* TODO */ "GiantCrops.Power.Description": "Giant crops have a higher chance of growing overnight.",
 
-	"Power.PetGifts.Name": "반려동물 보강법",
-	"Power.PetGifts.Description": "반려동물이 더 좋은 선물을 가져올 가능성이 더 커집니다.",
+	/* TODO */ "Popularity.Book.Name": "Friendship 202",
+	/* TODO */ "Popularity.Book.Description": "Your friends will be more likely to send you gifts.",
+	/* TODO */ "Popularity.Book.Message": "Your friends love you!",
+	/* TODO */ "Popularity.Power.Description": "Your friends are more likely to send you gifts in the mail.",
 
-	// TODO /////////////////////////////////////////////////
-	"Power.CheatCodes.Name": "Secret Codes for Arcade Machines",
-	"Power.CheatCodes.Description": "Start with more lives in Junimo Kart progress mode.",
-	
-	// BOOK ITEMS //
-	"Book.Luck.Name": "초심자의 행운",
-	"Book.Luck.Description": "이 책을 읽으면 운이 조금 더 좋아집니다.",
-	"Book.Luck.Message": "You feel luckier!",
+	/* TODO */ "BusDriving.Book.Name": "Bus Driving for Dummies",
+	/* TODO */ "BusDriving.Book.Description": "This book contains all the information you need to drive a bus, more or less.",
+	/* TODO */ "BusDriving.Book.Message": "You've learned how to drive!",
+	/* TODO */ "BusDriving.Power.Description": "You can drive the bus to Calico Desert yourself.",
 
-	"Book.ExtraGifts.Name": "이타주의 : 당신을 바꾸는 힘",
-	"Book.ExtraGifts.Description": "이 책을 읽은 후, 마을 사람들에게 선물을 매주 두 개 이상 주는 법을 알게 됩니다.",
-	"Book.ExtraGifts.Message": "You're a real people pleaser!",
+	/* TODO */ "QiNotebook.Book.Name": "Mr. Qi's Notebook",
+	/* TODO */ "QiNotebook.Book.Description": "These notes will help you find more random Qi gems.",
+	/* TODO */ "QiNotebook.Book.Message": '"Good luck, kid."',
+	/* TODO */ "QiNotebook.Power.Description": "Increased odds of finding random Qi gems.",
 
-	"Book.TreesIgnoreSeason.Name": "겨울 산림학",
-	"Book.TreesIgnoreSeason.Description": "이 책을 읽으면 겨울동안 나무를 기르는 방법에 대해 배울 수 있습니다.",
-	"Book.TreesIgnoreSeason.Message": "Silviculture+!",
-	
-	"Book.ArtisanMachines.Name": "장인 조합 지침서",
-	"Book.ArtisanMachines.Description": "이 책에는 장인 제작품을 더 빠르게 생산할 수 있는 기술들이 적혀있습니다.",
-	"Book.ArtisanMachines.Message": "Your artisanal machines are now more efficient!",
-	
-	"Book.GiantCrops.Name": "거대한 멜론!",
-	"Book.GiantCrops.Description": "이 책을 읽은 후, 거대 작물을 키우는 데 더 쉬울 것입니다.",
-	"Book.GiantCrops.Message": "You've learned the secrets of giant crops!",
-	
-	"Book.Popularity.Name": "우정 202",
-	"Book.Popularity.Description": "이 책을 읽으면 마을 사람들에게 우편으로 선물을 받을 가능성이 더 높아집니다.",
-	"Book.Popularity.Message": "Your friends love you!",
+	/* TODO */ "PetGifts.Book.Name": "Pawsitive Reinforcement",
+	/* TODO */ "PetGifts.Book.Description": "This book will teach you how to train your pets to bring you better gifts.",
+	/* TODO */ "PetGifts.Book.Message": "Your pet REALLY loves you!",
+	/* TODO */ "PetGifts.Power.Description": "Your pets are more likely to bring you better gifts.",
 
-	"Book.BusDriving.Name": "초보자용 버스 운전 교본",
-	"Book.BusDriving.Description": "이 책에는 버스를 운전하는 데 필요한 모든 정보가 담겨 있습니다.",
-	"Book.BusDriving.Message": "You've learned how to drive!",
+	"CheatCodes.Book.Name": "아케이드 게임용 비밀 코드",
+	"CheatCodes.Book.Description": "이 책 어딘가에 주니모 카트를 마침내 클리어할 수 있는 코드가 있을 거야, 확신해.",
+	"CheatCodes.Book.Message": "위, 위, 아래, 아래, 왼쪽, 오른쪽...",
+	"CheatCodes.Power.Description": "주니모 카트 진행 모드에서 더 많은 목숨으로 시작하기.",
 
-	"Book.QiNotebook.Name": "미스터 치의 노트",
-	"Book.QiNotebook.Description": "이 노트를 읽으면 치 보석을 더 많이 찾을 수 있게 됩니다.",
-	"Book.QiNotebook.Message": '"Good luck, kid."',
-	
-	"Book.PetGifts.Name": "반려동물 보강법",
-	"Book.PetGifts.Description": "이 책은 반려동물을 훈련시켜서 더 좋은 선물을 가져다주게 하는 방법을 가르쳐 줄 것입니다.",
-	"Book.PetGifts.Message": "Your pet REALLY loves you!",
+	/* TODO */ "JunimoScrap.Book.Name": "Junimo Scrapbook",
+	/* TODO */ "JunimoScrap.Book.Description": "Your Junimos have filled this book with memories.",
+	/* TODO */ "JunimoScrap.Book.Message": "You are now closer to your Junimos!",
+	/* TODO */ "JunimoScrap.Power.Description": "Your Junimos are chattier and will send you letters.",
 
-	// TODO ///////////////////////////////////////////////////////////
-	"Book.CheatCodes.Name": "Secret Codes for Arcade Machines",
-	"Book.CheatCodes.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
-	"Book.CheatCodes.Message": "Up, up, down down, left, right...",
-	
+	/* TODO */ "Carols.Book.Name": "Book of Carols",
+	/* TODO */ "Carols.Book.Description": "TBD.",
+	/* TODO */ "Carols.Book.Message": "You've learned some seasonal carols!",
+	/* TODO */ "Carols.Power.Description": "TBD.",
+
+	/* TODO */ "Coffee.Book.Name": "The Strongest Brew",
+	/* TODO */ "Coffee.Book.Description": "Read this book to take your caffeine consumption to the next level.",
+	/* TODO */ "Coffee.Book.Message": "You're practically a barista now!",
+	/* TODO */ "Coffee.Power.Description": "Coffee drinks now last three times longer.",
+
+	/* TODO */ "Sketchbook.Book.Name": "Children's Sketchbook",
+	/* TODO */ "Sketchbook.Book.Description": "There's a lot of farming-related drawings in this book. Some pages are covered in real dirt.",
+	/* TODO */ "Sketchbook.Book.Message": "You feel like a role model!",
+	/* TODO */ "Sketchbook.Power.Description": "Artifact spots may contain better items.",
+
 	// MAIL //
-	"Mail.ArtisanGrange.Text": "저희 펀길 공화국의 장인 조합은 귀하가 양질의 장인 생산품을 만든 것에 대한 헌신과 노고를 인정하는바, 저희는 귀하를 자랑스럽게 여기고 있습니다. 최근 스타듀밸리 박람회에서 귀하의 장인 생산품 전시에 감사를 표하기 위해, 귀하가 장비를 좀 더 효율적으로 활용할 수 있도록 도와줄 지침서를 동봉했습니다.",
-	"Mail.ArtisanGrange.Title": "장인 조합",
+	/* TODO */ "Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",
+	/* TODO */ "Mail.ArtisanGrange.Title": "Artisans Guild",
 
-	// MISC DIALOGUE CHANGES //
-	"Dialogue.EnoughGifts": "이미 {0}한테 충분히 선물을 주었습니다.",
-	
+	/* TODO */ "Mail.JunimoScrap.Crop.Text": "We worked soooo hard to grow these extra crops for you! Thank you for trusting us with your farm!",
+	/* TODO */ "Mail.JunimoScrap.Gem.Text": "Look what we found when we were digging in the dirt! It's so shiny... but we think you might want it more than us!",
+	/* TODO */ "Mail.JunimoScrap.Item.Text": "We found this! We don't know how useful it will be to you, but... we hope you're proud of us anyway!",
+	/* TODO */ "Mail.JunimoScrap.Title": "Letter From Your Junimos",
+
+	// MISC DIALOGUE //
+	/* TODO */ "Dialogue.EnoughGifts": "You've given {0} enough gifts for now!",
+
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.A": "{0} {1}!",
+	// "{0} {1}!" is "[Adjective] [Noun]!" e.g. "Yummy Parsnip!" Please put them in the order that would make sense for your language! (I understand it might not be correct 100% of the time regardless. I'm sorry!)
+
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.B": "*munch*",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.C": "*nibble*",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.D": "Is for me?", // The grammar is wrong on purpose!
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.E": "Oooh!",
+
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.A": "Yummy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.B": "Juicy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.C": "Delicious",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.D": "Tasty",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.E": "Big",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.F": "Squishy",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.G": "Fresh",
+	/* TODO */ "Dialogue.JunimoScrap.CropAdjectives.H": "Ripe",
+
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.A": "Oops...",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.B": "Uh oh!",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.C": "Sorry!",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.D": "Sorry...",
+	/* TODO */ "Dialogue.JunimoScrap.DroppedItem.E": "Too much!",
+
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.A": "Cute farm!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.B": "Love it here!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.C": "Paradise!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.D": "A beautiful day!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.E": "Good morning!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.F": "Rise and shine!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.G": "Got any raisins?",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.H": "Hello, world!",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.I": "*yawn*",
+
+	// CONFIG //
+	/* TODO */ "Config.SectionTitle.General": "General Settings",
+	/* TODO */ "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
+	/* TODO */ "Config.SectionTitle.Prices": "Change Book Prices",
+	/* TODO */ "Config.SectionTitle.Adjustments": "Adjust Book Powers",
+	/* TODO */ "Config.SectionTitle.Debug": "Debug Settings",
+
+	/* TODO */ "Config.General.AlwaysAvailable.Name": "Books Always Available",
+	/* TODO */ "Config.General.AlwaysAvailable.Description": "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
+
+	/* TODO */ "Config.General.Enabled.Name": "Enabled",
+	/* TODO */ "Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+
+	/* TODO */ "Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
+
+	/* TODO */ "Config.Luck.Bonus.Name": "Luck Bonus",
+	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
+
+	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Name": "Grange Display Must Win",
+	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Description": "If enabled, your grange display must place 1st as well as include 6+ artisan goods.",
+	/* TODO */ "Config.ArtisanMachines.Bonus.Name": "Machine Speed Bonus",
+	/* TODO */ "Config.ArtisanMachines.Bonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
+
+	/* TODO */ "Config.GiantCrops.Bonus.Name": "Giant Crop Chance",
+	/* TODO */ "Config.GiantCrops.Bonus.Description": "The percent chance that crops will become a giant crop overnight.",
+
+	/* TODO */ "Config.QiNotebook.Bonus.Name": "Qi Gem Chance",
+	/* TODO */ "Config.QiNotebook.Bonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
+
+	/* TODO */ "Config.CheatCodes.Requirement.Name": "Junimo Kart Deaths Required",
+	/* TODO */ "Config.CheatCodes.Requirement.Description": "The number of times you must die in Junimo Kart before the Secret Codes book becomes available.",
+	/* TODO */ "Config.CheatCodes.Bonus.Name": "Extra Lives",
+	/* TODO */ "Config.CheatCodes.Bonus.Description": "The number of extra lives you start with in Junimo Kart progress mode.",
+
+	/* TODO */ "Config.JunimoScrap.RandomItems.Name": "Random Junimo Items",
+	/* TODO */ "Config.JunimoScrap.RandomItems.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
+
 	// DEBUG //
-	"Debug.Book.RemoveAll.Name": "BEB 능력 제거",
-	"Debug.Book.RemoveAll.Description": "Button's Extra Books로 부여된 모든 능력을 제거하고, 해당 책들을 환급합니다.",
-	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
-}
+	/* TODO */ "Debug.RemoveAll.Book.Name": "BEB Power Removal",
+	/* TODO */ "Debug.RemoveAll.Book.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
+	"Debug.RemoveAll.Book.Message": "너는 버튼의 모든 능력을 잃었어!",
 
-// Thank you hongdel and yunminxx on Nexusmods!
+	/* TODO */ "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
+	/* TODO */ "Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."
+}

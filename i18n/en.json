@@ -47,13 +47,28 @@
 
 	"CheatCodes.Book.Name": "Secret Codes for Arcade Machines",
 	"CheatCodes.Book.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
-	"CheatCodes.Book.Message": "Up, up, down down, left, right...",
+	"CheatCodes.Book.Message": "Up, up, down, down, left, right...",
 	"CheatCodes.Power.Description": "Start with more lives in Junimo Kart progress mode.",
 
 	"JunimoScrap.Book.Name": "Junimo Scrapbook",
 	"JunimoScrap.Book.Description": "Your Junimos have filled this book with memories.",
 	"JunimoScrap.Book.Message": "You are now closer to your Junimos!",
-	"JunimoScrap.Power.Descriptions": "Your Junimos are chattier and will send you letters.",
+	"JunimoScrap.Power.Description": "Your Junimos are chattier and will send you letters.",
+
+	"Carols.Book.Name": "Book of Carols",
+	"Carols.Book.Description": "TBD.",
+	"Carols.Book.Message": "You've learned some seasonal carols!",
+	"Carols.Power.Description": "TBD.",
+
+	"Coffee.Book.Name": "The Strongest Brew",
+	"Coffee.Book.Description": "Read this book to take your caffeine consumption to the next level.",
+	"Coffee.Book.Message": "You're practically a barista now!",
+	"Coffee.Power.Description": "Coffee drinks now last three times longer.",
+
+	"Sketchbook.Book.Name": "Children's Sketchbook",
+	"Sketchbook.Book.Description": "There's a lot of farming-related drawings in this book. Some pages are covered in real dirt.",
+	"Sketchbook.Book.Message": "You feel like a role model!",
+	"Sketchbook.Power.Description": "Artifact spots may contain better items.",
 
 	// MAIL //
 	"Mail.ArtisanGrange.Text": "The Ferngill Republic Artisans Guild is proud to recognize your commitment to quality artisanal goods. To show our appreciation of your recent display at the Stardew Valley Fair, we are enclosing a manual that we hope will help you more efficiently utilize your machinery.",
@@ -64,11 +79,84 @@
 	"Mail.JunimoScrap.Item.Text": "We found this! We don't know how useful it will be to you, but... we hope you're proud of us anyway!",
 	"Mail.JunimoScrap.Title": "Letter From Your Junimos",
 
-	// MISC DIALOGUE CHANGES //
+	// MISC DIALOGUE //
 	"Dialogue.EnoughGifts": "You've given {0} enough gifts for now!",
 
+	"Dialogue.JunimoScrap.Harvest.A": "{0} {1}!",
+	// "{0} {1}!" is "[Adjective] [Noun]!" e.g. "Yummy Parsnip!" Please put them in the order that would make sense for your language! (I understand it might not be correct 100% of the time regardless. I'm sorry!)
+
+	"Dialogue.JunimoScrap.Harvest.B": "*munch*",
+	"Dialogue.JunimoScrap.Harvest.C": "*nibble*",
+	"Dialogue.JunimoScrap.Harvest.D": "Is for me?", // The grammar is wrong on purpose!
+	"Dialogue.JunimoScrap.Harvest.E": "Oooh!",
+
+	"Dialogue.JunimoScrap.CropAdjectives.A": "Yummy",
+	"Dialogue.JunimoScrap.CropAdjectives.B": "Juicy",
+	"Dialogue.JunimoScrap.CropAdjectives.C": "Delicious",
+	"Dialogue.JunimoScrap.CropAdjectives.D": "Tasty",
+	"Dialogue.JunimoScrap.CropAdjectives.E": "Big",
+	"Dialogue.JunimoScrap.CropAdjectives.F": "Squishy",
+	"Dialogue.JunimoScrap.CropAdjectives.G": "Fresh",
+	"Dialogue.JunimoScrap.CropAdjectives.H": "Ripe",
+
+	"Dialogue.JunimoScrap.DroppedItem.A": "Oops...",
+	"Dialogue.JunimoScrap.DroppedItem.B": "Uh oh!",
+	"Dialogue.JunimoScrap.DroppedItem.C": "Sorry!",
+	"Dialogue.JunimoScrap.DroppedItem.D": "Sorry...",
+	"Dialogue.JunimoScrap.DroppedItem.E": "Too much!",
+
+	"Dialogue.JunimoScrap.ExitHut.A": "Cute farm!",
+	"Dialogue.JunimoScrap.ExitHut.B": "Love it here!",
+	"Dialogue.JunimoScrap.ExitHut.C": "Paradise!",
+	"Dialogue.JunimoScrap.ExitHut.D": "A beautiful day!",
+	"Dialogue.JunimoScrap.ExitHut.E": "Good morning!",
+	"Dialogue.JunimoScrap.ExitHut.F": "Rise and shine!",
+	"Dialogue.JunimoScrap.ExitHut.G": "Got any raisins?",
+	"Dialogue.JunimoScrap.ExitHut.H": "Hello, world!",
+	"Dialogue.JunimoScrap.ExitHut.I": "*yawn*",
+
+	// CONFIG //
+	"Config.SectionTitle.General": "General Settings",
+	"Config.SectionTitle.EnableDisable": "Enable / Disable Books",
+	"Config.SectionTitle.Prices": "Change Book Prices",
+	"Config.SectionTitle.Adjustments": "Adjust Book Powers",
+	"Config.SectionTitle.Debug": "Debug Settings",
+
+	"Config.General.AlwaysAvailable.Name": "Books Always Available",
+	"Config.General.AlwaysAvailable.Description": "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
+
+	"Config.General.Enabled.Name": "Enabled",
+	"Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+
+	"Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
+
+	"Config.Luck.Bonus.Name": "Luck Bonus",
+	"Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
+
+	"Config.ArtisanMachines.GrangeMustWin.Name": "Grange Display Must Win",
+	"Config.ArtisanMachines.GrangeMustWin.Description": "If enabled, your grange display must place 1st as well as include 6+ artisan goods.",
+	"Config.ArtisanMachines.Bonus.Name": "Machine Speed Bonus",
+	"Config.ArtisanMachines.Bonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
+
+	"Config.GiantCrops.Bonus.Name": "Giant Crop Chance",
+	"Config.GiantCrops.Bonus.Description": "The percent chance that crops will become a giant crop overnight.",
+
+	"Config.QiNotebook.Bonus.Name": "Qi Gem Chance",
+	"Config.QiNotebook.Bonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
+
+	"Config.CheatCodes.Requirement.Name": "Junimo Kart Deaths Required",
+	"Config.CheatCodes.Requirement.Description": "The number of times you must die in Junimo Kart before the Secret Codes book becomes available.",
+	"Config.CheatCodes.Bonus.Name": "Extra Lives",
+	"Config.CheatCodes.Bonus.Description": "The number of extra lives you start with in Junimo Kart progress mode.",
+
+	"Config.JunimoScrap.RandomItems.Name": "Random Junimo Items",
+	"Config.JunimoScrap.RandomItems.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
+
 	// DEBUG //
-	"Debug.Book.RemoveAll.Name": "BEB Power Removal",
-	"Debug.Book.RemoveAll.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
-	"Debug.Book.RemoveAll.Message": "You've lost all of Button's powers!",
+	"Debug.RemoveAll.Book.Name": "BEB Power Removal",
+	"Debug.RemoveAll.Book.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
+	"Debug.RemoveAll.Book.Message": "You've lost all of Button's powers!",
+
+	"Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
+	"Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."
 }
