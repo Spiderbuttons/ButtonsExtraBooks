@@ -1,4 +1,5 @@
-﻿using StardewValley;
+﻿using System;
+using StardewValley;
 using StardewModdingAPI;
 
 namespace ButtonsExtraBooks.Helpers;
@@ -27,5 +28,26 @@ public class Utils
             }
         }
         return false;
+    }
+    
+    public static string GetLanguageCode()
+    {
+        return LocalizedContentManager.CurrentLanguageCode.ToString() != "mod" ? LocalizedContentManager.CurrentLanguageCode.ToString() : LocalizedContentManager.CurrentModLanguage.LanguageCode;
+    }
+    
+    public static Func<string> TryGetI18n(string key)
+    {
+        return () =>
+        {
+            if (ModEntry.ContentPackI18n.TryGetValue(GetLanguageCode(), out var i18nStrings))
+            {
+                if (i18nStrings.TryGetValue(key, out var i18nString))
+                {
+                    return i18nString;
+                }
+            }
+            
+            return "Missing translation key!";
+        };
     }
 }

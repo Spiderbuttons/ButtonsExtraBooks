@@ -124,29 +124,6 @@ public sealed class ModConfig
         return (int)GetType().GetProperty($"{bookName}Price")?.GetValue(this)!;
     }
 
-    public string GetLanguageCode()
-    {
-        return LocalizedContentManager.CurrentLanguageCode.ToString() != "mod" ? LocalizedContentManager.CurrentLanguageCode.ToString() : LocalizedContentManager.CurrentModLanguage.LanguageCode;
-    }
-    
-    public Func<string> TryGetI18n(string key)
-    {
-        return () =>
-        {
-            Log.Info($"Trying to get i18n for {key} and language code {GetLanguageCode()}");
-            if (ModEntry.ContentPackI18n.TryGetValue(GetLanguageCode(), out var i18nStrings))
-            {
-                Log.Info("Found language code");
-                if (i18nStrings.TryGetValue(key, out var i18nString))
-                {
-                    return i18nString;
-                }
-            }
-            
-            return "Missing translation key!";
-        };
-    }
-
     public void SetupConfig(IGenericModConfigMenuApi configMenu, IManifest ModManifest, IModHelper Helper, Harmony harmony)
     {
         configMenu.Register(
@@ -168,27 +145,27 @@ public sealed class ModConfig
         configMenu.AddPageLink(
             mod: ModManifest,
             pageId: "Config.Pages.General",
-            text: i18n.Config_SectionTitle_General
+            text: Utils.TryGetI18n("Config.SectionTitle.General")
         );
         configMenu.AddPageLink(
             mod: ModManifest,
             pageId: "Config.Pages.EnableDisable",
-            text: i18n.Config_SectionTitle_EnableDisable
+            text: Utils.TryGetI18n("Config.SectionTitle.EnableDisable")
         );
         configMenu.AddPageLink(
             mod: ModManifest,
             pageId: "Config.Pages.Prices",
-            text: i18n.Config_SectionTitle_Prices
+            text: Utils.TryGetI18n("Config.SectionTitle.Prices")
         );
         configMenu.AddPageLink(
             mod: ModManifest,
             pageId: "Config.Pages.Adjustments",
-            text: i18n.Config_SectionTitle_Adjustments
+            text: Utils.TryGetI18n("Config.SectionTitle.Adjustments")
         );
         configMenu.AddPageLink(
             mod: ModManifest,
             pageId: "Config.Pages.Debug",
-            text: i18n.Config_SectionTitle_Debug
+            text: Utils.TryGetI18n("Config.SectionTitle.Debug")
         );
     }
     
@@ -198,12 +175,12 @@ public sealed class ModConfig
         configMenu.AddPage(
             mod: ModManifest,
             pageId: "Config.Pages.General",
-            pageTitle: i18n.Config_SectionTitle_General
+            pageTitle: Utils.TryGetI18n("Config.SectionTitle.General")
         );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_General_AlwaysAvailable_Name,
-            tooltip: i18n.Config_General_AlwaysAvailable_Description,
+            name: Utils.TryGetI18n("Config.General.AlwaysAvailable.Name"),
+            tooltip: Utils.TryGetI18n("Config.General.AlwaysAvailable.Description"),
             getValue: () => AlwaysAvailable,
             setValue: value => AlwaysAvailable = value
         );
@@ -214,7 +191,7 @@ public sealed class ModConfig
         configMenu.AddPage(
             mod: ModManifest,
             pageId: "Config.Pages.EnableDisable",
-            pageTitle: i18n.Config_SectionTitle_EnableDisable
+            pageTitle: Utils.TryGetI18n("Config.SectionTitle.EnableDisable")
         );
         foreach (var property in GetType().GetProperties())
         {
@@ -223,8 +200,8 @@ public sealed class ModConfig
                 string bookName = property.Name.Substring(6);
                 configMenu.AddBoolOption(
                     mod: ModManifest,
-                    name: () => i18n.GetByKey($"Config.Books.{bookName}.Title"),
-                    tooltip: i18n.Config_General_Enabled_Description,
+                    name: Utils.TryGetI18n($"{bookName}.Book.Name"),
+                    tooltip: Utils.TryGetI18n("Config.General.Enabled.Description"),
                     getValue: () => (bool)property.GetValue(this)!,
                     setValue: value => property.SetValue(this, value)
                 );
@@ -237,7 +214,7 @@ public sealed class ModConfig
         configMenu.AddPage(
             mod: ModManifest,
             pageId: "Config.Pages.Prices",
-            pageTitle: i18n.Config_SectionTitle_Prices
+            pageTitle: Utils.TryGetI18n("Config.SectionTitle.Prices")
         );
         foreach (var property in GetType().GetProperties())
         {
@@ -246,8 +223,8 @@ public sealed class ModConfig
                 string bookName = property.Name.Substring(0, property.Name.Length - 5);
                 configMenu.AddNumberOption(
                     mod: ModManifest,
-                    name: () => i18n.GetByKey($"Config.Books.{bookName}.Title")!,
-                    tooltip: i18n.Config_General_Price_Description,
+                    name: Utils.TryGetI18n($"{bookName}.Book.Name"),
+                    tooltip: Utils.TryGetI18n("Config.General.Price.Description"),
                     getValue: () => (int)property.GetValue(this)!,
                     setValue: value => property.SetValue(this, value)
                 );
@@ -260,35 +237,34 @@ public sealed class ModConfig
         configMenu.AddPage(
             mod: ModManifest,
             pageId: "Config.Pages.Adjustments",
-            pageTitle: i18n.Config_SectionTitle_Adjustments
+            pageTitle: Utils.TryGetI18n("Config.SectionTitle.Adjustments")
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: TryGetI18n("Luck.Book.Name")
-            // text: i18n.Config_Books_Luck_Title
+            text: Utils.TryGetI18n("Luck.Book.Name")
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
-            name: i18n.Config_Books_LuckBonus_Name,
-            tooltip: i18n.Config_Books_LuckBonus_Description,
+            name: Utils.TryGetI18n("Config.Luck.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.Luck.Bonus.Description"),
             getValue: () => LuckAmount,
             setValue: value => LuckAmount = value
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: i18n.Config_Books_ArtisanMachines_Title
+            text: Utils.TryGetI18n("ArtisanMachines.Book.Name")
         );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_Books_ArtisanMachinesGrangeMustWin_Name,
-            tooltip: i18n.Config_Books_ArtisanMachinesGrangeMustWin_Description,
+            name: Utils.TryGetI18n("Config.ArtisanMachines.GrangeMustWin.Name"),
+            tooltip: Utils.TryGetI18n("Config.ArtisanMachines.GrangeMustWin.Description"),
             getValue: () => ArtisanMachinesGrangeMustWin,
             setValue: value => ArtisanMachinesGrangeMustWin = value
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
-            name: i18n.Config_Books_ArtisanMachinesBonus_Name,
-            tooltip: i18n.Config_Books_ArtisanMachinesBonus_Description,
+            name: Utils.TryGetI18n("Config.ArtisanMachines.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.ArtisanMachines.Bonus.Description"),
             getValue: () => ArtisanMachinesPercentDecrease,
             setValue: (value) =>
             {
@@ -303,12 +279,12 @@ public sealed class ModConfig
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: i18n.Config_Books_GiantCrops_Title
+            text: Utils.TryGetI18n("GiantCrops.Book.Name")
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
-            name: i18n.Config_Books_GiantCropsBonus_Name,
-            tooltip: i18n.Config_Books_GiantCropsBonus_Description,
+            name: Utils.TryGetI18n("Config.GiantCrops.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.GiantCrops.Bonus.Description"),
             getValue: () => GiantCropsPercent,
             setValue: value => GiantCropsPercent = value,
             min: 2,
@@ -318,12 +294,12 @@ public sealed class ModConfig
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: i18n.Config_Books_QiNotebook_Title
+            text: Utils.TryGetI18n("QiNotebook.Book.Name")
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
-            name: i18n.Config_Books_QiNotebookBonus_Name,
-            tooltip: i18n.Config_Books_QiNotebookBonus_Description,
+            name: Utils.TryGetI18n("Config.QiNotebook.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.QiNotebook.Bonus.Description"),
             getValue: () => QiNotebookPercent,
             setValue: value => QiNotebookPercent = value,
             min: 1,
@@ -333,12 +309,12 @@ public sealed class ModConfig
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: i18n.Config_Books_CheatCodes_Title
+            text: Utils.TryGetI18n("CheatCodes.Book.Name")
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
-            name: i18n.Config_Books_CheatCodesRequirement_Name,
-            tooltip: i18n.Config_Books_CheatCodesRequirement_Description,
+            name: Utils.TryGetI18n("Config.CheatCodes.Requirement.Name"),
+            tooltip: Utils.TryGetI18n("Config.CheatCodes.Requirement.Description"),
             getValue: () => CheatCodesRequirement,
             setValue: value => CheatCodesRequirement = value,
             min: 1,
@@ -347,8 +323,8 @@ public sealed class ModConfig
         );
         configMenu.AddNumberOption(
             mod: ModManifest,
-            name: i18n.Config_Books_CheatCodesBonus_Name,
-            tooltip: i18n.Config_Books_CheatCodesBonus_Description,
+            name: Utils.TryGetI18n("Config.CheatCodes.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.CheatCodes.Bonus.Description"),
             getValue: () => CheatCodesLives,
             setValue: value => CheatCodesLives = value,
             min: 1,
@@ -357,12 +333,12 @@ public sealed class ModConfig
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: i18n.Config_Books_JunimoScrapbook_Title
+            text: Utils.TryGetI18n("JunimoScrap.Book.Name")
         );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_Books_JunimoScrapbookRandom_Name,
-            tooltip: i18n.Config_Books_JunimoScrapbookRandom_Description,
+            name: Utils.TryGetI18n("Config.JunimoScrap.RandomItems.Name"),
+            tooltip: Utils.TryGetI18n("Config.JunimoScrap.RandomItems.Description"),
             getValue: () => JunimoRandomItems,
             setValue: value => JunimoRandomItems = value
         );
@@ -374,12 +350,12 @@ public sealed class ModConfig
         configMenu.AddPage(
             mod: ModManifest,
             pageId: "Config.Pages.Debug",
-            pageTitle: i18n.Config_SectionTitle_Debug
+            pageTitle: Utils.TryGetI18n("Config.SectionTitle.Debug")
         );
         configMenu.AddBoolOption(
             mod: ModManifest,
-            name: i18n.Config_Debug_EnableDebugBook_Name,
-            tooltip: i18n.Config_Debug_EnableDebugBook_Description,
+            name: Utils.TryGetI18n("Config.Debug.EnableDebugBook.Name"),
+            tooltip: Utils.TryGetI18n("Config.Debug.EnableDebugBook.Description"),
             getValue: () => DebugBook,
             setValue: value => DebugBook = value
         );

@@ -93,13 +93,77 @@ namespace ButtonsExtraBooks.Powers
         public static string randomDroppedText()
         {
             Random rng = Utility.CreateRandom(Game1.currentGameTime.TotalGameTime.TotalMilliseconds);
-            return rng.Choose(i18n.JunimoScrapbook_DroppedItem().Split("#"));
+            List<string> options = new List<string>();
+            for (int i = 1; i < 6; i++)
+            {
+                var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.DroppedItem." + i)();
+                if (opt != "Missing translation key!")
+                {
+                    options.Add(opt);   
+                }
+            }
+            if (options.Count == 0)
+            {
+                options.Add("...");
+            }
+            return rng.Choose(options.ToArray());
         }
 
         public static string randomExitHutText()
         {
             Random rng = Utility.CreateRandom(Game1.currentGameTime.TotalGameTime.TotalMilliseconds);
-            return rng.Choose(i18n.JunimoScrapbook_ExitHut().Split("#"));
+            List<string> options = new List<string>();
+            for (int i = 1; i < 10; i++)
+            {
+                var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.ExitHut." + i)();
+                if (opt != "Missing translation key!")
+                {
+                    options.Add(opt);   
+                }
+            }
+            if (options.Count == 0)
+            {
+                options.Add("...");
+            }
+            return rng.Choose(options.ToArray());
+        }
+
+        public static string randomCropAdjective()
+        {
+            Random rng = Utility.CreateRandom(Game1.currentGameTime.TotalGameTime.TotalMilliseconds);
+            List<string> options = new List<string>();
+            for (int i = 1; i < 9; i++)
+            {
+                var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.CropAdjective." + i)();
+                if (opt != "Missing translation key!")
+                {
+                    options.Add(opt);   
+                }
+            }
+            if (options.Count == 0)
+            {
+                options.Add("...");
+            }
+            return rng.Choose(options.ToArray());
+        }
+
+        public static string randomHarvestText()
+        {
+            Random rng = Utility.CreateRandom(Game1.currentGameTime.TotalGameTime.TotalMilliseconds);
+            List<string> options = new List<string>();
+            for (int i = 1; i < 6; i++)
+            {
+                var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.Harvest." + i)();
+                if (opt != "Missing translation key!")
+                {
+                    options.Add(opt);   
+                }
+            }
+            if (options.Count == 0)
+            {
+                options.Add("...");
+            }
+            return rng.Choose(options.ToArray());
         }
 
         [HarmonyTranspiler]
@@ -148,8 +212,8 @@ namespace ButtonsExtraBooks.Powers
                     feature is not HoeDirt dirt || !dirt.readyForHarvest()) return;
                 if (!Game1.objectData.TryGetValue(dirt.crop.indexOfHarvest.Value, out var data)) return;
                 string itemName = TokenParser.ParseText(data.DisplayName);
-                string cropAdjective = rng.Choose(i18n.JunimoScrapbook_CropAdjectives().Split("#"));
-                string harvestText = string.Format(rng.Choose(i18n.JunimoScrapbook_Harvest().Split("#")), cropAdjective,
+                string cropAdjective = randomCropAdjective();
+                string harvestText = string.Format(randomHarvestText(), cropAdjective,
                     itemName);
                 showJunimoText(__instance, harvestText);
             }
