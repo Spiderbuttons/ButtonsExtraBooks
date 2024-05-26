@@ -116,33 +116,33 @@
 	/* TODO */ "Dialogue.JunimoScrap.ExitHut.I": "*yawn*",
 
 	// CONFIG //
-	/* TODO */ "Config.SectionTitle.General": "General Settings",
-	/* TODO */ "Config.SectionTitle.EnableDisable": "Enable / Disable Books",
-	/* TODO */ "Config.SectionTitle.Prices": "Change Book Prices",
-	/* TODO */ "Config.SectionTitle.Adjustments": "Adjust Book Powers",
-	/* TODO */ "Config.SectionTitle.Debug": "Debug Settings",
+	"Config.SectionTitle.General": "Paramètres généraux",
+	"Config.SectionTitle.EnableDisable": "Activer / Désactiver les livres",
+	"Config.SectionTitle.Prices": "Changer le prix des livres",
+	"Config.SectionTitle.Adjustments": "Régler les pouvoirs des livres",
+	"Config.SectionTitle.Debug": "Paramètres de débogage",
 
-	/* TODO */ "Config.General.AlwaysAvailable.Name": "Books Always Available",
-	/* TODO */ "Config.General.AlwaysAvailable.Description": "If enabled, all books will always be available from the bookseller without the need to meet certain requirements.",
+	"Config.General.AlwaysAvailable.Name": "Livres toujours disponibles",
+	"Config.General.AlwaysAvailable.Description": "Si activé, tous les livres seront disponibles au libraire sans conditions.",
 
-	/* TODO */ "Config.General.Enabled.Name": "Enabled",
-	/* TODO */ "Config.General.Enabled.Description": "If disabled, this book and its powers will not be available.",
+	"Config.General.Enabled.Name": "Activé",
+	"Config.General.Enabled.Description": "Si désactivé, ce livre et ses pouvoirs ne seront pas disponibles.",
 
-	/* TODO */ "Config.General.Price.Description": "The price of this book when bought directly from a shop and not earned through other means. Integer values only.",
+	"Config.General.Price.Description": "Le prix de ce livre lorsqu’il est acheté directement d’une boutique et non obtenu d’une autre manière. Intégrez une valeur numérique uniquement.",
 
-	/* TODO */ "Config.Luck.Bonus.Name": "Luck Bonus",
+	"Config.Luck.Bonus.Name": "Bonus de chance",
 	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 
-	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Name": "Grange Display Must Win",
-	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Description": "If enabled, your grange display must place 1st as well as include 6+ artisan goods.",
-	/* TODO */ "Config.ArtisanMachines.Bonus.Name": "Machine Speed Bonus",
-	/* TODO */ "Config.ArtisanMachines.Bonus.Description": "Percent decrease to the processing time of machines producing artisan goods.",
+	"Config.ArtisanMachines.GrangeMustWin.Name": "Victoire au festival",
+	"Config.ArtisanMachines.GrangeMustWin.Description": "Si activé, votre présentoir doit être numéro 1 et avoir plus de 6 produits artisanaux.",
+	"Config.ArtisanMachines.Bonus.Name": "Bonus Vitesse de Machine",
+	"Config.ArtisanMachines.Bonus.Description": "Diminution en pourcentage du temps de traitement des machines produisant des produits artisanaux.",
 
-	/* TODO */ "Config.GiantCrops.Bonus.Name": "Giant Crop Chance",
-	/* TODO */ "Config.GiantCrops.Bonus.Description": "The percent chance that crops will become a giant crop overnight.",
+	"Config.GiantCrops.Bonus.Name": "Chance de Culture Géante",
+	"Config.GiantCrops.Bonus.Description": "Pourcentage de chance que les cultures forment une culture géante pendant la nuit.",
 
-	/* TODO */ "Config.QiNotebook.Bonus.Name": "Qi Gem Chance",
-	/* TODO */ "Config.QiNotebook.Bonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
+	"Config.QiNotebook.Bonus.Name": "Chance Gemmes Qi",
+	"Config.QiNotebook.Bonus.Description": "Pourcentage de chance d'obtenir une Qemme Qi en plus des chances habituelles.",
 
 	"Config.CheatCodes.Requirement.Name": "Morts requises pour Junimo Kart",
 	"Config.CheatCodes.Requirement.Description": "Le nombre de fois que vous devez mourir dans Junimo Kart avant que le livre des Codes Secrets ne devienne disponible.",
@@ -157,6 +157,6 @@
 	/* TODO */ "Debug.RemoveAll.Book.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
 	"Debug.RemoveAll.Book.Message": "Vous avez perdu tous les pouvoirs de Button!",
 
-	/* TODO */ "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
-	/* TODO */ "Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."
+	"Config.Debug.EnableDebugBook.Name": "Activer Livre de Débogage",
+	"Config.Debug.EnableDebugBook.Description": "Si activé, un livre de débogage sera disponible chez Pierre qui retire tous les pouvoirs octroyés par les livres de ce mod."
 }
