@@ -180,6 +180,36 @@
 			},
 		},
 
+		// OPTIMIZED SDV++ //
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}_Book_Optimization": {
+					"Name": "{{ModId}}_Book_Optimization",
+					"DisplayName": "{{i18n: Optimization.Book.Name}}",
+					"Description": "{{i18n: Optimization.Book.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 500,
+					"Texture": "Mods/{{ModId}}/Books",
+					"SpriteIndex": 6,
+					"ContextTags": [
+						"color_white",
+						"book_item",
+						"spu_book_colour"
+					],
+					"CustomFields": {
+						"Spiderbuttons.SpecialPowerUtilities/Books/Message": "{{i18n: Optimization.Book.Message}}",
+						"Spiderbuttons.SpecialPowerUtilities/Books/Colour": "#FFFFFF"
+					},
+				},
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableOptimization": true
+			},
+		},
+
 		// BUS DRIVING FOR DUMMIES //
 		{
 			"Action": "EditData",

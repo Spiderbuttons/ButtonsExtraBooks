@@ -65,6 +65,18 @@ namespace ButtonsExtraBooks
                     $"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/{lang}");
             if (i18nStrings == null) return;
             ContentPackI18n.TryAdd(lang, i18nStrings);
+            
+            if (!ContentPackI18n.ContainsKey("default"))
+            {
+                var defaultStrings =
+                    Helper.GameContent.Load<Dictionary<string, string>>(
+                        $"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/default");
+                if (defaultStrings != null)
+                {
+                    ContentPackI18n.TryAdd("default", defaultStrings);
+                }
+            }
+            
             Helper.Events.GameLoop.UpdateTicked -= InitializeTranslationsFromCP;
         }
 

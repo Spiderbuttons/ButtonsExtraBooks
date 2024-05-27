@@ -30,6 +30,11 @@
 	/* TODO */ "Popularity.Book.Message": "Your friends love you!",
 	"Popularity.Power.Description": "仲良くなった住民からプレゼントが送られてくる確率を高める。",
 
+	/* TODO */ "Optimization.Book.Name": "Optimized SDV++",
+	/* TODO */ "Optimization.Book.Description": "Learn how to optimize your experience gain by reading this book.",
+	/* TODO */ "Optimization.Book.Message": "More experience, per experience!",
+	/* TODO */ "Optimization.Power.Description": "Experience gains are increased.",
+
 	"BusDriving.Book.Name": "バスの運転マニュアル",
 	"BusDriving.Book.Description": "この本には、バスを運転するのに必要なすべての情報が、ざっくりと書かれている。",
 	/* TODO */ "BusDriving.Book.Message": "You've learned how to drive!",

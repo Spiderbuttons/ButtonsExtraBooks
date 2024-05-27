@@ -137,6 +137,27 @@
 			},
 		},
 
+		// OPTIMIZED SDV++ //
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Optimization": {
+					"DisplayName": "{{i18n: Optimization.Book.Name}}",
+					"Description": "{{i18n: Optimization.Power.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Books",
+					"TexturePosition": {
+						"X": 112,
+						"Y": 0,
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Optimization 1",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableOptimization": true
+			},
+		},
+
 		// BUS DRIVING FOR DUMMIES //
 		{
 			"Action": "EditData",

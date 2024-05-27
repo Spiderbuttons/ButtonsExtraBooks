@@ -30,6 +30,11 @@
 	/* TODO */ "Popularity.Book.Message": "Your friends love you!",
 	"Popularity.Power.Description": "你的朋友更有可能通过邮件给你送礼物。",
 
+	/* TODO */ "Optimization.Book.Name": "Optimized SDV++",
+	/* TODO */ "Optimization.Book.Description": "Learn how to optimize your experience gain by reading this book.",
+	/* TODO */ "Optimization.Book.Message": "More experience, per experience!",
+	/* TODO */ "Optimization.Power.Description": "Experience gains are increased.",
+
 	"BusDriving.Book.Name": "傻瓜式巴士驾驶手册",
 	"BusDriving.Book.Description": "这本书或多或少地包含了驾驶公交车所需的所有信息。",
 	/* TODO */ "BusDriving.Book.Message": "You've learned how to drive!",

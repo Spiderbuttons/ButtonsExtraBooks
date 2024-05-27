@@ -7,6 +7,13 @@
 			"FromFile": "{{FirstValidFile: i18n/{{language}}.json, i18n/default.json }}",
 			"Target": "Mods/{{ModId}}/Translations/{{language}}"
 		},
+
+		{
+			"Action": "Load",
+			"FromFile": "i18n/default.json",
+			"Target": "Mods/{{ModId}}/Translations/default",
+			"Priority": "High"
+		},
 	
 		// TEXTURES //
 		{

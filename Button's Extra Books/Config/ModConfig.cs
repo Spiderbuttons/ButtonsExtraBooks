@@ -33,6 +33,10 @@ public sealed class ModConfig
     
     public bool EnablePopularity { get; set; } = true;
     public int PopularityPrice { get; set; } = 35000;
+    
+    public bool EnableOptimization { get; set; } = true;
+    public int OptimizationPrice { get; set; } = 30000;
+    public int OptimizationPercent { get; set; } = 2;
 
     public bool EnableBusDriving { get; set; } = true;
     public int BusDrivingPrice { get; set; } = 42500;
@@ -78,6 +82,7 @@ public sealed class ModConfig
         ArtisanMachinesPercentDecrease = 10;
         ArtisanMachinesGrangeMustWin = true;
         GiantCropsPercent = 5;
+        OptimizationPercent = 2;
         QiNotebookPercent = 10f;
         CheatCodesRequirement = 30;
         CheatCodesLives = 1;
@@ -104,6 +109,7 @@ public sealed class ModConfig
         ArtisanMachinesPrice = 100000;
         GiantCropsPrice = 30000;
         PopularityPrice = 35000;
+        OptimizationPrice = 30000;
         BusDrivingPrice = 42500;
         QiNotebookPrice = 10;
         PetGiftsPrice = 15000;
@@ -288,6 +294,21 @@ public sealed class ModConfig
             getValue: () => GiantCropsPercent,
             setValue: value => GiantCropsPercent = value,
             min: 2,
+            max: 100,
+            interval: 1,
+            formatValue: value => $"{value}%"
+        );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: Utils.TryGetI18n("Optimization.Book.Name")
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: Utils.TryGetI18n("Config.Optimization.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.Optimization.Bonus.Description"),
+            getValue: () => OptimizationPercent,
+            setValue: value => OptimizationPercent = value,
+            min: 1,
             max: 100,
             interval: 1,
             formatValue: value => $"{value}%"

@@ -51,7 +51,6 @@ namespace ButtonsExtraBooks.Powers
             {
                 string cropId = crops[new Random().Next(crops.Count)];
                 Item randomCrop = ItemRegistry.Create(cropId);
-                // pick a number that is either 1, 2, or 4
                 randomCrop.Quality = new Random().Choose(1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4);
                 randomCrop.Stack = new Random().Next(3, 8);
                 return randomCrop;
@@ -61,7 +60,6 @@ namespace ButtonsExtraBooks.Powers
 
         public static Item randomGem()
         {
-            // store the keys of items with category == -2
             List<string> gems = Game1.objectData.Keys
                 .Where(key => Game1.objectData[key].Category == -2)
                 .ToList();

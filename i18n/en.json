@@ -30,6 +30,11 @@
 	"Popularity.Book.Message": "Your friends love you!",
 	"Popularity.Power.Description": "Your friends are more likely to send you gifts in the mail.",
 
+	"Optimization.Book.Name": "Optimized SDV++",
+	"Optimization.Book.Description": "Learn how to optimize your experience gain by reading this book.",
+	"Optimization.Book.Message": "More experience, per experience!",
+	"Optimization.Power.Description": "Experience gains are increased.",
+
 	"BusDriving.Book.Name": "Bus Driving for Dummies",
 	"BusDriving.Book.Description": "This book contains all the information you need to drive a bus, more or less.",
 	"BusDriving.Book.Message": "You've learned how to drive!",

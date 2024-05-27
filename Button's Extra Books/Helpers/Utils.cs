@@ -45,6 +45,12 @@ public class Utils
                 {
                     return i18nString;
                 }
+            } else if (ModEntry.ContentPackI18n.TryGetValue("default", out var defaultStrings))
+            {
+                if (defaultStrings.TryGetValue(key, out var defaultString))
+                {
+                    return defaultString;
+                }
             }
             
             return "Missing translation key!";

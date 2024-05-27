@@ -118,6 +118,25 @@
 			},
 		},
 
+		// OPTIMIZED SDV++ //
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Popularity": {
+					"Price": "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigPriceOptimization}}",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Optimization",
+					"ItemId": "(O){{ModId}}_Book_Optimization",
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableOptimization": true
+			},
+		},
+
 		// BUS DRIVING FOR DUMMIES //
 		{
 			"Action": "EditData",

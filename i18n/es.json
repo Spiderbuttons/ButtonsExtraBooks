@@ -30,6 +30,11 @@
     "Popularity.Book.Message": "¡Tus amigos te aman!",
     "Popularity.Power.Description": "Es más probable que tus amigos te envíen regalos.",
 
+    /* TODO */ "Optimization.Book.Name": "Optimized SDV++",
+    /* TODO */ "Optimization.Book.Description": "Learn how to optimize your experience gain by reading this book.",
+    /* TODO */ "Optimization.Book.Message": "More experience, per experience!",
+    /* TODO */ "Optimization.Power.Description": "Experience gains are increased.",
+
     "BusDriving.Book.Name": "Conducción de autobús para principiantes",
     "BusDriving.Book.Description": "Este libro contiene la información que necesitas para aprender a conducir un autobús.",
     "BusDriving.Book.Message": "¡Has aprendido a conducir!",
