@@ -16,11 +16,9 @@ namespace ButtonsExtraBooks.Powers
             if (!ModEntry.Config.EnableOptimization || !Utils.PlayerHasPower("Optimization")) return;
             try
             {
-                Log.Debug($"Before: {howMuch}");
                 int pct = ModEntry.Config.OptimizationPercent;
                 if (pct <= 0 || pct > 100) return;
                 howMuch = (int)Math.Ceiling(howMuch * (1 + pct / 100f));
-                Log.Debug($"After: {howMuch}");
             }
             catch (Exception ex)
             {

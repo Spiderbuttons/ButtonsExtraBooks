@@ -81,5 +81,22 @@
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableExtraGifts": true
 			}
 		},
+		
+		// ARTIFACT SPOTS //
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [ "Default", "ArtifactSpots" ],
+			"Entries": {
+				"{{ModId}}_SketchbookDrops": {
+					"Chance": 0.05,
+					"Condition": "PLAYER_STAT Current {{ModId}}_Book_Sketchbook 1",
+					"RandomItemId": [ "(O)166", "(O)797", "(O)534", "(O)533", "(O)852", "(O)856", "(O)872" ]
+				}
+			},
+			"When": {
+				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook": true
+			},
+		},
     ]
 }
