@@ -146,6 +146,9 @@
     "Config.GiantCrops.Bonus.Name": "Oportunidad de cosecha gigante",
     "Config.GiantCrops.Bonus.Description": "Porcentaje de probabilidad de que los cultivos formen una cosecha gigante durante la noche.",
 
+    /* TODO */ "Config.Optimization.Bonus.Name": "Extra Experience",
+    /* TODO */ "Config.Optimization.Bonus.Description": "Percent increase to experience gains.",
+
     "Config.QiNotebook.Bonus.Name": "Probabilidad de Gema Qi",
     "Config.QiNotebook.Bonus.Description": "Porcentaje de probabilidad de que una gema Qi caiga además de las probabilidades habituales.",
 

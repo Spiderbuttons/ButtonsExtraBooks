@@ -146,6 +146,9 @@
 	"Config.GiantCrops.Bonus.Name": "Chance de Culture Géante",
 	"Config.GiantCrops.Bonus.Description": "Pourcentage de chance que les cultures forment une culture géante pendant la nuit.",
 
+	/* TODO */ "Config.Optimization.Bonus.Name": "Extra Experience",
+	/* TODO */ "Config.Optimization.Bonus.Description": "Percent increase to experience gains.",
+
 	"Config.QiNotebook.Bonus.Name": "Chance Gemmes Qi",
 	"Config.QiNotebook.Bonus.Description": "Pourcentage de chance d'obtenir une Qemme Qi en plus des chances habituelles.",
 

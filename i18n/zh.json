@@ -146,6 +146,9 @@
 	"Config.GiantCrops.Bonus.Name": "大甜瓜！额外奖励",
 	"Config.GiantCrops.Bonus.Description": "作物过夜形成巨大作物的几率百分比。",
 
+	/* TODO */ "Config.Optimization.Bonus.Name": "Extra Experience",
+	/* TODO */ "Config.Optimization.Bonus.Description": "Percent increase to experience gains.",
+
 	"Config.QiNotebook.Bonus.Name": "齐钻概率",
 	"Config.QiNotebook.Bonus.Description": "调整齐钻的概率。",
 

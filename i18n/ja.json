@@ -146,6 +146,9 @@
 	"Config.GiantCrops.Bonus.Name": "巨大な作物の発生率",
 	"Config.GiantCrops.Bonus.Description": "作物が一夜にして巨大な作物を形成する確率。",
 
+	/* TODO */ "Config.Optimization.Bonus.Name": "Extra Experience",
+	/* TODO */ "Config.Optimization.Bonus.Description": "Percent increase to experience gains.",
+
 	"Config.QiNotebook.Bonus.Name": "Qiジェムのドロップボーナス値。",
 	"Config.QiNotebook.Bonus.Description": "モンスターを倒した時にドロップするQiジェムのドロップボーナス値。",
 

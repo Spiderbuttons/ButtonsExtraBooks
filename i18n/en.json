@@ -146,6 +146,9 @@
 	"Config.GiantCrops.Bonus.Name": "Giant Crop Chance",
 	"Config.GiantCrops.Bonus.Description": "The percent chance that crops will become a giant crop overnight.",
 
+	"Config.Optimization.Bonus.Name": "Extra Experience",
+	"Config.Optimization.Bonus.Description": "Percent increase to experience gains.",
+
 	"Config.QiNotebook.Bonus.Name": "Qi Gem Chance",
 	"Config.QiNotebook.Bonus.Description": "Percent chance that a Qi Gem will drop in addition to the usual odds.",
 

@@ -193,7 +193,7 @@
 					"Category": -102,
 					"Price": 500,
 					"Texture": "Mods/{{ModId}}/Books",
-					"SpriteIndex": 6,
+					"SpriteIndex": 7,
 					"ContextTags": [
 						"color_white",
 						"book_item",
