@@ -1,22 +1,30 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection.Emit;
 using ButtonsExtraBooks.Config;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
 using ButtonsExtraBooks.Helpers;
+using Netcode;
 using StardewValley.Locations;
+using StardewValley.Network;
 
 namespace ButtonsExtraBooks.Powers
 {
     [HarmonyPatch]
     static class BusDriving
     {
+        public static bool CanDriveBus()
+        {
+            return Utils.PlayerHasPower("BusDriving");
+        }
+        
         [HarmonyTranspiler]
         [HarmonyPatch(typeof(BusStop), nameof(BusStop.draw))]
-        private static IEnumerable<CodeInstruction> DrawTranspiler(IEnumerable<CodeInstruction> instructions,
+        private static IEnumerable<CodeInstruction> BusStop_DrawTranspiler(IEnumerable<CodeInstruction> instructions,
             ILGenerator il)
         {
             if (!ModEntry.Config.EnableBusDriving) return instructions;
@@ -61,6 +69,41 @@ namespace ButtonsExtraBooks.Powers
             {
                 Log.Error("Error in ButtonsExtraBooks_BusDriving.draw_Transpiler: \n" + ex);
                 return instructions;
+            }
+        }
+        
+        [HarmonyTranspiler]
+        [HarmonyPatch(typeof(Desert), nameof(Desert.draw))]
+        private static IEnumerable<CodeInstruction> Desert_DrawTranspiler(IEnumerable<CodeInstruction> instructions,
+            ILGenerator il)
+        {
+            if (!ModEntry.Config.EnableBusDriving) return instructions;
+            var code = instructions.ToList();
+            try
+            {
+                var matcher = new CodeMatcher(code, il);
+                matcher.MatchEndForward(
+                    new CodeMatch(OpCodes.Ldarg_0),
+                    new CodeMatch(OpCodes.Ldfld, AccessTools.Field(typeof(Desert), nameof(Desert.drivingOff))),
+                    new CodeMatch(OpCodes.Brfalse),
+                    new CodeMatch(OpCodes.Ldsfld, AccessTools.Field(typeof(Desert), nameof(Desert.warpedToDesert))),
+                    new CodeMatch(OpCodes.Brfalse))
+                    .ThrowIfNotMatch("Could not find proper entry point for Desert_DrawTranspiler");
+
+                matcher.CreateLabelAt(matcher.Pos + 1, out var label);
+                matcher.Advance(-4);
+                
+                matcher.Insert(
+                    new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(BusDriving), nameof(BusDriving.CanDriveBus))),
+                    new CodeInstruction(OpCodes.Brtrue_S, label)
+                );
+
+                return matcher.InstructionEnumeration();
+            }
+            catch (Exception ex)
+            {
+                Log.Error("Error in ButtonsExtraBooks_BusDriving.Desert_DrawTranspiler: \n" + ex);
+                return code;
             }
         }
 
