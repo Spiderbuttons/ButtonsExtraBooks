@@ -58,7 +58,8 @@ public sealed class ModConfig
     public bool JunimoRandomItems { get; set; } = false;
     
     public bool EnableCarols { get; set; } = true;
-    public int CarolsPrice { get; set; } = 10000;
+    public int CarolsPrice { get; set; } = 65000;
+    public int CarolsBonus { get; set; } = 15;
     
     public bool EnableCoffee { get; set; } = true;
     public int CoffeePrice { get; set; } = 75000;
@@ -87,6 +88,7 @@ public sealed class ModConfig
         CheatCodesRequirement = 30;
         CheatCodesLives = 1;
         JunimoRandomItems = false;
+        CarolsBonus = 15;
         DebugBook = false;
     }
 
@@ -115,7 +117,7 @@ public sealed class ModConfig
         PetGiftsPrice = 15000;
         CheatCodesPrice = 65536;
         JunimoScrapPrice = 25000;
-        CarolsPrice = 10000;
+        CarolsPrice = 65000;
         CoffeePrice = 75000;
         SketchbookPrice = 30000;
     }
@@ -362,6 +364,25 @@ public sealed class ModConfig
             tooltip: Utils.TryGetI18n("Config.JunimoScrap.RandomItems.Description"),
             getValue: () => JunimoRandomItems,
             setValue: value => JunimoRandomItems = value
+        );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: Utils.TryGetI18n("Carols.Book.Name")
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: Utils.TryGetI18n("Config.Carols.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.Carols.Bonus.Description"),
+            getValue: () => CarolsBonus,
+            setValue: value =>
+            {
+                CarolsBonus = value;
+                ModEntry.ModHelper.GameContent.InvalidateCache("Data/Shops");
+            },
+            min: 1,
+            max: 100,
+            interval: 1,
+            formatValue: (value) => $"{value}%"
         );
     }
     

@@ -73,7 +73,6 @@ namespace ButtonsExtraBooks.Powers
                 .Where(key => Game1.objectData[key].Category == -2)
                 .ToList();
             string gemId = gems[new Random().Next(gems.Count)];
-            Log.Warn(gemId);
             Item randomGem = ItemRegistry.Create(gemId);
             randomGem.Stack = new Random().Next(1, 4);
             return randomGem;
@@ -154,7 +153,6 @@ namespace ButtonsExtraBooks.Powers
                 var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.Harvest." + i)();
                 if (opt != "Missing translation key!")
                 {
-                    Log.Debug(opt);
                     options.Add(opt);   
                 }
             }

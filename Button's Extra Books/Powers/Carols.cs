@@ -37,7 +37,7 @@ namespace ButtonsExtraBooks.Powers
                 Id = "Spiderbuttons.ButtonsExtraBooks_CarolsPrices",
                 Modification = QuantityModifier.ModificationType.Multiply,
                 Condition = "PLAYER_STAT Current Spiderbuttons.ButtonsExtraBooks_Book_Carols 1, SEASON winter, !PLAYER_LOCATION_NAME Current JojaMart",
-                Amount = 0.85f
+                Amount = 1f - ModEntry.Config.CarolsBonus / 100f
             };
             return mod;
         }

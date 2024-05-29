@@ -22,6 +22,7 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(Pet), nameof(Pet.TryGetGiftItem))]
         private static bool Prefix(List<PetGift> gifts, Pet __instance, ref Item __result)
         {
+            if (!ModEntry.Config.EnablePetGifts) return true;
             try
             {
                 float totalWeight = 0f;
