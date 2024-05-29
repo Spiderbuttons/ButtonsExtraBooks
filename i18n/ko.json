@@ -138,6 +138,9 @@
 	/* TODO */ "Config.Luck.Bonus.Name": "Luck Bonus",
 	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 
+	/* TODO */ "Config.ExtraGifts.Bonus.Name": "Weekly Gift Limit",
+	/* TODO */ "Config.ExtraGifts.Bonus.Description": "How many gifts this book will allow you to give to someone in the same week.",
+
 	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Name": "Grange Display Must Win",
 	/* TODO */ "Config.ArtisanMachines.GrangeMustWin.Description": "If enabled, your grange display must place 1st as well as include 6+ artisan goods.",
 	/* TODO */ "Config.ArtisanMachines.Bonus.Name": "Machine Speed Bonus",

@@ -138,6 +138,9 @@
 	"Config.Luck.Bonus.Name": "Bonus de chance",
 	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 
+	/* TODO */ "Config.ExtraGifts.Bonus.Name": "Weekly Gift Limit",
+	/* TODO */ "Config.ExtraGifts.Bonus.Description": "How many gifts this book will allow you to give to someone in the same week.",
+
 	"Config.ArtisanMachines.GrangeMustWin.Name": "Victoire au festival",
 	"Config.ArtisanMachines.GrangeMustWin.Description": "Si activé, votre présentoir doit être numéro 1 et avoir plus de 6 produits artisanaux.",
 	"Config.ArtisanMachines.Bonus.Name": "Bonus Vitesse de Machine",

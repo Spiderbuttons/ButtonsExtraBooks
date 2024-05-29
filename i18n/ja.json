@@ -138,6 +138,9 @@
 	"Config.Luck.Bonus.Name": "幸運ボーナス",
 	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 
+	/* TODO */ "Config.ExtraGifts.Bonus.Name": "Weekly Gift Limit",
+	/* TODO */ "Config.ExtraGifts.Bonus.Description": "How many gifts this book will allow you to give to someone in the same week.",
+
 	"Config.ArtisanMachines.GrangeMustWin.Name": "品評会での優勝",
 	"Config.ArtisanMachines.GrangeMustWin.Description": "有効にすると、入手には品評会で6つ以上の加工品で1位を取る必要がある。",
 	"Config.ArtisanMachines.Bonus.Name": "設備の生産速度",

@@ -139,6 +139,9 @@
 	"Config.Luck.Bonus.Name": "Luck Bonus",
 	"Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 
+	"Config.ExtraGifts.Bonus.Name": "Weekly Gift Limit",
+	"Config.ExtraGifts.Bonus.Description": "How many gifts this book will allow you to give to someone in the same week.",
+
 	"Config.ArtisanMachines.GrangeMustWin.Name": "Grange Display Must Win",
 	"Config.ArtisanMachines.GrangeMustWin.Description": "If enabled, your grange display must place 1st as well as include 6+ artisan goods.",
 	"Config.ArtisanMachines.Bonus.Name": "Machine Speed Bonus",

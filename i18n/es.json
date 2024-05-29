@@ -138,6 +138,9 @@
     "Config.Luck.Bonus.Name": "Bonificación de suerte",
     /* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 
+    /* TODO */ "Config.ExtraGifts.Bonus.Name": "Weekly Gift Limit",
+    /* TODO */ "Config.ExtraGifts.Bonus.Description": "How many gifts this book will allow you to give to someone in the same week.",
+
     "Config.ArtisanMachines.GrangeMustWin.Name": "La exhibición de la granja debe ganar",
     "Config.ArtisanMachines.GrangeMustWin.Description": "Si está activado, la exhibición de tu granja debe quedar en primer lugar además de tener más de 6 productos artesanales.",
     "Config.ArtisanMachines.Bonus.Name": "Bonificación de velocidad de las máquinas",

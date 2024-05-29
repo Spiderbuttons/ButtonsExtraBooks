@@ -138,6 +138,9 @@
 	"Config.Luck.Bonus.Name": "初学者运气额外奖励",
 	/* TODO */ "Config.Luck.Bonus.Description": "The amount added to your daily luck value.",
 
+	/* TODO */ "Config.ExtraGifts.Bonus.Name": "Weekly Gift Limit",
+	/* TODO */ "Config.ExtraGifts.Bonus.Description": "How many gifts this book will allow you to give to someone in the same week.",
+
 	"Config.ArtisanMachines.GrangeMustWin.Name": "展览是否必须胜出",
 	"Config.ArtisanMachines.GrangeMustWin.Description": "如果启用，你的农庄必须第一并且放置超过6件工匠物品。",
 	"Config.ArtisanMachines.Bonus.Name": "工匠协会手册额外奖励",
