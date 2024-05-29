@@ -160,6 +160,9 @@
 	/* TODO */ "Config.JunimoScrap.RandomItems.Name": "Random Junimo Items",
 	/* TODO */ "Config.JunimoScrap.RandomItems.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
 
+	/* TODO */ "Config.Carols.Bonus.Name": "Shop Discount",
+	/* TODO */ "Config.Carols.Bonus.Description": "The percent discount applied to shop prices.",
+
 	// DEBUG //
 	"Debug.RemoveAll.Book.Name": "Button's Extra Booksの力を除去",
 	"Debug.RemoveAll.Book.Description": "Button's Extra Booksによって与えられたすべての力を削除し、対応する本の代金を返金する。",
