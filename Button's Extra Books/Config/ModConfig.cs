@@ -18,6 +18,7 @@ public sealed class ModConfig
     
     public bool EnableExtraGifts { get; set; } = true;
     public  int ExtraGiftsPrice { get; set; } = 50000;
+    public int ExtraGiftsBonus { get; set; } = 7;
     
     public bool EnableTreesIgnoreSeason { get; set; } = true;
     public int TreesIgnoreSeasonPrice { get; set; } = 20000;
@@ -80,6 +81,7 @@ public sealed class ModConfig
         ResetAllPrice();
         AlwaysAvailable = false;
         LuckAmount = 0.025f;
+        ExtraGiftsBonus = 7;
         ArtisanMachinesPercentDecrease = 10;
         ArtisanMachinesGrangeMustWin = true;
         GiantCropsPercent = 5;
@@ -257,6 +259,20 @@ public sealed class ModConfig
             tooltip: Utils.TryGetI18n("Config.Luck.Bonus.Description"),
             getValue: () => LuckAmount,
             setValue: value => LuckAmount = value
+        );
+        configMenu.AddSectionTitle(
+            mod: ModManifest,
+            text: Utils.TryGetI18n("ExtraGifts.Book.Name")
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: Utils.TryGetI18n("Config.ExtraGifts.Bonus.Name"),
+            tooltip: Utils.TryGetI18n("Config.ExtraGifts.Bonus.Description"),
+            getValue: () => ExtraGiftsBonus,
+            setValue: value => ExtraGiftsBonus = value,
+            min: 3,
+            max: 7,
+            interval: 1
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using HarmonyLib;
 using StardewModdingAPI;
 using StardewValley;
@@ -10,21 +12,35 @@ namespace ButtonsExtraBooks.Powers
     [HarmonyPatch]
     static class ExtraGifts
     {
-        [HarmonyPatch(typeof(Farmer), nameof(Farmer.updateFriendshipGifts))]
-        private static void Postfix(Farmer __instance)
+        public static int GetGiftLimit()
         {
-            if (!ModEntry.Config.EnableExtraGifts) return;
+            return Utils.PlayerHasPower("ExtraGifts") ? ModEntry.Config.ExtraGiftsBonus : 2;
+        }
+        
+        [HarmonyTranspiler]
+        [HarmonyPatch(typeof(NPC), nameof(NPC.tryToReceiveActiveObject))]
+        static IEnumerable<CodeInstruction> tryToReceiveActiveObject_Transpiler(IEnumerable<CodeInstruction> instructions,
+            ILGenerator il)
+        {
+            if (!ModEntry.Config.EnableExtraGifts) return instructions;
+            var code = instructions.ToList();
             try
             {
-                if (__instance.stats.Get("Spiderbuttons.ButtonsExtraBooks_Book_ExtraGifts") == 0) return;
-                foreach (var name in __instance.friendshipData.Keys.Where(name => __instance.friendshipData[name].GiftsThisWeek == 2))
-                {
-                    __instance.friendshipData[name].GiftsThisWeek--;
-                }
+                var matcher = new CodeMatcher(code, il);
+                matcher.MatchEndForward(
+                        new CodeMatch(OpCodes.Ldloc_1),
+                        new CodeMatch(OpCodes.Call, AccessTools.PropertyGetter(typeof(Friendship), nameof(Friendship.GiftsThisWeek))),
+                        new CodeMatch(OpCodes.Ldc_I4_2))
+                    .ThrowIfNotMatch("Could not find proper entry point for tryToReceiveActiveObject_Transpiler");
+
+                matcher.Set(OpCodes.Call, AccessTools.Method(typeof(ExtraGifts), nameof(ExtraGifts.GetGiftLimit)));
+
+                return matcher.InstructionEnumeration();
             }
             catch (Exception ex)
             {
-                Log.Error("Error in ButtonsExtraBooks_ExtraGifts.updateFriendshipGifts_Postfix: \n" + ex);
+                Log.Error("Error in ButtonsExtraBooks_ExtraGifts.tryToReceiveActiveObject_Transpiler: \n" + ex);
+                return code;
             }
         }
     }
