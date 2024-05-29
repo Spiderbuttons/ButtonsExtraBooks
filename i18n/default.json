@@ -61,9 +61,9 @@
 	"JunimoScrap.Power.Description": "Your Junimos are chattier and will send you letters.",
 	
 	"Carols.Book.Name": "Book of Carols",
-	"Carols.Book.Description": "TBD.",
+	"Carols.Book.Description": "These songs will help you spread holiday cheer throughout winter.",
 	"Carols.Book.Message": "You've learned some seasonal carols!",
-	"Carols.Power.Description": "TBD.",
+	"Carols.Power.Description": "Shop owners will give you a discount during the winter season.",
 	
 	"Coffee.Book.Name": "The Strongest Brew",
 	"Coffee.Book.Description": "Read this book to take your caffeine consumption to the next level.",
@@ -71,8 +71,8 @@
 	"Coffee.Power.Description": "Coffee drinks now last three times longer.",
 	
 	"Sketchbook.Book.Name": "Children's Sketchbook",
-	"Sketchbook.Book.Description": "There's a lot of farming-related drawings in this book. Some pages are covered in real dirt.",
-	"Sketchbook.Book.Message": "You feel like a role model!",
+	"Sketchbook.Book.Description": "The drawings that aren't covered in dirt are actually quite good!",
+	"Sketchbook.Book.Message": "You feel like there's more to dig up!",
 	"Sketchbook.Power.Description": "Artifact spots may contain better items.",
 	
 	// MAIL //
