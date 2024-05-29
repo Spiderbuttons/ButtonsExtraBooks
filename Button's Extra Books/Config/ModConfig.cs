@@ -384,17 +384,17 @@ public sealed class ModConfig
             getValue: () => JunimoChatter,
             setValue: value => JunimoChatter = value,
             min: 0,
-            max: 30,
+            max: 100,
             interval: 1,
             formatValue: (value) =>
             {
-                return value switch
-                {
-                    0 => Utils.TryGetI18n("Config.JunimoScrap.Chatter.Never")(),
-                    15 => Utils.TryGetI18n("Config.JunimoScrap.Chatter.Normal")(),
-                    30 => Utils.TryGetI18n("Config.JunimoScrap.Chatter.Always")(),
-                    _ => $"{value}"
-                };
+                if (value == 0)
+                    return Utils.TryGetI18n("Config.JunimoScrap.Chatter.Never")();
+                if (value >= 45 && value <= 55)
+                    return Utils.TryGetI18n("Config.JunimoScrap.Chatter.Normal")();
+                if (value == 100)
+                    return Utils.TryGetI18n("Config.JunimoScrap.Chatter.Always")();
+                return $"{value}";
             }
         );
         configMenu.AddBoolOption(

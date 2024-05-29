@@ -1,0 +1,18 @@
+{
+	"Changes": [
+		// COFFEE //
+		{
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": {
+				"{{ModId}}_Mail_ArtisanGrange": "@,^^  {{i18n: Mail.ArtisanGrange.Text}}%item id (O){{ModId}}_Book_ArtisanMachines 1%%[#]{{i18n: Mail.ArtisanGrange.Title}}",
+				
+				"{{ModId}}_Mail_JunimoScrap_Crop": "[letterbg Mods/{{ModId}}/Letters/junimoLetterBG 0][textcolor black]{{i18n: Mail.JunimoScrap.Crop.Text}}%item id (O){{ModId}}_Book_JunimoScrap 5%%[#]{{i18n: Mail.JunimoScrap.Title}}",
+				"{{ModId}}_Mail_JunimoScrap_Gem": "[letterbg Mods/{{ModId}}/Letters/junimoLetterBG 0][textcolor black]{{i18n: Mail.JunimoScrap.Gem.Text}}%item id (O){{ModId}}_Book_JunimoScrap 5%%[#]{{i18n: Mail.JunimoScrap.Title}}",
+				"{{ModId}}_Mail_JunimoScrap_Item": "[letterbg Mods/{{ModId}}/Letters/junimoLetterBG 0][textcolor black]{{i18n: Mail.JunimoScrap.Item.Text}}%item id (O){{ModId}}_Book_JunimoScrap 5%%[#]{{i18n: Mail.JunimoScrap.Title}}",
+				
+				"{{ModId}}_Mail_SketchbookDelivery": "[letterbg 1]{{i18n: Mail.SketchbookDelivery.Text}}%item id (O){{ModId}}_Book_Sketchbook 1%%[#]{{i18n: Mail.SketchbookDelivery.Title}}",
+			}
+		},
+	]
+}
