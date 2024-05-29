@@ -33,6 +33,15 @@ namespace ButtonsExtraBooks.Powers
             Game1.mailbox.Add($"Spiderbuttons.ButtonsExtraBooks_Mail_JunimoScrap_{rng.ChooseFrom(letterOptions)}");
         }
         
+        public static void showJunimoText(JunimoHarvester junimo, string text, int delay = 0)
+        {
+            if (!Utils.PlayerHasPower("JunimoScrap") || new Random().Next(10) != 0) return;
+            // string currentlyShownText = ModEntry.ModHelper.Reflection
+            //     .GetField<string>(junimo, "textAboveHead").GetValue();
+            //if (currentlyShownText != null) return;
+            junimo.showTextAboveHead(text, null, 2, 3000, delay);
+        }
+        
         public static Item randomCropInSeason()
         {
             if (seasonalCrops.Count == 0)
@@ -78,15 +87,6 @@ namespace ButtonsExtraBooks.Powers
             Item randomItem = ItemRegistry.Create(itemId);
             return randomItem;
         }
-        
-        public static void showJunimoText(JunimoHarvester junimo, string text, int delay = 0)
-        {
-            if (!Utils.PlayerHasPower("JunimoScrap") || new Random().Next(10) != 0) return;
-            string currentlyShownText = ModEntry.ModHelper.Reflection
-                .GetField<string>(junimo, "textAboveHead").GetValue();
-            if (currentlyShownText != null) return;
-            junimo.showTextAboveHead(text, null, 2, 3000, delay);
-        }
 
         public static string randomDroppedText()
         {
@@ -126,7 +126,7 @@ namespace ButtonsExtraBooks.Powers
             return rng.Choose(options.ToArray());
         }
 
-        public static string randomCropAdjective()
+        public static string randomCropAdjective(string cropName)
         {
             Random rng = Utility.CreateRandom(Game1.currentGameTime.TotalGameTime.TotalMilliseconds);
             List<string> options = new List<string>();
@@ -135,7 +135,7 @@ namespace ButtonsExtraBooks.Powers
                 var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.CropAdjective." + i)();
                 if (opt != "Missing translation key!")
                 {
-                    options.Add(opt);   
+                    options.Add(string.Format(opt, cropName));   
                 }
             }
             if (options.Count == 0)
@@ -154,6 +154,7 @@ namespace ButtonsExtraBooks.Powers
                 var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.Harvest." + i)();
                 if (opt != "Missing translation key!")
                 {
+                    Log.Debug(opt);
                     options.Add(opt);   
                 }
             }
@@ -210,9 +211,8 @@ namespace ButtonsExtraBooks.Powers
                     feature is not HoeDirt dirt || !dirt.readyForHarvest()) return;
                 if (!Game1.objectData.TryGetValue(dirt.crop.indexOfHarvest.Value, out var data)) return;
                 string itemName = TokenParser.ParseText(data.DisplayName);
-                string cropAdjective = randomCropAdjective();
-                string harvestText = string.Format(randomHarvestText(), cropAdjective,
-                    itemName);
+                string cropAdjective = randomCropAdjective(itemName);
+                string harvestText = string.Format(randomHarvestText(), cropAdjective);
                 showJunimoText(__instance, harvestText);
             }
             catch (Exception ex)

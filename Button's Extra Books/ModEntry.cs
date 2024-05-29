@@ -39,15 +39,22 @@ namespace ButtonsExtraBooks
             Harmony = harmony;
             harmony.PatchAll();
 
-            helper.Events.GameLoop.UpdateTicked += this.OnUpdateTicked;
+            helper.Events.GameLoop.OneSecondUpdateTicked += this.OnOneSecondUpdateTicked;
             helper.Events.GameLoop.UpdateTicked += this.InitializeTranslationsFromCP;
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
             helper.Events.GameLoop.DayEnding += JunimoScrap.OnDayEnding;
             helper.Events.Display.MenuChanged += this.OnMenuChange;
+            helper.Events.Content.AssetRequested += Carols.AddShopModifiers;
             helper.Events.Content.LocaleChanged += this.InitializeTranslationsFromCP;
+            helper.Events.Input.ButtonPressed += this.OnButtonPressed;
         }
 
-        private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
+        private void OnButtonPressed(object sender, ButtonPressedEventArgs e)
+        {
+            if (!Context.IsWorldReady) return;
+        }
+        
+        private void OnOneSecondUpdateTicked(object sender, OneSecondUpdateTickedEventArgs e)
         {
             if (!Context.IsWorldReady) return;
             if (Game1.player.stats.Get("Spiderbuttons.ButtonsExtraBooks_Debug_RemoveAll") != 0)
@@ -172,8 +179,7 @@ namespace ButtonsExtraBooks
 
         private void OnMenuChange(object sender, MenuChangedEventArgs e)
         {
-            if (e.NewMenu is not LetterViewerMenu letter)
-                return;
+            if (e.NewMenu is not LetterViewerMenu letter) return;
             switch (letter.mailTitle)
             {
                 case "Spiderbuttons.ButtonsExtraBooks_Mail_JunimoScrap_Crop":

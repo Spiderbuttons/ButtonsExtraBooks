@@ -87,22 +87,21 @@
 	// MISC DIALOGUE //
 	"Dialogue.EnoughGifts": "You've given {0} enough gifts for now!",
 	
-	"Dialogue.JunimoScrap.Harvest.1": "{0} {1}!",
-	// "{0} {1}!" is "[Adjective] [Noun]!" e.g. "Yummy Parsnip!" Please put them in the order that would make sense for your language! (I understand it might not be correct 100% of the time regardless. I'm sorry!)
-	
+	"Dialogue.JunimoScrap.Harvest.1": "{0}",
 	"Dialogue.JunimoScrap.Harvest.2": "*munch*",
 	"Dialogue.JunimoScrap.Harvest.3": "*nibble*",
 	"Dialogue.JunimoScrap.Harvest.4": "Is for me?", // The grammar is wrong on purpose!
 	"Dialogue.JunimoScrap.Harvest.5": "Oooh!",
-	
-	"Dialogue.JunimoScrap.CropAdjective.1": "Yummy",
-	"Dialogue.JunimoScrap.CropAdjective.2": "Juicy",
-	"Dialogue.JunimoScrap.CropAdjective.3": "Delicious",
-	"Dialogue.JunimoScrap.CropAdjective.4": "Tasty",
-	"Dialogue.JunimoScrap.CropAdjective.5": "Big",
-	"Dialogue.JunimoScrap.CropAdjective.6": "Squishy",
-	"Dialogue.JunimoScrap.CropAdjective.7": "Fresh",
-	"Dialogue.JunimoScrap.CropAdjective.8": "Ripe",
+
+	// {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
+	"Dialogue.JunimoScrap.CropAdjective.1": "Yummy {0}!",
+	"Dialogue.JunimoScrap.CropAdjective.2": "Juicy {0}!",
+	"Dialogue.JunimoScrap.CropAdjective.3": "Delicious {0}!",
+	"Dialogue.JunimoScrap.CropAdjective.4": "Tasty {0}!",
+	"Dialogue.JunimoScrap.CropAdjective.5": "Big {0}!",
+	"Dialogue.JunimoScrap.CropAdjective.6": "Squishy {0}!",
+	"Dialogue.JunimoScrap.CropAdjective.7": "Fresh {0}!",
+	"Dialogue.JunimoScrap.CropAdjective.8": "Ripe {0}!",
 	
 	"Dialogue.JunimoScrap.DroppedItem.1": "Oops...",
 	"Dialogue.JunimoScrap.DroppedItem.2": "Uh oh!",
