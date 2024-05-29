@@ -159,6 +159,11 @@
 	"Config.CheatCodes.Bonus.Name": "Extra Lives",
 	"Config.CheatCodes.Bonus.Description": "The number of extra lives you start with in Junimo Kart progress mode.",
 	
+	"Config.JunimoScrap.Chatter.Name": "Junimo Chattiness",
+	"Config.JunimoScrap.Chatter.Description": "How often the Junimos will have speech bubbles appear over their heads. Higher numbers mean more chatter.",
+	"Config.JunimoScrap.Chatter.Never": "Never",
+	"Config.JunimoScrap.Chatter.Normal": "Normal",
+	"Config.JunimoScrap.Chatter.Always": "Always",
 	"Config.JunimoScrap.RandomItems.Name": "Random Junimo Items",
 	"Config.JunimoScrap.RandomItems.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
 	

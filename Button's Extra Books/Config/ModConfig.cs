@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Mime;
+using System.Text.Json.Serialization;
 using ButtonsExtraBooks.Helpers;
 using GenericModConfigMenu;
 using HarmonyLib;
@@ -56,6 +57,7 @@ public sealed class ModConfig
     
     public bool EnableJunimoScrap { get; set; } = true;
     public int JunimoScrapPrice { get; set; } = 25000;
+    public int JunimoChatter { get; set; } = 15;
     public bool JunimoRandomItems { get; set; } = false;
     
     public bool EnableCarols { get; set; } = true;
@@ -89,6 +91,7 @@ public sealed class ModConfig
         QiNotebookPercent = 10f;
         CheatCodesRequirement = 30;
         CheatCodesLives = 1;
+        JunimoChatter = 15;
         JunimoRandomItems = false;
         CarolsBonus = 15;
         DebugBook = false;
@@ -373,6 +376,26 @@ public sealed class ModConfig
         configMenu.AddSectionTitle(
             mod: ModManifest,
             text: Utils.TryGetI18n("JunimoScrap.Book.Name")
+        );
+        configMenu.AddNumberOption(
+            mod: ModManifest,
+            name: Utils.TryGetI18n("Config.JunimoScrap.Chatter.Name"),
+            tooltip: Utils.TryGetI18n("Config.JunimoScrap.Chatter.Description"),
+            getValue: () => JunimoChatter,
+            setValue: value => JunimoChatter = value,
+            min: 0,
+            max: 30,
+            interval: 1,
+            formatValue: (value) =>
+            {
+                return value switch
+                {
+                    0 => Utils.TryGetI18n("Config.JunimoScrap.Chatter.Never")(),
+                    15 => Utils.TryGetI18n("Config.JunimoScrap.Chatter.Normal")(),
+                    30 => Utils.TryGetI18n("Config.JunimoScrap.Chatter.Always")(),
+                    _ => $"{value}"
+                };
+            }
         );
         configMenu.AddBoolOption(
             mod: ModManifest,

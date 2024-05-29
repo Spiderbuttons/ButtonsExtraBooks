@@ -160,6 +160,11 @@
 	"Config.CheatCodes.Bonus.Name": "额外生命数",
 	"Config.CheatCodes.Bonus.Description": "在祝尼魔赛车开始时的额外生命数。",
 
+	/* TODO */ "Config.JunimoScrap.Chatter.Name": "Junimo Chattiness",
+	/* TODO */ "Config.JunimoScrap.Chatter.Description": "How often the Junimos will have speech bubbles appear over their heads. Higher numbers mean more chatter.",
+	/* TODO */ "Config.JunimoScrap.Chatter.Never": "Never",
+	/* TODO */ "Config.JunimoScrap.Chatter.Normal": "Normal",
+	/* TODO */ "Config.JunimoScrap.Chatter.Always": "Always",
 	/* TODO */ "Config.JunimoScrap.RandomItems.Name": "Random Junimo Items",
 	/* TODO */ "Config.JunimoScrap.RandomItems.Description": "If enabled, you can receive a completely random item in the mail from your Junimos. This may possibly give you items that you are not supposed to obtain and is just for fun. Enable at your own risk.",
 
