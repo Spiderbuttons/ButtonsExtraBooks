@@ -277,7 +277,7 @@
 			},
 		},
 		
-		// CHILDS SKETCHBOOK //
+		// CHILDREN'S SKETCHBOOK //
 		{
 			"Action": "EditData",
 			"Target": "Data/Shops",
@@ -289,6 +289,7 @@
 					"AvailableStockLimit": "Player",
 					"Id": "(O){{ModId}}_Book_Sketchbook",
 					"ItemId": "(O){{ModId}}_Book_Sketchbook",
+					"Condition": 'ANY "PLAYER_STAT Current {{ModId}}_Book_Sketchbook 1" "{{Spiderbuttons.ButtonsExtraBooksCore/ConfigAlwaysAvailable}}"'
 				}
 			},
 			"When": {
