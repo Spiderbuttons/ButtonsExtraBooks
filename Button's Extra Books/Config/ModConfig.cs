@@ -321,7 +321,7 @@ public sealed class ModConfig
         );
         configMenu.AddSectionTitle(
             mod: ModManifest,
-            text: Utils.TryGetI18n("Optimization.Book.Name")
+            text: () => Utils.SanitizeString(Utils.TryGetI18n("Optimization.Book.Name")())
         );
         configMenu.AddNumberOption(
             mod: ModManifest,

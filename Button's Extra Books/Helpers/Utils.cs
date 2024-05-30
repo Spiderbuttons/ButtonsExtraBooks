@@ -29,6 +29,12 @@ public class Utils
         }
         return false;
     }
+
+    public static string SanitizeString(string text)
+    {
+        // This removes any characters that are not alphanumeric or whitespace characters, since the Stardew Font replaces some of them with different icons sometimes.
+        return System.Text.RegularExpressions.Regex.Replace(text, @"[^\w\s]", "");
+    }
     
     public static string GetLanguageCode()
     {
