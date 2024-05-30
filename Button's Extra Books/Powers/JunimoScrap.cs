@@ -36,7 +36,7 @@ namespace ButtonsExtraBooks.Powers
         public static void showJunimoText(JunimoHarvester junimo, string text, int delay = 0)
         {
             if (ModEntry.Config.JunimoChatter == 0) return;
-            if (!Utils.PlayerHasPower("JunimoScrap") || new Random().Next(100 - ModEntry.Config.JunimoChatter) != 0) return;
+            if (!Utils.PlayerHasPower("JunimoScrap") || new Random().Next(101 - ModEntry.Config.JunimoChatter) != 0) return;
             // string currentlyShownText = ModEntry.ModHelper.Reflection
             //     .GetField<string>(junimo, "textAboveHead").GetValue();
             //if (currentlyShownText != null) return;
@@ -111,7 +111,7 @@ namespace ButtonsExtraBooks.Powers
         {
             Random rng = Utility.CreateRandom(Game1.currentGameTime.TotalGameTime.TotalMilliseconds);
             List<string> options = new List<string>();
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i < 11; i++)
             {
                 var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.ExitHut." + i)();
                 if (opt != "Missing translation key!")
@@ -149,7 +149,7 @@ namespace ButtonsExtraBooks.Powers
         {
             Random rng = Utility.CreateRandom(Game1.currentGameTime.TotalGameTime.TotalMilliseconds);
             List<string> options = new List<string>();
-            for (int i = 1; i < 6; i++)
+            for (int i = 1; i < 8; i++)
             {
                 var opt = Utils.TryGetI18n("Dialogue.JunimoScrap.Harvest." + i)();
                 if (opt != "Missing translation key!")

@@ -71,8 +71,8 @@
 	/* TODO */ "Coffee.Power.Description": "Coffee drinks now last three times longer.",
 
 	/* TODO */ "Sketchbook.Book.Name": "Children's Sketchbook",
-	/* TODO */ "Sketchbook.Book.Description": "There's a lot of farming-related drawings in this book. Some pages are covered in real dirt.",
-	/* TODO */ "Sketchbook.Book.Message": "You feel like a role model!",
+	/* TODO */ "Sketchbook.Book.Description": "The drawings that aren't covered in dirt are actually quite good!",
+	/* TODO */ "Sketchbook.Book.Message": "You feel like there's more to dig up!",
 	/* TODO */ "Sketchbook.Power.Description": "Artifact spots may contain better items.",
 
 	// MAIL //
@@ -90,9 +90,10 @@
 	/* TODO */ "Dialogue.JunimoScrap.Harvest.1": "{0}",
 	/* TODO */ "Dialogue.JunimoScrap.Harvest.2": "*munch*",
 	/* TODO */ "Dialogue.JunimoScrap.Harvest.3": "*nibble*",
-	/* TODO */ "Dialogue.JunimoScrap.Harvest.4": "Is for me?", // The grammar is wrong on purpose!
-	/* TODO */ "Dialogue.JunimoScrap.Harvest.5": "Oooh!",
-	/* TODO */ "Dialogue.JunimoScrap.Harvest.6": "Yum yum!",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.4": "*nom*",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.5": "Is for me?", // The grammar is wrong on purpose!
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.6": "Oooh!",
+	/* TODO */ "Dialogue.JunimoScrap.Harvest.7": "Yum yum!",
 
 	// {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
 	/* TODO */ "Dialogue.JunimoScrap.CropAdjective.1": "Yummy {0}!",
@@ -118,7 +119,8 @@
 	/* TODO */ "Dialogue.JunimoScrap.ExitHut.6": "Rise and shine!",
 	/* TODO */ "Dialogue.JunimoScrap.ExitHut.7": "Got any raisins?",
 	/* TODO */ "Dialogue.JunimoScrap.ExitHut.8": "Hello, world!",
-	/* TODO */ "Dialogue.JunimoScrap.ExitHut.9": "*yawn*",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.9": "Hello~",
+	/* TODO */ "Dialogue.JunimoScrap.ExitHut.10": "*yawn*",
 
 	// CONFIG //
 	"Config.SectionTitle.General": "基本設定",

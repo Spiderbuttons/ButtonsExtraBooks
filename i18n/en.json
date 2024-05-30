@@ -71,8 +71,8 @@
 	"Coffee.Power.Description": "Coffee drinks now last three times longer.",
 
 	"Sketchbook.Book.Name": "Children's Sketchbook",
-	"Sketchbook.Book.Description": "There's a lot of farming-related drawings in this book. Some pages are covered in real dirt.",
-	"Sketchbook.Book.Message": "You feel like a role model!",
+	"Sketchbook.Book.Description": "The drawings that aren't covered in dirt are actually quite good!",
+	"Sketchbook.Book.Message": "You feel like there's more to dig up!",
 	"Sketchbook.Power.Description": "Artifact spots may contain better items.",
 
 	// MAIL //
@@ -90,10 +90,10 @@
 	"Dialogue.JunimoScrap.Harvest.1": "{0}",
 	"Dialogue.JunimoScrap.Harvest.2": "*munch*",
 	"Dialogue.JunimoScrap.Harvest.3": "*nibble*",
-	"Dialogue.JunimoScrap.Harvest.7": "*nom*",
-	"Dialogue.JunimoScrap.Harvest.4": "Is for me?", // The grammar is wrong on purpose!
-	"Dialogue.JunimoScrap.Harvest.5": "Oooh!",
-	"Dialogue.JunimoScrap.Harvest.6": "Yum yum!",
+	"Dialogue.JunimoScrap.Harvest.4": "*nom*",
+	"Dialogue.JunimoScrap.Harvest.5": "Is for me?", // The grammar is wrong on purpose!
+	"Dialogue.JunimoScrap.Harvest.6": "Oooh!",
+	"Dialogue.JunimoScrap.Harvest.7": "Yum yum!",
 
 	// {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
 	"Dialogue.JunimoScrap.CropAdjective.1": "Yummy {0}!",
@@ -119,7 +119,8 @@
 	"Dialogue.JunimoScrap.ExitHut.6": "Rise and shine!",
 	"Dialogue.JunimoScrap.ExitHut.7": "Got any raisins?",
 	"Dialogue.JunimoScrap.ExitHut.8": "Hello, world!",
-	"Dialogue.JunimoScrap.ExitHut.9": "*yawn*",
+	"Dialogue.JunimoScrap.ExitHut.9": "Hello~",
+	"Dialogue.JunimoScrap.ExitHut.10": "*yawn*",
 
 	// CONFIG //
 	"Config.SectionTitle.General": "General Settings",
