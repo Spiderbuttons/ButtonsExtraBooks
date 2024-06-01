@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 CHINESE TRANSLATIONS COURTESY OF [ICY1998666](https://forums.nexusmods.com/profile/181793031-lcy1998666/)\
-FRENCH TRANSLATIONS COURTESY OF [CARANUD](https://forums.nexusmods.com/profile/745980-caranud/)\
+FRENCH TRANSLATIONS COURTESY OF [CARANUD](https://forums.nexusmods.com/profile/745980-caranud/) AND [SCHNEITIZEL](https://forums.nexusmods.com/profile/63305411-schneitizel/)\
 JAPANESE TRANSLATIONS COURTESY OF [MITEKANO23](https://forums.nexusmods.com/profile/3588405-mitekano23/)\
 KOREAN TRANSLATIONS COURTESY OF [WHDMS2008](https://forums.nexusmods.com/profile/193949342-whdms2008/)\
 PORTUGUESE TRANSLATIONS COURTESY OF [ONEMIX](https://forums.nexusmods.com/profile/39429640-onemix/)\
