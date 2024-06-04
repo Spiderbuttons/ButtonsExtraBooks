@@ -1,7 +1,7 @@
 {
     "Name": "[CP] Button's Extra Books",
     "Author": "Spiderbuttons",
-    "Version": "3.0.1",
+    "Version": "3.0.2",
     "Description": "Adds more books and powers that can be obtained from the bookseller and other various places.",
     "UniqueID": "Spiderbuttons.ButtonsExtraBooks",
     "UpdateKeys": [ "Nexus:21526" ],
