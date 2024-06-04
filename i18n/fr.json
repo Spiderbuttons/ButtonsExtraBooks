@@ -30,7 +30,7 @@
 	"Popularity.Book.Message": "Vos amis vous adorent!",
 	"Popularity.Power.Description": "Vos amis sont plus enclins à vous envoyer des cadeaux par courrier.",
 	
-	"Optimization.Book.Name": "Optimisation ++",
+	"Optimization.Book.Name": "Optimisation SDV++",
 	"Optimization.Book.Description": "Apprenez à optimiser vos gains d’expérience en lisant ce livre.",
 	"Optimization.Book.Message": "Plus d’expérience, par l’expérience !",
 	"Optimization.Power.Description": "Les gains d’expérience sont augmentés.",
@@ -42,7 +42,7 @@
 	
 	"QiNotebook.Book.Name": "Carnet de M. Qi",
 	"QiNotebook.Book.Description": "Ces notes vous aideront à trouver plus de Gemmes Qi aléatoires.",
-	"QiNotebook.Book.Message": "Bonne chance, gamin."',
+	"QiNotebook.Book.Message": '"Bonne chance, gamin."',
 	"QiNotebook.Power.Description": "Augmente les chances d'obtenir aléatoirement des Gemmes Qi.",
 	
 	"PetGifts.Book.Name": "Renforcement patte-ibulaire",
@@ -50,9 +50,9 @@
 	"PetGifts.Book.Message": "Vos animaux vous adorent VRAIMENT !",
 	"PetGifts.Power.Description": "Vos animaux domestiques sont plus susceptibles de vous offrir de beaux cadeaux.",
 	
-	"CheatCodes.Book.Name": "Codes secrets pour les machines \nd’arcade",
+	"CheatCodes.Book.Name": "Codes secrets pour les machines d’arcade",
 	"CheatCodes.Book.Description": "Quelque part dans ce livre, il y a un code qui vous aidera à battre Junimo Kart, sûr!",
-	"CheatCodes.Book.Message": "Haut, haut, bas, bas, gauche, droite…",
+	"CheatCodes.Book.Message": "Haut, haut, bas, bas, gauche, droite...",
 	"CheatCodes.Power.Description": "Commencez avec plus de vie dans le Mode Progrès de Junimo Kart.",
 	
 	"JunimoScrap.Book.Name": "Album Junimo",
@@ -79,9 +79,9 @@
 	"Mail.ArtisanGrange.Text": "La Guilde des Artisans de la République de Ferngill est fière de reconnaître votre engagement pour des produits artisanaux de qualité. Pour vous remercier de votre récente exposition à la Foire de Stardew Valley, nous vous joignons un manuel qui, nous l'espérons, vous aidera à utiliser plus efficacement vos machines.",
 	"Mail.ArtisanGrange.Title": "Guilde des Artisans",
 	
-	"Mail.JunimoScrap.Crop.Text": "Nous avons travaillé telllleeement dur pour faire pousser ces cultures en plus pour toi ! Merci de nous faire confiance avec ta ferme !",
-	"Mail.JunimoScrap.Gem.Text": "Regarde ce que nous avons trouvé lorsque nous creusions la terre ! C’est tellement brillant... Mais on pense que tu le voudras plus que nous !",
-	"Mail.JunimoScrap.Item.Text": "On a trouvé ça ! On ne sait pas si c’est utile pour toi mais... On espère que tu es fier de nous quand même !",
+	"Mail.JunimoScrap.Crop.Text": "Nous avons travaillé telllleeement dur pour faire pousser ces cultures en plus pour toi ! Merci de nous faire confiance avec ta ferme !",
+	"Mail.JunimoScrap.Gem.Text": "Regarde ce que nous avons trouvé lorsque nous creusions la terre ! C’est tellement brillant... Mais on pense que tu le voudras plus que nous !",
+	"Mail.JunimoScrap.Item.Text": "On a trouvé ça ! On ne sait pas si c’est utile pour toi mais... On espère que tu es fier de nous quand même !",
 	"Mail.JunimoScrap.Title": "Lettre de vos Junimos",
 	
 	// MISC DIALOGUE //
@@ -100,7 +100,7 @@
 	"Dialogue.JunimoScrap.CropAdjective.2": "{0} juteux !",
 	"Dialogue.JunimoScrap.CropAdjective.3": "{0} délicieux !",
 	"Dialogue.JunimoScrap.CropAdjective.4": "{0} savoureux !",
-	"Dialogue.JunimoScrap.CropAdjective.5": "{0} gros !",
+	"Dialogue.JunimoScrap.CropAdjective.5": "Gros {0} !",
 	"Dialogue.JunimoScrap.CropAdjective.6": "{0} tout mou !",
 	"Dialogue.JunimoScrap.CropAdjective.7": "{0} frais !",
 	"Dialogue.JunimoScrap.CropAdjective.8": "{0} mûr !",
@@ -163,7 +163,7 @@
 	"Config.CheatCodes.Bonus.Description": "Le nombre de vie supplémentaires avec lesquelles vous commencez Junimo Kart",
 	
 	"Config.JunimoScrap.Chatter.Name": "Bavardage Junimo",
-	"Config.JunimoScrap.Chatter.Description": "À quelle fréquence les Junimos auront des bulles de dialogue au-dessus de leurs têtes.\nPlus le chiffre est élevé, plus les Junimos seront bavards.",
+	"Config.JunimoScrap.Chatter.Description": "À quelle fréquence les Junimos auront des bulles de dialogue au-dessus de leurs têtes. Plus le chiffre est élevé, plus les Junimos seront bavards.",
 	"Config.JunimoScrap.Chatter.Never": "Jamais",
 	"Config.JunimoScrap.Chatter.Normal": "Normal",
 	"Config.JunimoScrap.Chatter.Always": "Toujours",
