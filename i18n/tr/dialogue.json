@@ -1,0 +1,38 @@
+﻿{
+  "Dialogue.EnoughGifts": "Åžimdilik {0} tanesine hediye verdin!",
+
+  "Dialogue.JunimoScrap.Harvest.1": "{0}",
+  "Dialogue.JunimoScrap.Harvest.2": "*yemek*",
+  "Dialogue.JunimoScrap.Harvest.3": "*nom nom*",
+  "Dialogue.JunimoScrap.Harvest.4": "*leziz*",
+  "Dialogue.JunimoScrap.Harvest.5": "Benum iÃ§in mÃ¼?", // The grammar is wrong on purpose!
+  "Dialogue.JunimoScrap.Harvest.6": "Ahhha!",
+  "Dialogue.JunimoScrap.Harvest.7": "Kemir kemir!",
+
+  // {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
+  "Dialogue.JunimoScrap.CropAdjective.1": "Leziz {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.2": "Sulu {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.3": "Lezzetli {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.4": "Tasty {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.5": "BÃ¼yÃ¼k {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.6": "YumuÅŸacÄ±k {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.7": "Taptaze {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.8": "Olgun {0}!",
+
+  "Dialogue.JunimoScrap.DroppedItem.1": "Oops...",
+  "Dialogue.JunimoScrap.DroppedItem.2": "Uh oh!",
+  "Dialogue.JunimoScrap.DroppedItem.3": "ÃœzgÃ¼nÃ¼m!",
+  "Dialogue.JunimoScrap.DroppedItem.4": "Pardon...",
+  "Dialogue.JunimoScrap.DroppedItem.5": "Ã‡ok Fazla!",
+
+  "Dialogue.JunimoScrap.ExitHut.1": "Åžirin bir Ã§iftlik!",
+  "Dialogue.JunimoScrap.ExitHut.2": "BurayÄ± seviyorum!",
+  "Dialogue.JunimoScrap.ExitHut.3": "Cennet!",
+  "Dialogue.JunimoScrap.ExitHut.4": "Ne gÃ¼zel bir gÃ¼n!",
+  "Dialogue.JunimoScrap.ExitHut.5": "GÃ¼naydÄ±n!",
+  "Dialogue.JunimoScrap.ExitHut.6": "YÃ¼ksel ve Parla!",
+  "Dialogue.JunimoScrap.ExitHut.7": "HiÃ§ kuru Ã¼zÃ¼m var mÄ±?",
+  "Dialogue.JunimoScrap.ExitHut.8": "Selam DÃ¼nya!",
+  "Dialogue.JunimoScrap.ExitHut.9": "Merhaba~",
+  "Dialogue.JunimoScrap.ExitHut.10": "*esneme*",
+}

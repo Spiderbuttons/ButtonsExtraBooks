@@ -1,0 +1,51 @@
+﻿{
+  "Config.SectionTitle.General": "Genel Ayarlar",
+  "Config.SectionTitle.EnableDisable": "AÃ§Ä±k / KapalÄ± Kitaplar",
+  "Config.SectionTitle.Prices": "Kitap FiyatlarÄ±nÄ± DeÄŸiÅŸtir",
+  "Config.SectionTitle.Adjustments": "Kitap GÃ¼Ã§lerini Ayarla",
+  "Config.SectionTitle.Debug": "Hata AyÄ±klama AyarlarÄ±",
+
+  "Config.General.AlwaysAvailable.Name": "Kitaplar Her Zaman Mevcut",
+  "Config.General.AlwaysAvailable.Description": "EtkinleÅŸtirilirse, tÃ¼m kitaplar belirli gereksinimleri karÅŸÄ±lamaya gerek kalmadan her zaman kitapÃ§Ä±dan temin edilebilecektir.",
+
+  "Config.General.Enabled.Name": "Aktif",
+  "Config.General.Enabled.Description": "Devre dÄ±ÅŸÄ± bÄ±rakÄ±lÄ±rsa bu kitap ve yetkileri kullanÄ±lamayacaktÄ±r.",
+
+  "Config.General.Price.Description": "Bu kitabÄ±n doÄŸrudan bir maÄŸazadan satÄ±n alÄ±ndÄ±ÄŸÄ±nda ve baÅŸka yollarla kazanÄ±lmadÄ±ÄŸÄ±nda fiyatÄ±. YalnÄ±zca tam sayÄ± deÄŸerleri.",
+
+  "Config.Luck.Bonus.Name": "Åžans Bonusu",
+  "Config.Luck.Bonus.Description": "GÃ¼nlÃ¼k ÅŸans deÄŸerinize eklenen miktar.",
+
+  "Config.ExtraGifts.Bonus.Name": "HaftalÄ±k Hediye Limiti",
+  "Config.ExtraGifts.Bonus.Description": "Bu kitap aynÄ± hafta iÃ§inde birine kaÃ§ tane hediye vermenize olanak saÄŸlayacak?",
+
+  "Config.ArtisanMachines.GrangeMustWin.Name": "Fazla Ã‡aba KazandÄ±rÄ±r",
+  "Config.ArtisanMachines.GrangeMustWin.Description": "EtkinleÅŸtirilirse, Ã§iftlik serginiz 1. sÄ±rada yer almalÄ± ve 6'dan fazla zanaat Ã¼rÃ¼nÃ¼ iÃ§ermelidir.",
+  "Config.ArtisanMachines.Bonus.Name": "Makine HÄ±zÄ± Bonusu",
+  "Config.ArtisanMachines.Bonus.Description": "Zanaatkar Ã¼rÃ¼nler Ã¼reten makinelerin iÅŸlem sÃ¼resinde yÃ¼zde azalma.",
+
+  "Config.GiantCrops.Bonus.Name": "Dev Mahsul ÅžansÄ±",
+  "Config.GiantCrops.Bonus.Description": "Mahsullerin bir gecede devasa bir mahsÃ»la dÃ¶nÃ¼ÅŸme ihtimalinin yÃ¼zdesi.",
+
+  "Config.Optimization.Bonus.Name": "Ekstra Deneyim",
+  "Config.Optimization.Bonus.Description": "Deneyim kazanÄ±mlarÄ±ndaki yÃ¼zde artÄ±ÅŸ.",
+
+  "Config.QiNotebook.Bonus.Name": "Qi MÃ¼cevheri ÅžansÄ±",
+  "Config.QiNotebook.Bonus.Description": "Normal oranlara ek olarak bir Qi MÃ¼cevher'in dÃ¼ÅŸme ihtimalinin yÃ¼zdesi.",
+
+  "Config.CheatCodes.Requirement.Name": "Junimo Kart Ã–lÃ¼m SayÄ±sÄ±",
+  "Config.CheatCodes.Requirement.Description": "Gizli Kodlar kitabÄ± kullanÄ±ma sunulmadan Ã¶nce Junimo Kart'ta kaÃ§ kez Ã¶lmeniz gerektiÄŸi.",
+  "Config.CheatCodes.Bonus.Name": "Ekstra Canlar",
+  "Config.CheatCodes.Bonus.Description": "Junimo Kart ilerleme modunda baÅŸladÄ±ÄŸÄ±nÄ±z ekstra canlarÄ±n sayÄ±sÄ±.",
+
+  "Config.JunimoScrap.Chatter.Name": "Junimo GevezeliÄŸi",
+  "Config.JunimoScrap.Chatter.Description": "JunimolarÄ±n baÅŸlarÄ±nÄ±n Ã¼zerinde ne sÄ±klÄ±kla konuÅŸma balonlarÄ± belirecek? Daha yÃ¼ksek sayÄ±lar daha fazla sohbet anlamÄ±na gelir.",
+  "Config.JunimoScrap.Chatter.Never": "Asla",
+  "Config.JunimoScrap.Chatter.Normal": "Normal",
+  "Config.JunimoScrap.Chatter.Always": "Herzaman",
+  "Config.JunimoScrap.RandomItems.Name": "Rastgele Junimo Ã–ÄŸeleri",
+  "Config.JunimoScrap.RandomItems.Description": "EtkinleÅŸtirilirse Junimos'unuzdan posta yoluyla tamamen rastgele bir Ã¶ÄŸe alabilirsiniz. Bu size muhtemelen elde etmemeniz gereken ve sadece eÄŸlence amaÃ§lÄ± olan Ã¶ÄŸeler verebilir. Riski size ait olmak Ã¼zere etkinleÅŸtirin.",
+
+  "Config.Carols.Bonus.Name": "MaÄŸaza Ä°ndirimi",
+  "Config.Carols.Bonus.Description": "MaÄŸaza fiyatlarÄ±na uygulanan yÃ¼zde indirim.",
+}
