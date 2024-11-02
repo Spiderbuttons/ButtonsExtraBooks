@@ -173,6 +173,18 @@ namespace ButtonsExtraBooks
                 }
             );
             
+            ContentPatcher.RegisterToken(
+                mod: ModManifest,
+                name: "ConfigCoffeeMultiplier",
+                getValue: () =>
+                {
+                    return new[]
+                    {
+                        Config.CoffeeBonus.ToString()
+                    };
+                }
+            );
+            
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
         }

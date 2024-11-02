@@ -7,7 +7,7 @@
 			"TargetField": [ "395", "Buffs" ],
             "Fields": {
 				"Drink": {
-					"Duration": 360
+					"Duration": "{{Query: 120 * {{Spiderbuttons.ButtonsExtraBooksCore/ConfigCoffeeMultiplier}}}}"
 				}
 			},
 			"When": {
@@ -22,7 +22,7 @@
 			"TargetField": [ "253", "Buffs" ],
             "Fields": {
 				"Drink": {
-					"Duration": 1080
+					"Duration": "{{Query: 360 * {{Spiderbuttons.ButtonsExtraBooksCore/ConfigCoffeeMultiplier}}}}"
 				}
 			},
 			"When": {
