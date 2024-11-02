@@ -66,7 +66,7 @@ public sealed class ModConfig
     
     public bool EnableCoffee { get; set; } = true;
     public int CoffeePrice { get; set; } = 75000;
-    public float CoffeeBonus { get; set; } = 3f;
+    public int CoffeeBonus { get; set; } = 3;
     
     public bool EnableSketchbook { get; set; } = true;
     public int SketchbookPrice { get; set; } = 30000;
@@ -434,8 +434,9 @@ public sealed class ModConfig
             tooltip: Utils.TryGetI18n("Config.Coffee.Bonus.Description"),
             getValue: () => CoffeeBonus,
             setValue: value => CoffeeBonus = value,
-            min: 1f,
-            interval: 0.1f,
+            min: 1,
+            max: 10,
+            interval: 1,
             formatValue: (value) => $"x{value}"
         );
     }
