@@ -27,6 +27,7 @@ FRENCH TRANSLATIONS COURTESY OF [CARANUD](https://forums.nexusmods.com/profile/7
 JAPANESE TRANSLATIONS COURTESY OF [MITEKANO23](https://forums.nexusmods.com/profile/3588405-mitekano23/)\
 KOREAN TRANSLATIONS COURTESY OF [WHDMS2008](https://forums.nexusmods.com/profile/193949342-whdms2008/)\
 PORTUGUESE TRANSLATIONS COURTESY OF [ONEMIX](https://forums.nexusmods.com/profile/39429640-onemix/)\
-SPANISH TRANSLATIONS COURTESY OF [CARLOSROJASCU](https://forums.nexusmods.com/profile/76373178-carlosrojascu/)
+SPANISH TRANSLATIONS COURTESY OF [CARLOSROJASCU](https://forums.nexusmods.com/profile/76373178-carlosrojascu/)\
+TURKISH TRANSLATIONS COURTESY OF [VISORGER](https://next.nexusmods.com/profile/ViSorger)
 
 THANK YOU TO MY VOLUNTEER TRANSLATORS! ♥
