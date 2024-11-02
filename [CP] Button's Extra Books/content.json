@@ -1,5 +1,5 @@
 {
-    "Format": "2.0.0",
+    "Format": "2.3.0",
     "Changes": [
 		// TRANSLATIONS //
 		{
@@ -92,19 +92,33 @@
 			"TargetField": [ "Default", "ArtifactSpots" ],
 			"Entries": {
 				"{{ModId}}_Sketchbook": {
+					"Id": "{{ModId}}_Sketchbook",
 					"Chance": 0.05,
 					"Condition": "!PLAYER_STAT Current {{ModId}}_Book_Sketchbook 1",
 					"ItemId": "{{ModId}}_Book_Sketchbook"
 				},
 				"{{ModId}}_SketchbookDrops": {
+					"Id": "{{ModId}}_SketchbookDrops",
 					"Chance": 0.05,
 					"Condition": "PLAYER_STAT Current {{ModId}}_Book_Sketchbook 1",
-					"RandomItemId": [ "(O)74", "(O)166", "(O)797", "(O)534", "(O)533", "(O)852", "(O)856", "(O)872" ]
+					"RandomItemId": [ "(O)74", "(O)166", "(O)797", "(O)534", "(O)533", "(O)856", "(O)872" ]
 				}
 			},
 			"When": {
 				"Spiderbuttons.ButtonsExtraBooksCore/ConfigEnableSketchbook": true
 			},
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"TargetField": [ "Default", "ArtifactSpots", "{{ModId}}_SketchbookDrops", "RandomItemId" ],
+			"Entries": {
+				"(O)852": "(O)852",
+			},
+			"When": {
+				"HasVisitedLocation": "Caldera"
+			}
 		},
     ]
 }
