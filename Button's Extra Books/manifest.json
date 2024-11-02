@@ -5,7 +5,7 @@
 	"Description": "Adds more books and powers that can be obtained from the bookseller and other various places.",
 	"UniqueID": "Spiderbuttons.ButtonsExtraBooksCore",
 	"EntryDll": "ButtonsExtraBooks.dll",
-	"MinimumApiVersion": "4.0.0",
+	"MinimumApiVersion": "4.1.0",
 	"UpdateKeys": [ "Nexus:21526" ],
 	"Dependencies": [
 		{ "UniqueID": "Pathoschild.ContentPatcher", "IsRequired": true }
