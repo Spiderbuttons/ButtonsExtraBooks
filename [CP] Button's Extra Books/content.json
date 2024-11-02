@@ -4,14 +4,23 @@
 		// TRANSLATIONS //
 		{
 			"Action": "Load",
-			"FromFile": "{{FirstValidFile: i18n/{{language}}.json, i18n/default.json }}",
-			"Target": "Mods/{{ModId}}/Translations/{{language}}"
+			"FromFile": "{{FirstValidFile: i18n/{{language}}/{{Lowercase:{{TargetWithoutPath}}}}.json, i18n/default/{{Lowercase:{{TargetWithoutPath}}}}.json }}",
+			"Target": "Mods/{{ModId}}/Translations/{{language}}/Books, Mods/{{ModId}}/Translations/{{language}}/Config, Mods/{{ModId}}/Translations/{{language}}/Debug, Mods/{{ModId}}/Translations/{{language}}/Dialogue, Mods/{{ModId}}/Translations/{{language}}/Mail"
 		},
 
 		{
 			"Action": "Load",
-			"FromFile": "i18n/default.json",
-			"Target": "Mods/{{ModId}}/Translations/default",
+			"FromFile": "i18n/{{language}}/NOT TRANSLATED YET.json",
+			"Target": "Mods/{{ModId}}/Translations/{{language}}/Untranslated",
+			"When": {
+				"HasFile:i18n/{{language}}/NOT TRANSLATED YET.json": "true"
+			}
+		},
+
+		{
+			"Action": "Load",
+			"FromFile": "i18n/default/{{Lowercase:{{TargetWithoutPath}}}}.json",
+			"Target": "Mods/{{ModId}}/Translations/default/Books, Mods/{{ModId}}/Translations/default/Config, Mods/{{ModId}}/Translations/default/Debug, Mods/{{ModId}}/Translations/default/Dialogue, Mods/{{ModId}}/Translations/default/Mail",
 			"Priority": "High"
 		},
 	

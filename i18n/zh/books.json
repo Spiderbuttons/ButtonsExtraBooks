@@ -1,0 +1,76 @@
+﻿{
+  "Luck.Book.Name": "初学者的运气",
+  "Luck.Book.Description": "读这本书，你的运气会得到永久的小提升。",
+  "Luck.Book.Message": "你感觉更幸运了！",
+  "Luck.Power.Description": "永久增加少量运气属性。",
+
+  "ExtraGifts.Book.Name": "奉献之书",
+  "ExtraGifts.Book.Description": "读这本书，村民每周会接受你两份以上的礼物。",
+  "ExtraGifts.Book.Message": "你是个真正讨喜的人！",
+  "ExtraGifts.Power.Description": "村民每周会接受你两份以上的礼物。",
+
+  "TreesIgnoreSeason.Book.Name": "冬日之森",
+  "TreesIgnoreSeason.Book.Description": "阅读这本书将教你如何在冬季种树。",
+  "TreesIgnoreSeason.Book.Message": "林业学+！",
+  "TreesIgnoreSeason.Power.Description": "树木全年生长。",
+
+  "ArtisanMachines.Book.Name": "工匠协会手册",
+  "ArtisanMachines.Book.Description": "本书中包含的技术将帮助您更快地生产工匠物品。",
+  "ArtisanMachines.Book.Message": "您的工匠物品机器现在更高效了！",
+  "ArtisanMachines.Power.Description": "机器生产工匠物品的速度要快得多。",
+
+  "GiantCrops.Book.Name": "大甜瓜！",
+  "GiantCrops.Book.Description": "读完这本书后，你将更有可能生长出巨大作物。",
+  "GiantCrops.Book.Message": "你已经知晓了巨大作物的秘密！",
+  "GiantCrops.Power.Description": "巨大作物过夜成长的几率更高。",
+
+  "Popularity.Book.Name": "友谊202",
+  "Popularity.Book.Description": "你的朋友更有可能给你送礼物。",
+  "Popularity.Book.Message": "你的朋友爱你！",
+  "Popularity.Power.Description": "你的朋友更有可能通过邮件给你送礼物。",
+
+  "Optimization.Book.Name": "最优化星露谷++",
+  "Optimization.Book.Description": "学习如何通过阅读本书来增加你的经验收益。",
+  "Optimization.Book.Message": "经验，更多经验！",
+  "Optimization.Power.Description": "经验增益增加。",
+
+  "BusDriving.Book.Name": "傻瓜式巴士驾驶手册",
+  "BusDriving.Book.Description": "这本书或多或少地包含了驾驶公交车所需的所有信息。",
+  "BusDriving.Book.Message": "你学会了如何驾驶！",
+  "BusDriving.Power.Description": "你可以自己开车去卡利科沙漠。",
+
+  "QiNotebook.Book.Name": "齐先生的笔记本",
+  "QiNotebook.Book.Description": "这本笔记将帮助你寻找到更多随机的齐钻。",
+  "QiNotebook.Book.Message": '“好运，孩子。”',
+  "QiNotebook.Power.Description": "增加发现齐钻的概率。",
+
+  "PetGifts.Book.Name": "强化爪爪",
+  "PetGifts.Book.Description": "这本书将教你如何训练你的宠物给你带来更好的礼物。",
+  "PetGifts.Book.Message": "你的宠物真的爱你！",
+  "PetGifts.Power.Description": "你的宠物更可能带来更好的礼物。",
+
+  "CheatCodes.Book.Name": "街机密码",
+  "CheatCodes.Book.Description": "你确信，这本书的某个地方有条可以帮你通关祝尼魔赛车的代码。",
+  "CheatCodes.Book.Message": "上上下下左右左右……",
+  "CheatCodes.Power.Description": "祝尼魔赛车关卡模式从更多的生命数开始。",
+
+  "JunimoScrap.Book.Name": "祝尼魔剪切簿",
+  "JunimoScrap.Book.Description": "这本书充满了你的祝尼魔的回忆。",
+  "JunimoScrap.Book.Message": "你现在离得你的祝尼魔更亲近！",
+  "JunimoScrap.Power.Description": "你的祝尼魔更健谈，并且会给你写信。",
+
+  "Carols.Book.Name": "颂歌之书",
+  "Carols.Book.Description": "这些歌曲将帮助你在整个冬天传播节日的快乐。",
+  "Carols.Book.Message": "你学会了一些冬季的颂歌！",
+  "Carols.Power.Description": "店主会在冬季给你折扣。",
+
+  "Coffee.Book.Name": "最浓特调",
+  "Coffee.Book.Description": "读这本书，让你的咖啡因消化达到一个新的水平。",
+  "Coffee.Book.Message": "你现在几乎是一名咖啡师了！",
+  "Coffee.Power.Description": "咖啡饮料的使用时间现在延长了三倍。",
+
+  "Sketchbook.Book.Name": "儿童素描本",
+  "Sketchbook.Book.Description": "没有被泥土覆盖的素描本实际上很好！",
+  "Sketchbook.Book.Message": "你觉得还有更多东西要挖掘！",
+  "Sketchbook.Power.Description": "远古斑点可能产出更好的物品。",
+}

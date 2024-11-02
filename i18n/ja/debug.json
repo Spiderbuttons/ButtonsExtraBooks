@@ -1,0 +1,8 @@
+﻿{
+  "Debug.RemoveAll.Book.Name": "Button's Extra Booksのパワーを除去",
+  "Debug.RemoveAll.Book.Description": "Button's Extra Booksによって与えられたすべてのパワーを削除し、対応する本の代金を返金する。",
+  "Debug.RemoveAll.Book.Message": "Button'sのパワーをすべて失った！",
+
+  "Config.Debug.EnableDebugBook.Name": "デバッグブックの有効化",
+  "Config.Debug.EnableDebugBook.Description": "有効にすると、ピエールからデバッグブックが入手できるようになり、このMODによって付与されたパワーをすべて取り除くことができる。"
+}

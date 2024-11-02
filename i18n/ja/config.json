@@ -1,0 +1,51 @@
+﻿{
+  "Config.SectionTitle.General": "基本設定",
+  "Config.SectionTitle.EnableDisable": "本の有効化",
+  "Config.SectionTitle.Prices": "本の販売価格",
+  "Config.SectionTitle.Adjustments": "本のパワーの調整",
+  "Config.SectionTitle.Debug": "デバッグ設定",
+
+  "Config.General.AlwaysAvailable.Name": "本がいつでも入手可能",
+  "Config.General.AlwaysAvailable.Description": "有効にすると、特定の条件を満たさなくても、すべての本が常に書店から入手できるようになる。",
+
+  "Config.General.Enabled.Name": "有効",
+  "Config.General.Enabled.Description": "無効にすると、MOD本とその効果は利用できなくなる。",
+
+  "Config.General.Price.Description": "本を他の手段で購入せず、直接店で購入した場合の価格。整数値のみ。",
+
+  "Config.Luck.Bonus.Name": "幸運ボーナス",
+  "Config.Luck.Bonus.Description": "毎日の運勢に加算される幸運値。",
+
+  "Config.ExtraGifts.Bonus.Name": "週の贈り物上限",
+  "Config.ExtraGifts.Bonus.Description": "同じ週に贈ることができる、贈り物の上限。",
+
+  "Config.ArtisanMachines.GrangeMustWin.Name": "品評会での優勝",
+  "Config.ArtisanMachines.GrangeMustWin.Description": "有効にすると、入手には品評会で6つ以上の加工品で1位を取る必要がある。",
+  "Config.ArtisanMachines.Bonus.Name": "設備の生産速度",
+  "Config.ArtisanMachines.Bonus.Description": "加工品を生産する設備の加工時間の減少率。",
+
+  "Config.GiantCrops.Bonus.Name": "巨大な作物の発生率",
+  "Config.GiantCrops.Bonus.Description": "作物が一夜にして巨大な作物を形成する確率。",
+
+  "Config.Optimization.Bonus.Name": "追加経験値",
+  "Config.Optimization.Bonus.Description": "経験値の増加率。",
+
+  "Config.QiNotebook.Bonus.Name": "Qiジェムのドロップボーナス値。",
+  "Config.QiNotebook.Bonus.Description": "モンスターを倒した時にドロップするQiジェムのドロップボーナス値。",
+
+  "Config.CheatCodes.Requirement.Name": "秘密コードの購入条件",
+  "Config.CheatCodes.Requirement.Description": "ジュニモカートで秘密コードの購入に必要なゲームオーバー数。",
+  "Config.CheatCodes.Bonus.Name": "ライフ数",
+  "Config.CheatCodes.Bonus.Description": "ジュニモカートを始めるときのライフ数。",
+
+  "Config.JunimoScrap.Chatter.Name": "ジュニモおしゃべり",
+  "Config.JunimoScrap.Chatter.Description": "ジュニモの頭上に吹き出しが現れる頻度。数字が大きいほど、しゃべる頻度が増える。",
+  "Config.JunimoScrap.Chatter.Never": "なし",
+  "Config.JunimoScrap.Chatter.Normal": "通常",
+  "Config.JunimoScrap.Chatter.Always": "常に",
+  "Config.JunimoScrap.RandomItems.Name": "ランダムな贈り物",
+  "Config.JunimoScrap.RandomItems.Description": "有効にすると、ジュニモから完全にランダムなアイテムをメールで受け取ることができる。これはもしかしたら、あなたが手に入れるはずのないアイテムを与えてくれるかもしれないし、単なるお遊びかもしれない。自己責任で有効にしてください。",
+
+  "Config.Carols.Bonus.Name": "ショップの割引率",
+  "Config.Carols.Bonus.Description": "ショップ価格に適用される割引率。",
+}

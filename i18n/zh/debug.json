@@ -1,0 +1,8 @@
+﻿{
+  "Debug.RemoveAll.Book.Name": "BEB能力消除",
+  "Debug.RemoveAll.Book.Description": "删除Button的额外书本授予您的所有权限，并退还相应的书本。",
+  "Debug.RemoveAll.Book.Message": "你已经失去了所有Button的能力。",
+
+  "Config.Debug.EnableDebugBook.Name": "开启排错之书",
+  "Config.Debug.EnableDebugBook.Description": "如果启用，皮埃尔将提供一本排错书，它将删除此mod授予您的所有能力。"
+}

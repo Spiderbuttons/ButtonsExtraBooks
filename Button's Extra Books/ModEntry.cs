@@ -67,20 +67,39 @@ namespace ButtonsExtraBooks
             string lang = LocalizedContentManager.CurrentLanguageCode.ToString();
             if (lang == "mod") lang = LocalizedContentManager.CurrentModLanguage.LanguageCode;
             if (ContentPackI18n.ContainsKey(lang)) return;
-            var i18nStrings =
-                Helper.GameContent.Load<Dictionary<string, string>>(
-                    $"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/{lang}");
-            if (i18nStrings == null) return;
-            ContentPackI18n.TryAdd(lang, i18nStrings);
-            
+
+            List<string> i18nFiles = ["Books", "Config", "Debug", "Dialogue", "Mail", "Untranslated"];
+
+            ContentPackI18n[lang] = new Dictionary<string, string>();
+            foreach (var file in i18nFiles)
+            {
+                if (!Game1.content.DoesAssetExist<Dictionary<string, string>>($"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/{lang}/{file}")) continue;
+                var i18nStrings =
+                    Helper.GameContent.Load<Dictionary<string, string>>(
+                        $"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/{lang}/{file}");
+                if (i18nStrings == null) return;
+
+                foreach (var (key, value) in i18nStrings)
+                {
+                    ContentPackI18n[lang].TryAdd(key, value);
+                }
+            }
+
             if (!ContentPackI18n.ContainsKey("default"))
             {
-                var defaultStrings =
-                    Helper.GameContent.Load<Dictionary<string, string>>(
-                        $"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/default");
-                if (defaultStrings != null)
+                ContentPackI18n["default"] = new Dictionary<string, string>();
+                foreach (var file in i18nFiles)
                 {
-                    ContentPackI18n.TryAdd("default", defaultStrings);
+                    if (!Game1.content.DoesAssetExist<Dictionary<string, string>>($"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/default/{file}")) continue;
+                    var defaultStrings =
+                        Helper.GameContent.Load<Dictionary<string, string>>(
+                            $"Mods/Spiderbuttons.ButtonsExtraBooks/Translations/default/{file}");
+                    if (defaultStrings == null) return;
+
+                    foreach (var (key, value) in defaultStrings)
+                    {
+                        ContentPackI18n["default"].TryAdd(key, value);
+                    }
                 }
             }
             

@@ -1,0 +1,38 @@
+﻿{
+  "Dialogue.EnoughGifts": "!Has dado {0} suficientes regalos por ahora!",
+
+  "Dialogue.JunimoScrap.Harvest.1": "{0}",
+  "Dialogue.JunimoScrap.Harvest.2": "*mascar*",
+  "Dialogue.JunimoScrap.Harvest.3": "*mordisco*",
+  "Dialogue.JunimoScrap.Harvest.4": "*nom*",
+  "Dialogue.JunimoScrap.Harvest.5": "¿Es para mí?", // The grammar is wrong on purpose!
+  "Dialogue.JunimoScrap.Harvest.6": "¡Ooh!",
+  "Dialogue.JunimoScrap.Harvest.7": "¡Ñam ñam!",
+
+  // {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
+  "Dialogue.JunimoScrap.CropAdjective.1": "¡Deliciosa {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.2": "¡Jugoso {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.3": "¡Delicioso {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.4": "¡Sabroso {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.5": "¡Grande {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.6": "¡Blando {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.7": "¡Fresca {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.8": "¡Maduro {0}!",
+
+  "Dialogue.JunimoScrap.DroppedItem.1": "Ups...",
+  "Dialogue.JunimoScrap.DroppedItem.2": "¡Oh, oh!",
+  "Dialogue.JunimoScrap.DroppedItem.3": "¡Lo siento!",
+  "Dialogue.JunimoScrap.DroppedItem.4": "Lo siento...",
+  "Dialogue.JunimoScrap.DroppedItem.5": "¡Demasiado!",
+
+  "Dialogue.JunimoScrap.ExitHut.1": "¡Bonita granja!",
+  "Dialogue.JunimoScrap.ExitHut.2": "¡Me encanta estar aquí!",
+  "Dialogue.JunimoScrap.ExitHut.3": "¡Paraíso!",
+  "Dialogue.JunimoScrap.ExitHut.4": "¡Un hermoso día!",
+  "Dialogue.JunimoScrap.ExitHut.5": "¡Buen día!",
+  "Dialogue.JunimoScrap.ExitHut.6": "¡Levántate y brilla!",
+  "Dialogue.JunimoScrap.ExitHut.7": "¿Tienes algunas pasas?",
+  "Dialogue.JunimoScrap.ExitHut.8": "¡Hola mundo!",
+  "Dialogue.JunimoScrap.ExitHut.9": "Hola~",
+  "Dialogue.JunimoScrap.ExitHut.10": "*bostezo*",
+}

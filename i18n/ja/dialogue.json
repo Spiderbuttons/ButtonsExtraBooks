@@ -1,0 +1,38 @@
+﻿{
+  "Dialogue.EnoughGifts": "もう{0}には十分にプレゼントを贈りました！",
+
+  "Dialogue.JunimoScrap.Harvest.1": "{0}",
+  "Dialogue.JunimoScrap.Harvest.2": "（カプカプ）",
+  "Dialogue.JunimoScrap.Harvest.3": "（ガジガジ）",
+  "Dialogue.JunimoScrap.Harvest.4": "（ムシャムシャ）",
+  "Dialogue.JunimoScrap.Harvest.5": "これ食べていいの？", // The grammar is wrong on purpose!
+  "Dialogue.JunimoScrap.Harvest.6": "オッー！",
+  "Dialogue.JunimoScrap.Harvest.7": "うまい！おいしい！",
+
+  // {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
+  "Dialogue.JunimoScrap.CropAdjective.1": "美味しそうな{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.2": "ジューシーな{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.3": "美味しい{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.4": "おいしい{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.5": "大きな{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.6": "ぷにぷにな{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.7": "新鮮な{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.8": "完熟な{0}！",
+
+  "Dialogue.JunimoScrap.DroppedItem.1": "おっとと…",
+  "Dialogue.JunimoScrap.DroppedItem.2": "ああっ！",
+  "Dialogue.JunimoScrap.DroppedItem.3": "ごめんね！",
+  "Dialogue.JunimoScrap.DroppedItem.4": "ごめんよ…",
+  "Dialogue.JunimoScrap.DroppedItem.5": "多いよー",
+
+  "Dialogue.JunimoScrap.ExitHut.1": "かわいい牧場！",
+  "Dialogue.JunimoScrap.ExitHut.2": "ここが大好き！",
+  "Dialogue.JunimoScrap.ExitHut.3": "ここは楽園！",
+  "Dialogue.JunimoScrap.ExitHut.4": "今日も素晴らしい1日！",
+  "Dialogue.JunimoScrap.ExitHut.5": "おはよう！",
+  "Dialogue.JunimoScrap.ExitHut.6": "太陽が昇ったよ！",
+  "Dialogue.JunimoScrap.ExitHut.7": "干しブドウはある？",
+  "Dialogue.JunimoScrap.ExitHut.8": "ハロー、ワールド！",
+  "Dialogue.JunimoScrap.ExitHut.9": "やっほー",
+  "Dialogue.JunimoScrap.ExitHut.10": "（ふわぁ～）",
+}

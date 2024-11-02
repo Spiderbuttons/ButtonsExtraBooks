@@ -1,0 +1,51 @@
+﻿{
+  "Config.SectionTitle.General": "Paramètres généraux",
+  "Config.SectionTitle.EnableDisable": "Activer / désactiver les livres",
+  "Config.SectionTitle.Prices": "Changer le prix des livres",
+  "Config.SectionTitle.Adjustments": "Régler les pouvoirs des livres",
+  "Config.SectionTitle.Debug": "Paramètres de débogage",
+
+  "Config.General.AlwaysAvailable.Name": "Livres toujours disponibles",
+  "Config.General.AlwaysAvailable.Description": "Si activé, tous les livres seront disponibles au libraire sans conditions.",
+
+  "Config.General.Enabled.Name": "Activé",
+  "Config.General.Enabled.Description": "Si désactivé, ce livre et ses pouvoirs ne seront pas disponibles.",
+
+  "Config.General.Price.Description": "Le prix de ce livre lorsqu’il est acheté directement d’une boutique et non obtenu d’une autre manière. Intégrez une valeur numérique uniquement.",
+
+  "Config.Luck.Bonus.Name": "Bonus de chance",
+  "Config.Luck.Bonus.Description": "Le montant ajouté à votre valeur quotidienne de chance.",
+
+  "Config.ExtraGifts.Bonus.Name": "Limite de don journalier",
+  "Config.ExtraGifts.Bonus.Description": "Combien de cadeaux supplémentaires sont autorisés par ce livre à être donnés à quelqu’un dans la même semaine.",
+
+  "Config.ArtisanMachines.GrangeMustWin.Name": "Victoire au festival",
+  "Config.ArtisanMachines.GrangeMustWin.Description": "Si activé, votre présentoir doit être numéro 1 et avoir plus de 6 produits artisanaux.",
+  "Config.ArtisanMachines.Bonus.Name": "Bonus vitesse de machine",
+  "Config.ArtisanMachines.Bonus.Description": "Diminution en pourcentage du temps de traitement des machines produisant des produits artisanaux.",
+
+  "Config.GiantCrops.Bonus.Name": "Probabilité de culture géante",
+  "Config.GiantCrops.Bonus.Description": "Pourcentage de chance que les cultures forment une culture géante pendant la nuit.",
+
+  "Config.Optimization.Bonus.Name": "Exp supplémentaire",
+  "Config.Optimization.Bonus.Description": "Pourcentage d’augmentation des gains d’expérience.",
+
+  "Config.QiNotebook.Bonus.Name": "Chance Qi gemme",
+  "Config.QiNotebook.Bonus.Description": "Pourcentage de chance d'obtenir une Qi gemme en plus des probabilités habituelles.",
+
+  "Config.CheatCodes.Requirement.Name": "Morts requises pour Junimo Kart",
+  "Config.CheatCodes.Requirement.Description": "Le nombre de fois que vous devez mourir dans Junimo Kart avant que le livre des Codes Secrets ne devienne disponible.",
+  "Config.CheatCodes.Bonus.Name": "Vies supplémentaires",
+  "Config.CheatCodes.Bonus.Description": "Le nombre de vie supplémentaires avec lesquelles vous commencez Junimo Kart",
+
+  "Config.JunimoScrap.Chatter.Name": "Bavardage Junimo",
+  "Config.JunimoScrap.Chatter.Description": "À quelle fréquence les Junimos auront des bulles de dialogue au-dessus de leurs têtes. Plus le chiffre est élevé, plus les Junimos seront bavards.",
+  "Config.JunimoScrap.Chatter.Never": "Jamais",
+  "Config.JunimoScrap.Chatter.Normal": "Normal",
+  "Config.JunimoScrap.Chatter.Always": "Toujours",
+  "Config.JunimoScrap.RandomItems.Name": "Objets Junimo aléatoires",
+  "Config.JunimoScrap.RandomItems.Description": "Si activé, vous pouvez recevoir un objet complètement aléatoire dans votre courrier de vos Junimos. Ils peuvent même vous donner des objets que vous n’êtes pas supposés obtenir, c’est juste pour le fun. Activez à vos propres risques.",
+
+  "Config.Carols.Bonus.Name": "Rabais de boutique",
+  "Config.Carols.Bonus.Description": "Le pourcentage de rabais appliqué aux pris des boutiques pendant l’hiver.",
+}

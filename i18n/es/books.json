@@ -1,0 +1,76 @@
+﻿{
+  "Luck.Book.Name": "Suerte del principiante",
+  "Luck.Book.Description": "Leer este libro aumentará la estadística de suerte permanentemente en una pequeña cantidad.",
+  "Luck.Book.Message": "¡Te sientes con mas suerte que antes!",
+  "Luck.Power.Description": "La estadística de suerte aumentó permanentemente en una pequeña cantidad.",
+
+  "ExtraGifts.Book.Name": "Libro del altruismo",
+  "ExtraGifts.Book.Description": "Después de leer este libro, los aldeanos aceptarán más de dos regalos por semana.",
+  "ExtraGifts.Book.Message": "¡Eres una verdadera persona que complace a los demas!",
+  "ExtraGifts.Power.Description": "Los aldeanos aceptarán más de dos regalos por semana.",
+
+  "TreesIgnoreSeason.Book.Name": "Bosques de invierno",
+  "TreesIgnoreSeason.Book.Description": "Leer este libro le enseñará a cultivar árboles durante la temporada de invierno.",
+  "TreesIgnoreSeason.Book.Message": "¡Silvicultura +!",
+  "TreesIgnoreSeason.Power.Description": "Los árboles crecen durante todo el año.",
+
+  "ArtisanMachines.Book.Name": "Manual del gremio de artesanos",
+  "ArtisanMachines.Book.Description": "Las técnicas contenidas en este libro le ayudarán a producir productos artesanales mucho más rápidamente.",
+  "ArtisanMachines.Book.Message": "¡Tus máquinas de productos artesanales ahora son más eficientes!",
+  "ArtisanMachines.Power.Description": "Las máquinas producen productos artesanales mucho más rápido.",
+
+  "GiantCrops.Book.Name": "Melones gigantes",
+  "GiantCrops.Book.Description": "Después de leer este libro será más probable que obtengas cosechas gigantes.",
+  "GiantCrops.Book.Message": "¡Has conocido parte de los secretos sobre los cultivos gigantes!",
+  "GiantCrops.Power.Description": "Los cultivos gigantes tienen más posibilidades de crecer durante la noche.",
+
+  "Popularity.Book.Name": "Amistad 202",
+  "Popularity.Book.Description": "Es más probable que tus amigos te envíen regalos.",
+  "Popularity.Book.Message": "¡Tus amigos te aman!",
+  "Popularity.Power.Description": "Es más probable que tus amigos te envíen regalos.",
+
+  "Optimization.Book.Name": "SDV++ Optimizado",
+  "Optimization.Book.Description": "Aprenda cómo optimizar su experiencia adquirida leyendo este libro.",
+  "Optimization.Book.Message": "¡Más experiencia, por experiencia!",
+  "Optimization.Power.Description": "Las ganancias de experiencia aumentaron.",
+
+  "BusDriving.Book.Name": "Conducción de autobús para principiantes",
+  "BusDriving.Book.Description": "Este libro contiene la información que necesitas para aprender a conducir un autobús.",
+  "BusDriving.Book.Message": "¡Has aprendido a conducir!",
+  "BusDriving.Power.Description": "Tú mismo puedes conducir el autobús hasta el desierto Calico.",
+
+  "QiNotebook.Book.Name": "El cuaderno del Señor Qi",
+  "QiNotebook.Book.Description": "Estas notas te ayudarán a encontrar más gemas Qi.",
+  "QiNotebook.Book.Message": '"Buena suerte, chico/a"',
+  "QiNotebook.Power.Description": "Mayores probabilidades de encontrar gemas Qi.",
+
+  "PetGifts.Book.Name": "Refuerzo positivo",
+  "PetGifts.Book.Description": "Este libro le enseñará cómo entrenar a sus mascotas para que le brinden mejores regalos.",
+  "PetGifts.Book.Message": "¡Tu mascota REALMENTE te ama!",
+  "PetGifts.Power.Description": "Es más probable que tus mascotas te brinden mejores regalos.",
+
+  "CheatCodes.Book.Name": "Códigos secretos para máquinas recreativas",
+  "CheatCodes.Book.Description": "En algún lugar de este libro hay un código que te ayudará a vencer finalmente a Junimo Kart, de ello estás seguro.",
+  "CheatCodes.Book.Message": "Arriba, arriba, abajo, abajo, izquierda, derecha...",
+  "CheatCodes.Power.Description": "Comienza con más vidas en el modo de progreso Junimo Kart.",
+
+  "JunimoScrap.Book.Name": "Álbum de recortes de Junimo",
+  "JunimoScrap.Book.Description": "Tus Junimos han llenado de recuerdos este libro.",
+  "JunimoScrap.Book.Message": "¡Ahora estás más cerca de tus Junimos!",
+  "JunimoScrap.Power.Description": "Tus Junimos son más comunicativos y te enviarán cartas.",
+
+  "Carols.Book.Name": "Libro de villancicos",
+  "Carols.Book.Description": "Estas canciones te ayudarán a transmitir la alegría navideña durante todo el invierno.",
+  "Carols.Book.Message": "¡Has aprendido algunos villancicos de temporada!",
+  "Carols.Power.Description": "Los propietarios de tiendas te harán un descuento durante la temporada de invierno.",
+
+  "Coffee.Book.Name": "El brebaje más fuerte",
+  "Coffee.Book.Description": "Lea este libro para llevar su consumo de cafeína al siguiente nivel.",
+  "Coffee.Book.Message": "¡Eres prácticamente un barista ahora!",
+  "Coffee.Power.Description": "Las bebidas de café ahora duran tres veces más.",
+
+  "Sketchbook.Book.Name": "Cuaderno de dibujo infantil",
+  "Sketchbook.Book.Description": "¡Los dibujos que no están cubiertos de suciedad son bastante buenos!",
+  "Sketchbook.Book.Message": "¡Sientes que hay más por desenterrar!",
+  "Sketchbook.Power.Description": "Los lugares de artefactos pueden contener mejores elementos.",
+}

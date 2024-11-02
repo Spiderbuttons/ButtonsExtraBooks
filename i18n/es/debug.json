@@ -1,0 +1,8 @@
+﻿{
+  "Debug.RemoveAll.Book.Name": "Eliminación de beneficios BEB",
+  "Debug.RemoveAll.Book.Description": "Elimina todos los beneficios que te otorgan los libros del mod y te devuelve sus libros correspondientes.",
+  "Debug.RemoveAll.Book.Message": "¡Has perdido todos los poderes del mod: Button's Extra Books!",
+
+  "Config.Debug.EnableDebugBook.Name": "Habilitar libro de depuración",
+  "Config.Debug.EnableDebugBook.Description": "Si está habilitado, Pierre tendrá disponible un libro de depuración que eliminará todos los beneficios otorgados por este mod."
+}

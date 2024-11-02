@@ -1,0 +1,76 @@
+﻿{
+  "Luck.Book.Name": "ビギナーズラック",
+  "Luck.Book.Description": "この本を読めば、運のステータスが永続的に少し上昇する。",
+  "Luck.Book.Message": "運勢が高まった気がする！",
+  "Luck.Power.Description": "運のステータスが永続的にわずかに上昇する。",
+
+  "ExtraGifts.Book.Name": "利他主義の本",
+  "ExtraGifts.Book.Description": "この本を読めば、村人たちはあなたから週に2回以上の贈り物を受け取るようになるだろう。",
+  "ExtraGifts.Book.Message": "贈り物の渡し方が上達した！",
+  "ExtraGifts.Power.Description": "村人は週に2つ以上の贈り物を受け取る。",
+
+  "TreesIgnoreSeason.Book.Name": "冬の林業",
+  "TreesIgnoreSeason.Book.Description": "この本を読めば、冬の季節に樹木を育てる方法を学ぶことができる。",
+  "TreesIgnoreSeason.Book.Message": "林学についての知識が身についた！",
+  "TreesIgnoreSeason.Power.Description": "木が一年中成長する。",
+
+  "ArtisanMachines.Book.Name": "職人ギルドのマニュアル",
+  "ArtisanMachines.Book.Description": "本に掲載されているテクニックを使えば、職人技を駆使した商品をより早く作ることができるだろう。",
+  "ArtisanMachines.Book.Message": "加工設備を効率的に使えるようになった！",
+  "ArtisanMachines.Power.Description": "生産設備での加工品をより早く生産する。",
+
+  "GiantCrops.Book.Name": "大きなメロン！",
+  "GiantCrops.Book.Description": "この本を読めば、巨大な作物ができる可能性が高まるだろう。",
+  "GiantCrops.Book.Message": "巨大な作物を作るコツを学んだ！",
+  "GiantCrops.Power.Description": "作物が一夜にして巨大になる確率を高める。",
+
+  "Popularity.Book.Name": "親友のつくり方",
+  "Popularity.Book.Description": "仲良くなった住民からプレゼントが送られてくる可能性が高まるだろう。",
+  "Popularity.Book.Message": "友人からの親愛が深まった！",
+  "Popularity.Power.Description": "仲良くなった住民からプレゼントが送られてくる確率を高める。",
+
+  "Optimization.Book.Name": "スターデューバレーの暮らし方",
+  "Optimization.Book.Description": "この本を読めば、経験値をより多く得ることができるだろう。",
+  "Optimization.Book.Message": "経験を効率良く積めるようになった！",
+  "Optimization.Power.Description": "経験値が増加する。",
+
+  "BusDriving.Book.Name": "バスの運転マニュアル",
+  "BusDriving.Book.Description": "この本には、バスを運転するのに必要なすべての情報が、ざっくりと書かれている。",
+  "BusDriving.Book.Message": "バスの運転方法を学んだ！",
+  "BusDriving.Power.Description": "自分でバスを運転し、カリコ砂漠まで行くことができる。",
+
+  "QiNotebook.Book.Name": "ミスターQiのノート",
+  "QiNotebook.Book.Description": "これらのメモは、あなたがQiジェムを見つけるのに役立ちます。",
+  "QiNotebook.Book.Message": "「さらなる健闘を期待しているよ」",
+  "QiNotebook.Power.Description": "モンスターを倒した時にQiジェムが見つかる確率を高める。",
+
+  "PetGifts.Book.Name": "ぺっとのきもち",
+  "PetGifts.Book.Description": "この本には、ペットから貰えるアイテムが良くなるしつけ方法が書かれている。",
+  "PetGifts.Book.Message": "ペットはあなたが、もっとだーいすき！になったようだ。",
+  "PetGifts.Power.Description": "ペットから貰えるアイテムのレア率を高める。",
+
+  "CheatCodes.Book.Name": "ジュニモカートの秘密コード",
+  "CheatCodes.Book.Description": "この本のどこかに、ジュニモカートのライフを調整するコードが書かれている。",
+  "CheatCodes.Book.Message": "上上下下左右左右BA",
+  "CheatCodes.Power.Description": "ジュニモカートをプログレスモードで起動して、より多くのライフでスタートしよう。",
+
+  "JunimoScrap.Book.Name": "ジュニモのスクラップブック",
+  "JunimoScrap.Book.Description": "ジュニモたちは、この本を思い出でいっぱいにしてくれた。",
+  "JunimoScrap.Book.Message": "ジュニモとの距離が縮まった！",
+  "JunimoScrap.Power.Description": "ジュニモがより話すようになり、時々手紙も送ってくれる。",
+
+  "Carols.Book.Name": "キャロルの本",
+  "Carols.Book.Description": "これらの曲は、冬の間、ホリデーシーズンを盛り上げるのに役立つだろう。",
+  "Carols.Book.Message": "キャロルを歌えるようになった！",
+  "Carols.Power.Description": "冬の季節ではショップの商品が割引される。",
+
+  "Coffee.Book.Name": "キマる入れ方",
+  "Coffee.Book.Description": "コーヒーとトリプルショットエスプレッソの効果時間が3倍になる。",
+  "Coffee.Book.Message": "バリスタのようコーヒーを入れられるようになった！",
+  "Coffee.Power.Description": "コーヒー類のバフ効果時間が3倍。",
+
+  "Sketchbook.Book.Name": "子どものスケッチブック",
+  "Sketchbook.Book.Description": "発掘ポイントを掘り出した時に、より良いアイテムを入手できるようになる。",
+  "Sketchbook.Book.Message": "発掘のコツが分かった！",
+  "Sketchbook.Power.Description": "発掘ポイントから入手できるアイテムの質が高まる。",
+}

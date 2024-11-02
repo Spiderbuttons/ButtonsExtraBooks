@@ -1,0 +1,13 @@
+﻿{
+  "Luck.Book.Name": "Sorte de Principiante",
+  "Luck.Book.Description": "Leia este livro para obter um pequeno aumento permanente em sua sorte.",
+  "Luck.Power.Description": "Aumenta permanentemente a sorte.",
+
+  "ExtraGifts.Book.Name": "Livro do Altruísmo",
+  "ExtraGifts.Book.Description": "Depois de ler este livro, os aldeões aceitarão mais de dois presentes de você por semana.",
+  "ExtraGifts.Power.Description": "Aldeões aceitarão mais de dois presentes por semana.",
+
+  "TreesIgnoreSeason.Book.Name": "Silvicultura de Inverno",
+  "TreesIgnoreSeason.Book.Description": "A leitura deste livro irá ensiná-lo a cultivar árvores durante o inverno.",
+  "TreesIgnoreSeason.Power.Description": "Árvores crescem durante o ano todo.",
+}

@@ -1,0 +1,51 @@
+﻿{
+  "Config.SectionTitle.General": "常规设置",
+  "Config.SectionTitle.EnableDisable": "启用/禁用书籍",
+  "Config.SectionTitle.Prices": "更改书籍价格",
+  "Config.SectionTitle.Adjustments": "调整书籍能力",
+  "Config.SectionTitle.Debug": "排错设置",
+
+  "Config.General.AlwaysAvailable.Name": "书籍始终可获得",
+  "Config.General.AlwaysAvailable.Description": "如果启用，书摊老板将始终提供所有书籍，而无需满足某些要求。",
+
+  "Config.General.Enabled.Name": "启用",
+  "Config.General.Enabled.Description": "如果禁用，本书及其能力将不可用。",
+
+  "Config.General.Price.Description": "这本书直接从商店购买而非通过其他方式获取的价格。仅限整数值。",
+
+  "Config.Luck.Bonus.Name": "初学者运气额外奖励",
+  "Config.Luck.Bonus.Description": "增加您每日运气值中的数值。",
+
+  "Config.ExtraGifts.Bonus.Name": "每周礼品限额",
+  "Config.ExtraGifts.Bonus.Description": "这本书允许你在同一周内送给某人多少份礼物。",
+
+  "Config.ArtisanMachines.GrangeMustWin.Name": "展览是否必须胜出",
+  "Config.ArtisanMachines.GrangeMustWin.Description": "如果启用，你的农庄必须第一并且放置超过6件工匠物品。",
+  "Config.ArtisanMachines.Bonus.Name": "工匠协会手册额外奖励",
+  "Config.ArtisanMachines.Bonus.Description": "生产工匠物品的机器加工时间减少百分比。",
+
+  "Config.GiantCrops.Bonus.Name": "大甜瓜！额外奖励",
+  "Config.GiantCrops.Bonus.Description": "作物过夜形成巨大作物的几率百分比。",
+
+  "Config.Optimization.Bonus.Name": "额外经验",
+  "Config.Optimization.Bonus.Description": "经验增益的百分比增加。",
+
+  "Config.QiNotebook.Bonus.Name": "齐钻概率",
+  "Config.QiNotebook.Bonus.Description": "调整齐钻的概率。",
+
+  "Config.CheatCodes.Requirement.Name": "需要祝尼魔赛车死亡次数",
+  "Config.CheatCodes.Requirement.Description": "在本书可用之前，你必须在祝尼魔赛车中的死亡次数。",
+  "Config.CheatCodes.Bonus.Name": "额外生命数",
+  "Config.CheatCodes.Bonus.Description": "在祝尼魔赛车开始时的额外生命数。",
+
+  "Config.JunimoScrap.Chatter.Name": "祝尼魔聊天",
+  "Config.JunimoScrap.Chatter.Description": "祝尼魔头上出现语音气泡的频率。数字越高意味着聊天越多。",
+  "Config.JunimoScrap.Chatter.Never": "从不",
+  "Config.JunimoScrap.Chatter.Normal": "普通",
+  "Config.JunimoScrap.Chatter.Always": "总是",
+  "Config.JunimoScrap.RandomItems.Name": "随机祝尼魔物品",
+  "Config.JunimoScrap.RandomItems.Description": "如果启用，您可以在邮件中从您的祝尼魔收到一个完全随机的物品。这可能会给您带来不应该获得的物品，只是为了好玩。启用风险自负。",
+
+  "Config.Carols.Bonus.Name": "店铺折扣",
+  "Config.Carols.Bonus.Description": "应用于商店价格的百分比折扣。",
+}

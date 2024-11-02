@@ -1,0 +1,38 @@
+﻿{
+  "Dialogue.EnoughGifts": "당신은 {0}에게 충분한 선물을 주었습니다!",
+
+  "Dialogue.JunimoScrap.Harvest.1": "{0}",
+  "Dialogue.JunimoScrap.Harvest.2": "*냠냠*",
+  "Dialogue.JunimoScrap.Harvest.3": "*갉작갉작*",
+  "Dialogue.JunimoScrap.Harvest.4": "*우걱우걱*",
+  "Dialogue.JunimoScrap.Harvest.5": "내 거야?", // The grammar is wrong on purpose!
+  "Dialogue.JunimoScrap.Harvest.6": "오오!",
+  "Dialogue.JunimoScrap.Harvest.7": "냠냠!",
+
+  // {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
+  "Dialogue.JunimoScrap.CropAdjective.1": "맛있는 {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.2": "즙이 많은 {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.3": "맛있는 {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.4": "맛있는 {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.5": "큰 {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.6": "물렁한 {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.7": "신선한 {0}!",
+  "Dialogue.JunimoScrap.CropAdjective.8": "잘 익은 {0}!",
+
+  "Dialogue.JunimoScrap.DroppedItem.1": "어머...",
+  "Dialogue.JunimoScrap.DroppedItem.2": "어쩌지!",
+  "Dialogue.JunimoScrap.DroppedItem.3": "미안해!",
+  "Dialogue.JunimoScrap.DroppedItem.4": "미안해요...",
+  "Dialogue.JunimoScrap.DroppedItem.5": "너무 많아!",
+
+  "Dialogue.JunimoScrap.ExitHut.1": "귀여운 농장!",
+  "Dialogue.JunimoScrap.ExitHut.2": "여기가 좋아요!",
+  "Dialogue.JunimoScrap.ExitHut.3": "천국 같아!",
+  "Dialogue.JunimoScrap.ExitHut.4": "아름다운 날이에요!",
+  "Dialogue.JunimoScrap.ExitHut.5": "좋은 아침!",
+  "Dialogue.JunimoScrap.ExitHut.6": "일어나요!",
+  "Dialogue.JunimoScrap.ExitHut.7": "건포도 있어요?",
+  "Dialogue.JunimoScrap.ExitHut.8": "안녕하세요, 세상아!",
+  "Dialogue.JunimoScrap.ExitHut.9": "안녕하세요~",
+  "Dialogue.JunimoScrap.ExitHut.10": "*하품*",
+}

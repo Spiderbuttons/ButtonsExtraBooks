@@ -1,0 +1,8 @@
+﻿{
+  "Debug.RemoveAll.Book.Name": "BEB 능력 제거",
+  "Debug.RemoveAll.Book.Description": "Button의 추가 책이 부여한 모든 능력을 제거하고 해당 책을 환불합니다.",
+  "Debug.RemoveAll.Book.Message": "너는 버튼의 모든 능력을 잃었어!",
+
+  "Config.Debug.EnableDebugBook.Name": "디버그 책 활성화",
+  "Config.Debug.EnableDebugBook.Description": "활성화되면, 피에르에게서 디버그 책을 구할 수 있으며, 이 책은 이 모드가 부여한 모든 능력을 제거합니다."
+}

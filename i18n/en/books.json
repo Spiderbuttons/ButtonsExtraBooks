@@ -1,0 +1,76 @@
+﻿{
+  "Luck.Book.Name": "Beginner's Luck",
+  "Luck.Book.Description": "Read this book to gain a permanent, minor increase to your luck stat.",
+  "Luck.Book.Message": "You feel luckier!",
+  "Luck.Power.Description": "Luck stat permanently increased by a minor amount.",
+
+  "ExtraGifts.Book.Name": "Book of Altruism",
+  "ExtraGifts.Book.Description": "After reading this book, villagers will accept more than two gifts per week from you.",
+  "ExtraGifts.Book.Message": "You're a real people pleaser!",
+  "ExtraGifts.Power.Description": "Villagers will accept more than two gifts per week.",
+
+  "TreesIgnoreSeason.Book.Name": "Winter Forestry",
+  "TreesIgnoreSeason.Book.Description": "Reading this book will teach you how to grow trees during the winter season.",
+  "TreesIgnoreSeason.Book.Message": "Silviculture+!",
+  "TreesIgnoreSeason.Power.Description": "Trees grow year-round.",
+
+  "ArtisanMachines.Book.Name": "Artisans Guild Manual",
+  "ArtisanMachines.Book.Description": "The techniques contained within this book will help you produce artisan goods much quicker.",
+  "ArtisanMachines.Book.Message": "Your artisanal machines are now more efficient!",
+  "ArtisanMachines.Power.Description": "Machines produce artisan goods much quicker.",
+
+  "GiantCrops.Book.Name": "Big Melons!",
+  "GiantCrops.Book.Description": "You will be more likely to grow giant crops after reading this book.",
+  "GiantCrops.Book.Message": "You've learned the secrets of giant crops!",
+  "GiantCrops.Power.Description": "Giant crops have a higher chance of growing overnight.",
+
+  "Popularity.Book.Name": "Friendship 202",
+  "Popularity.Book.Description": "Your friends will be more likely to send you gifts.",
+  "Popularity.Book.Message": "Your friends love you!",
+  "Popularity.Power.Description": "Your friends are more likely to send you gifts in the mail.",
+
+  "Optimization.Book.Name": "Optimized SDV++",
+  "Optimization.Book.Description": "Learn how to optimize your experience gain by reading this book.",
+  "Optimization.Book.Message": "More experience, per experience!",
+  "Optimization.Power.Description": "Experience gains are increased.",
+
+  "BusDriving.Book.Name": "Bus Driving for Dummies",
+  "BusDriving.Book.Description": "This book contains all the information you need to drive a bus, more or less.",
+  "BusDriving.Book.Message": "You've learned how to drive!",
+  "BusDriving.Power.Description": "You can drive the bus to Calico Desert yourself.",
+
+  "QiNotebook.Book.Name": "Mr. Qi's Notebook",
+  "QiNotebook.Book.Description": "These notes will help you find more random Qi gems.",
+  "QiNotebook.Book.Message": '"Good luck, kid."',
+  "QiNotebook.Power.Description": "Increased odds of finding random Qi gems.",
+
+  "PetGifts.Book.Name": "Pawsitive Reinforcement",
+  "PetGifts.Book.Description": "This book will teach you how to train your pets to bring you better gifts.",
+  "PetGifts.Book.Message": "Your pet REALLY loves you!",
+  "PetGifts.Power.Description": "Your pets are more likely to bring you better gifts.",
+
+  "CheatCodes.Book.Name": "Secret Codes for Arcade Machines",
+  "CheatCodes.Book.Description": "Somewhere in this book is a code that will help you finally beat Junimo Kart, you're sure of it.",
+  "CheatCodes.Book.Message": "Up, up, down, down, left, right...",
+  "CheatCodes.Power.Description": "Start with more lives in Junimo Kart progress mode.",
+
+  "JunimoScrap.Book.Name": "Junimo Scrapbook",
+  "JunimoScrap.Book.Description": "Your Junimos have filled this book with memories.",
+  "JunimoScrap.Book.Message": "You are now closer to your Junimos!",
+  "JunimoScrap.Power.Description": "Your Junimos are chattier and will send you letters.",
+
+  "Carols.Book.Name": "Book of Carols",
+  "Carols.Book.Description": "These songs will help you spread holiday cheer throughout winter.",
+  "Carols.Book.Message": "You've learned some seasonal carols!",
+  "Carols.Power.Description": "Shop owners will give you a discount during the winter season.",
+
+  "Coffee.Book.Name": "The Strongest Brew",
+  "Coffee.Book.Description": "Read this book to take your caffeine consumption to the next level.",
+  "Coffee.Book.Message": "You're practically a barista now!",
+  "Coffee.Power.Description": "Coffee drinks now last three times longer.",
+
+  "Sketchbook.Book.Name": "Children's Sketchbook",
+  "Sketchbook.Book.Description": "The drawings that aren't covered in dirt are actually quite good!",
+  "Sketchbook.Book.Message": "You feel like there's more to dig up!",
+  "Sketchbook.Power.Description": "Artifact spots may contain better items.",
+}

@@ -1,0 +1,38 @@
+﻿{
+  "Dialogue.EnoughGifts": "你现在已经给了{0}足够的礼物！",
+
+  "Dialogue.JunimoScrap.Harvest.1": "{0}",
+  "Dialogue.JunimoScrap.Harvest.2": "*咀嚼*",
+  "Dialogue.JunimoScrap.Harvest.3": "*小口咬*",
+  "Dialogue.JunimoScrap.Harvest.4": "*嗯吃*",
+  "Dialogue.JunimoScrap.Harvest.5": "他是给我？", // The grammar is wrong on purpose!
+  "Dialogue.JunimoScrap.Harvest.6": "哦哦哦！",
+  "Dialogue.JunimoScrap.Harvest.7": "好吃 好吃！",
+
+  // {0} will be the name of a crop e.g. "Yummy Parsnip!" Please put the adjective in the correct position relative to the noun for your language!
+  "Dialogue.JunimoScrap.CropAdjective.1": "好吃的{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.2": "多汁的{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.3": "美味的{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.4": "可口的{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.5": "大的{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.6": "黏黏的{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.7": "新鲜的{0}！",
+  "Dialogue.JunimoScrap.CropAdjective.8": "成熟的{0}！",
+
+  "Dialogue.JunimoScrap.DroppedItem.1": "哎呦……",
+  "Dialogue.JunimoScrap.DroppedItem.2": "啊 哦！",
+  "Dialogue.JunimoScrap.DroppedItem.3": "对不起！",
+  "Dialogue.JunimoScrap.DroppedItem.4": "对不起……",
+  "Dialogue.JunimoScrap.DroppedItem.5": "太过分了！",
+
+  "Dialogue.JunimoScrap.ExitHut.1": "可爱的农场",
+  "Dialogue.JunimoScrap.ExitHut.2": "喜欢这里、",
+  "Dialogue.JunimoScrap.ExitHut.3": "天堂！",
+  "Dialogue.JunimoScrap.ExitHut.4": "美好的一天！",
+  "Dialogue.JunimoScrap.ExitHut.5": "早上好！",
+  "Dialogue.JunimoScrap.ExitHut.6": "快起床！",
+  "Dialogue.JunimoScrap.ExitHut.7": "有葡萄干吗？",
+  "Dialogue.JunimoScrap.ExitHut.8": "你好，世界！",
+  "Dialogue.JunimoScrap.ExitHut.9": "你好！",
+  "Dialogue.JunimoScrap.ExitHut.10": "*打呵欠*",
+}

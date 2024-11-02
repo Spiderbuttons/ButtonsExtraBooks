@@ -1,0 +1,51 @@
+﻿{
+  "Config.SectionTitle.General": "일반 설정",
+  "Config.SectionTitle.EnableDisable": "책 활성화 / 비활성화",
+  "Config.SectionTitle.Prices": "책 가격 변경",
+  "Config.SectionTitle.Adjustments": "책 능력 조정",
+  "Config.SectionTitle.Debug": "디버그 설정",
+
+  "Config.General.AlwaysAvailable.Name": "항상 책 이용 가능",
+  "Config.General.AlwaysAvailable.Description": "활성화되면, 모든 책이 특정 요구 사항을 충족하지 않아도 책 판매자에게 항상 이용할 수 있습니다.",
+
+  "Config.General.Enabled.Name": "활성화",
+  "Config.General.Enabled.Description": "비활성화하면 이 책과 그 능력을 사용할 수 없습니다.",
+
+  "Config.General.Price.Description": "상점에서 직접 구매할 때의 책 가격입니다. 정수 값만 가능합니다.",
+
+  "Config.Luck.Bonus.Name": "운 보너스",
+  "Config.Luck.Bonus.Description": "일일 운치에 추가되는 양입니다.",
+
+  "Config.ExtraGifts.Bonus.Name": "주간 선물 제한",
+  "Config.ExtraGifts.Bonus.Description": "이 책이 누군가에게 같은 주에 줄 수 있는 선물의 수입니다.",
+
+  "Config.ArtisanMachines.GrangeMustWin.Name": "그레인지 디스플레이 우승 필수",
+  "Config.ArtisanMachines.GrangeMustWin.Description": "활성화되면, 그레인지 디스플레이에서 1위를 차지해야 하며 장인 상품이 6개 이상 포함되어야 합니다.",
+  "Config.ArtisanMachines.Bonus.Name": "기계 속도 보너스",
+  "Config.ArtisanMachines.Bonus.Description": "장인 상품을 생산하는 기계의 처리 시간을 퍼센트로 감소시킵니다.",
+
+  "Config.GiantCrops.Bonus.Name": "거대한 작물 확률",
+  "Config.GiantCrops.Bonus.Description": "작물이 밤새 거대한 작물로 변할 확률입니다.",
+
+  "Config.Optimization.Bonus.Name": "추가 경험치",
+  "Config.Optimization.Bonus.Description": "경험치 획득량의 퍼센트 증가입니다.",
+
+  "Config.QiNotebook.Bonus.Name": "치 보석 확률",
+  "Config.QiNotebook.Bonus.Description": "일반 확률 외에 치 보석이 떨어질 확률입니다.",
+
+  "Config.CheatCodes.Requirement.Name": "주니모 카트 필요한 죽음 수",
+  "Config.CheatCodes.Requirement.Description": "비밀 코드 책이 이용 가능해지기 전에 주니모 카트에서 죽어야 하는 횟수입니다.",
+  "Config.CheatCodes.Bonus.Name": "추가 목숨",
+  "Config.CheatCodes.Bonus.Description": "주니모 카트 진행 모드에서 시작할 때의 추가 목숨 수입니다.",
+
+  "Config.JunimoScrap.Chatter.Name": "주니모 수다스러움",
+  "Config.JunimoScrap.Chatter.Description": "주니모들이 머리 위에 말풍선을 띄울 빈도입니다. 숫자가 높을수록 더 많은 대화가 있습니다.",
+  "Config.JunimoScrap.Chatter.Never": "절대 없음",
+  "Config.JunimoScrap.Chatter.Normal": "보통",
+  "Config.JunimoScrap.Chatter.Always": "항상",
+  "Config.JunimoScrap.RandomItems.Name": "랜덤 주니모 아이템",
+  "Config.JunimoScrap.RandomItems.Description": "활성화되면, 주니모로부터 완전히 랜덤한 아이템을 우편으로 받을 수 있습니다. 이는 당신이 얻어서는 안 되는 아이템을 줄 수도 있으며, 단순히 재미를 위해 있습니다. 사용 시 주의하세요.",
+
+  "Config.Carols.Bonus.Name": "상점 할인",
+  "Config.Carols.Bonus.Description": "상점 가격에 적용되는 할인 퍼센트입니다.",
+}

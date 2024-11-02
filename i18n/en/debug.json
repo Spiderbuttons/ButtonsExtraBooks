@@ -1,0 +1,8 @@
+﻿{
+  "Debug.RemoveAll.Book.Name": "BEB Power Removal",
+  "Debug.RemoveAll.Book.Description": "Removes all powers granted to you by Button's Extra Books and refunds you their corresponding books.",
+  "Debug.RemoveAll.Book.Message": "You've lost all of Button's powers!",
+
+  "Config.Debug.EnableDebugBook.Name": "Enable Debug Book",
+  "Config.Debug.EnableDebugBook.Description": "If enabled, a debug book will be available from Pierre that will remove all of your powers granted by this mod."
+}
