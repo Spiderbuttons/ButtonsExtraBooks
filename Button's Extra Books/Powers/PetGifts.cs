@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Reflection.Emit;
 using HarmonyLib;
-using StardewModdingAPI;
 using StardewValley;
 using ButtonsExtraBooks.Helpers;
-using Microsoft.Xna.Framework;
 using StardewValley.Characters;
-using StardewValley.GameData.Pets;
-using StardewValley.Internal;
-using StardewValley.Monsters;
+using System.Reflection;
 
 namespace ButtonsExtraBooks.Powers
 {
@@ -20,48 +14,23 @@ namespace ButtonsExtraBooks.Powers
     static class PetGifts
     {
         [HarmonyPatch(typeof(Pet), nameof(Pet.TryGetGiftItem))]
-        private static bool Prefix(List<PetGift> gifts, Pet __instance, ref Item __result)
+        private static IEnumerable<CodeInstruction> Transpiler(this IEnumerable<CodeInstruction> instructions, ILGenerator il)
         {
-            if (!ModEntry.Config.EnablePetGifts) return true;
+            var code = instructions.ToList();
             try
             {
-                float totalWeight = 0f;
-                foreach (PetGift gift2 in gifts)
-                {
-                    if (gift2.MinimumFriendshipThreshold <= __instance.friendshipTowardFarmer.Value)
-                    {
-                        totalWeight += gift2.Weight;
-                    }
-                }
-                totalWeight = Utility.RandomFloat(Utils.AnyoneHasPower("PetGifts") ? Utility.RandomFloat(0f, totalWeight) : 0f, totalWeight);
-                foreach (PetGift gift in gifts)
-                {
-                    if (gift.MinimumFriendshipThreshold > __instance.friendshipTowardFarmer.Value)
-                    {
-                        continue;
-                    }
-                    totalWeight -= gift.Weight;
-                    if (totalWeight <= 0f)
-                    {
-                        Item i = ItemQueryResolver.TryResolveRandomItem(gift.QualifiedItemID, null);
-                        if (i != null && !i.Name.Contains("Error"))
-                        {
-                            i.Stack = gift.Stack;
-                            __result = i;
-                            return false;
-                        }
-                        __result = ItemRegistry.Create(gift.QualifiedItemID, gift.Stack);
-                        return false;
-                    }
-                }
-                __result = null;
-                return false;
+                return code.MethodReplacer(RuntimeReflectionExtensions.GetMethodInfo(Utility.RandomFloat), RuntimeReflectionExtensions.GetMethodInfo(AdjustedFloat));
             }
             catch (Exception ex)
             {
-                Log.Error("Error in ButtonsExtraBooks_PetGifts.TryGetGiftItem_Prefix: \n" + ex);
-                return true;
+                Log.Error("Error in ButtonsExtraBooks_PetGifts.TryGetGiftItem_Transpiler: \n" + ex);
+                return code;
             }
+        }
+
+        private static float AdjustedFloat(float min, float max, Random random = null)
+        {
+            return Utility.RandomFloat(Utils.AnyoneHasPower("PetGifts") ? Utility.RandomFloat(min, max) : min, max);
         }
     }
 }
