@@ -23,9 +23,10 @@ namespace ButtonsExtraBooks.Powers
         [HarmonyPatch(typeof(StardewValley.Object), nameof(StardewValley.Object.OutputMachine))]
         private static void Postfix(StardewValley.Object __instance)
         {
-            if (!ModEntry.Config.EnableArtisanMachines || __instance.heldObject.Value.Category != -26) return;
             try
             {
+                if (__instance.heldObject?.Value is null) return;
+                if (!ModEntry.Config.EnableArtisanMachines || __instance.heldObject?.Value?.Category != -26) return;
                 __instance.MinutesUntilReady = CheckArtisanBuff(__instance.MinutesUntilReady);
             }
             catch (Exception ex)
