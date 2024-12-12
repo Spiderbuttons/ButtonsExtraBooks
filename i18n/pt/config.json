@@ -1,0 +1,54 @@
+{
+  "Config.SectionTitle.General": "Configurações Gerais",
+  "Config.SectionTitle.EnableDisable": "Ativar / Desativar Livros",
+  "Config.SectionTitle.Prices": "Alterar Preços dos Livros",
+  "Config.SectionTitle.Adjustments": "Ajustar Poderes dos Livros",
+  "Config.SectionTitle.Debug": "Configurações de Depuração",
+
+  "Config.General.AlwaysAvailable.Name": "Livros Sempre Disponíveis",
+  "Config.General.AlwaysAvailable.Description": "Se ativado, todos os livros estarão sempre disponíveis no vendedor de livros, sem a necessidade de cumprir certos requisitos.",
+
+  "Config.General.Enabled.Name": "Ativado",
+  "Config.General.Enabled.Description": "Se desativado, este livro e seus poderes não estarão disponíveis.",
+
+  "Config.General.Price.Description": "O preço deste livro quando comprado diretamente de uma loja e não obtido por outros meios. Apenas valores inteiros.",
+
+  "Config.Luck.Bonus.Name": "Bônus de Sorte",
+  "Config.Luck.Bonus.Description": "A quantidade adicionada ao seu valor diário de sorte.",
+
+  "Config.ExtraGifts.Bonus.Name": "Limite Semanal de Presentes",
+  "Config.ExtraGifts.Bonus.Description": "Quantos presentes este livro permitirá que você dê a alguém na mesma semana.",
+
+  "Config.ArtisanMachines.GrangeMustWin.Name": "Deve Vencer a Exposição da Granja",
+  "Config.ArtisanMachines.GrangeMustWin.Description": "Se ativado, sua exibição na granja deve ficar em 1º lugar e incluir 6 ou mais produtos artesanais.",
+  "Config.ArtisanMachines.Bonus.Name": "Bônus de Velocidade das Máquinas",
+  "Config.ArtisanMachines.Bonus.Description": "Percentual de redução no tempo de processamento das máquinas que produzem produtos artesanais.",
+
+  "Config.GiantCrops.Bonus.Name": "Chance de Colheita Gigante",
+  "Config.GiantCrops.Bonus.Description": "A chance percentual de que as colheitas se tornem uma colheita gigante durante a noite.",
+
+  "Config.Optimization.Bonus.Name": "Experiência Extra",
+  "Config.Optimization.Bonus.Description": "Aumento percentual nos ganhos de experiência.",
+
+  "Config.QiNotebook.Bonus.Name": "Chance de Gemas Qi",
+  "Config.QiNotebook.Bonus.Description": "Chance percentual de que uma gema Qi caia além das chances usuais.",
+
+  "Config.CheatCodes.Requirement.Name": "Mortes Necessárias no Junimo Kart",
+  "Config.CheatCodes.Requirement.Description": "O número de vezes que você precisa morrer no Junimo Kart antes que o livro de Códigos Secretos se torne disponível.",
+  "Config.CheatCodes.Bonus.Name": "Vidas Extras no Junimo Kart",
+  "Config.CheatCodes.Bonus.Description": "O número de vidas extras com as quais você começa no modo de progresso do Junimo Kart.",
+
+  "Config.JunimoScrap.Chatter.Name": "Junimos Conversadores",
+  "Config.JunimoScrap.Chatter.Description": "Com que frequência as bolhas de fala aparecerão sobre as cabeças dos Junimos. Números mais altos significam que serão mais conversadores.",
+  "Config.JunimoScrap.Chatter.Never": "Nunca",
+  "Config.JunimoScrap.Chatter.Normal": "Normal",
+  "Config.JunimoScrap.Chatter.Always": "Sempre",
+  "Config.JunimoScrap.RandomItems.Name": "Itens Aleatórios dos Junimos",
+  "Config.JunimoScrap.RandomItems.Description": "Se ativado, você pode receber um item completamente aleatório pelo correio dos seus Junimos. Isso pode lhe dar itens que você não deveria obter e é apenas para diversão. Ative por sua conta e risco.",
+
+  "Config.Carols.Bonus.Name": "Desconto nas Lojas",
+  "Config.Carols.Bonus.Description": "O percentual de desconto aplicado aos preços nas lojas.",
+
+  "Config.Coffee.Bonus.Name": "Multiplicador de Café",
+  "Config.Coffee.Bonus.Description": "O multiplicador aplicado à duração do Café e do Café Expresso Triplo."
+}
