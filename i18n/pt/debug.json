@@ -1,0 +1,8 @@
+﻿{
+  "Debug.RemoveAll.Book.Name": "Remoção dos Poderes em BEB",
+  "Debug.RemoveAll.Book.Description": "Remove todos os poderes concedidos a você pelos Button's Extra Books e devolve os livros correspondentes.",
+  "Debug.RemoveAll.Book.Message": "Você perdeu todos os poderes do Button!",
+
+  "Config.Debug.EnableDebugBook.Name": "Ativar Livro de Depuração",
+  "Config.Debug.EnableDebugBook.Description": "Se ativado, um livro de depuração estará disponível no Pierre e removerá todos os seus poderes concedidos por este mod."
+}

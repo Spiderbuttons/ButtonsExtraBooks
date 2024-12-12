@@ -1,0 +1,37 @@
+{
+  "Dialogue.EnoughGifts": "Você já deu presentes demais para {0} por enquanto! Chega.",
+
+  "Dialogue.JunimoScrap.Harvest.1": "{0}",
+  "Dialogue.JunimoScrap.Harvest.2": "*munch*",
+  "Dialogue.JunimoScrap.Harvest.3": "*belisca*",
+  "Dialogue.JunimoScrap.Harvest.4": "*nom*",
+  "Dialogue.JunimoScrap.Harvest.5": "É pra mim?",
+  "Dialogue.JunimoScrap.Harvest.6": "Oooh!",
+  "Dialogue.JunimoScrap.Harvest.7": "Humm, humm!",
+
+  "Dialogue.JunimoScrap.CropAdjective.1": "{0} Delicioso(a)!",
+  "Dialogue.JunimoScrap.CropAdjective.2": "{0} Suculento(a)!",
+  "Dialogue.JunimoScrap.CropAdjective.3": "{0} Saboroso(a)!",
+  "Dialogue.JunimoScrap.CropAdjective.4": "{0} Gostoso(a)!",
+  "Dialogue.JunimoScrap.CropAdjective.5": "{0} Grande!",
+  "Dialogue.JunimoScrap.CropAdjective.6": "{0} Mole!",
+  "Dialogue.JunimoScrap.CropAdjective.7": "{0} Fresco(a)!",
+  "Dialogue.JunimoScrap.CropAdjective.8": "{0} Maduro(a)!",
+
+  "Dialogue.JunimoScrap.DroppedItem.1": "Ops...",
+  "Dialogue.JunimoScrap.DroppedItem.2": "Oh não!",
+  "Dialogue.JunimoScrap.DroppedItem.3": "Desculpe!",
+  "Dialogue.JunimoScrap.DroppedItem.4": "Desculpa...",
+  "Dialogue.JunimoScrap.DroppedItem.5": "Demais!",
+
+  "Dialogue.JunimoScrap.ExitHut.1": "Fazenda fofa!",
+  "Dialogue.JunimoScrap.ExitHut.2": "Adoro aqui!",
+  "Dialogue.JunimoScrap.ExitHut.3": "Paraíso!",
+  "Dialogue.JunimoScrap.ExitHut.4": "Um dia lindo!",
+  "Dialogue.JunimoScrap.ExitHut.5": "Bom dia!",
+  "Dialogue.JunimoScrap.ExitHut.6": "Acorde e brilhe!",
+  "Dialogue.JunimoScrap.ExitHut.7": "Você tem uvas passas?",
+  "Dialogue.JunimoScrap.ExitHut.8": "Olá, mundo!",
+  "Dialogue.JunimoScrap.ExitHut.9": "Oi~",
+  "Dialogue.JunimoScrap.ExitHut.10": "*bocejo*"
+}
