@@ -206,6 +206,22 @@ namespace ButtonsExtraBooks
             
             var configMenu = Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu != null) Config.SetupConfig(configMenu, ModManifest, Helper, Harmony);
+            
+            GameStateQuery.Register("Spiderbuttons.ButtonsExtraBooks_WEEKLY_GIFTS_LIMIT_REACHED", (query, ctx) =>
+            {
+                if (!ArgUtility.TryGet(query, 1, out var playerKey, out var error, allowBlank: true, "string playerKey") || !ArgUtility.TryGet(query, 2, out var npcName, out error, allowBlank: true, "string npcName"))
+                {
+                    return GameStateQuery.Helpers.ErrorResult(query, error);
+                }
+                
+                return GameStateQuery.Helpers.WithPlayer(ctx.Player, playerKey, player =>
+                {
+                    if (!player.friendshipData.TryGetValue(npcName, out var data)) return false;
+                    if (Utils.PlayerHasPower(player, "ExtraGifts"))
+                        return data.GiftsThisWeek >= Config.ExtraGiftsBonus;
+                    return data.GiftsThisWeek >= 2;
+                });
+            });
         }
 
         private void OnMenuChange(object sender, MenuChangedEventArgs e)
