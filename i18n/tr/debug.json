@@ -1,8 +1,8 @@
 ﻿{
-  "Debug.RemoveAll.Book.Name": "BEB GÃ¼Ã§ KaldÄ±rma",
-  "Debug.RemoveAll.Book.Description": "Button'Ä±n Ekstra KitaplarÄ± tarafÄ±ndan size verilen tÃ¼m yetkileri kaldÄ±rÄ±r ve bunlara karÅŸÄ±lÄ±k gelen kitaplarÄ± size iade eder.",
-  "Debug.RemoveAll.Book.Message": "Button'Ä±n tÃ¼m gÃ¼Ã§lerini kaybettin!",
-
-  "Config.Debug.EnableDebugBook.Name": "Hata AyÄ±klama KitabÄ±nÄ± EtkinleÅŸtir",
-  "Config.Debug.EnableDebugBook.Description": "EtkinleÅŸtirilirse, bu mod tarafÄ±ndan verilen tÃ¼m gÃ¼Ã§lerinizi ortadan kaldÄ±racak bir hata ayÄ±klama kitabÄ± Pierre'den temin edilebilecektir."
+  "Debug.RemoveAll.Book.Name": "BEB Güç Kaldırma",
+  "Debug.RemoveAll.Book.Description": "Button'ın Ekstra Kitapları tarafından size verilen tüm yetkileri kaldırır ve bunlara karşılık gelen kitapları size iade eder.",
+  "Debug.RemoveAll.Book.Message": "Button'ın tüm güçlerini kaybettin!",
+  
+  "Config.Debug.EnableDebugBook.Name": "Hata Ayıklama Kitabını Etkinleştir",
+  "Config.Debug.EnableDebugBook.Description": "Etkinleştirilirse, bu mod tarafından verilen tüm güçlerinizi ortadan kaldıracak bir hata ayıklama kitabı Pierre'den temin edilebilecektir."
 }

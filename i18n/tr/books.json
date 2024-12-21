@@ -1,76 +1,76 @@
 ﻿{
-  "Luck.Book.Name": "Acemi ÅžansÄ±",
-  "Luck.Book.Description": "Åžans statÃ¼nÃ¼zde kalÄ±cÄ±, kÃ¼Ã§Ã¼k bir artÄ±ÅŸ elde etmek iÃ§in bu kitabÄ± okuyun.",
-  "Luck.Book.Message": "ÅžanslÄ± Hissediyorsun!",
-  "Luck.Power.Description": "Åžans istatistiÄŸi kÃ¼Ã§Ã¼k bir miktar kalÄ±cÄ± olarak arttÄ±.",
-
-  "ExtraGifts.Book.Name": "FedakarlÄ±k KitabÄ±",
-  "ExtraGifts.Book.Description": "Bu kitabÄ± okuduktan sonra kÃ¶ylÃ¼ler sizden haftada ikiden fazla hediye kabul edeceklerdir.",
-  "ExtraGifts.Book.Message": "Sen gerÃ§ekten insanlarÄ± memnun eden birisin!",
-  "ExtraGifts.Power.Description": "KÃ¶ylÃ¼ler haftada ikiden fazla hediye kabul edecek.",
-
-  "TreesIgnoreSeason.Book.Name": "KÄ±ÅŸ OrmancÄ±lÄ±ÄŸÄ±",
-  "TreesIgnoreSeason.Book.Description": "Bu kitabÄ± okumak size kÄ±ÅŸ mevsiminde nasÄ±l aÄŸaÃ§ yetiÅŸtirileceÄŸini Ã¶ÄŸretecektir.",
-  "TreesIgnoreSeason.Book.Message": "OrmancÄ±lÄ±k+!",
-  "TreesIgnoreSeason.Power.Description": "AÄŸaÃ§lar yÄ±l boyunca bÃ¼yÃ¼r.",
-
-  "ArtisanMachines.Book.Name": "Esnaf LoncasÄ± KÄ±lavuzu",
-  "ArtisanMachines.Book.Description": "Bu kitapta yer alan teknikler, zanaat Ã¼rÃ¼nlerini Ã§ok daha hÄ±zlÄ± Ã¼retmenize yardÄ±mcÄ± olacaktÄ±r.",
-  "ArtisanMachines.Book.Message": "Zanaatkar makineleriniz artÄ±k daha verimli!",
-  "ArtisanMachines.Power.Description": "Makineler zanaat Ã¼rÃ¼nlerini Ã§ok daha hÄ±zlÄ± Ã¼retiyor.",
-
-  "GiantCrops.Book.Name": "BÃ¼yÃ¼k Kavunlar!",
-  "GiantCrops.Book.Description": "Bu kitabÄ± okuduktan sonra dev mahsuller yetiÅŸtirme olasÄ±lÄ±ÄŸÄ±nÄ±z artacak.",
-  "GiantCrops.Book.Message": "Dev mahsullerin sÄ±rlarÄ±nÄ± Ã¶ÄŸrendiniz!",
-  "GiantCrops.Power.Description": "Dev mahsullerin bir gecede bÃ¼yÃ¼me ÅŸansÄ± daha yÃ¼ksektir.",
-
-  "Popularity.Book.Name": "ArkadaÅŸlÄ±k 202",
-  "Popularity.Book.Description": "ArkadaÅŸlarÄ±nÄ±zÄ±n size hediye gÃ¶nderme olasÄ±lÄ±ÄŸÄ± daha yÃ¼ksek olacaktÄ±r.",
-  "Popularity.Book.Message": "ArkadaÅŸlarÄ±n seni seviyor!",
-  "Popularity.Power.Description": "ArkadaÅŸlarÄ±nÄ±zÄ±n size postayla hediye gÃ¶nderme olasÄ±lÄ±ÄŸÄ± daha yÃ¼ksektir.",
-
-  "Optimization.Book.Name": "Optimize SDV++",
-  "Optimization.Book.Description": "Bu kitabÄ± okuyarak deneyim kazanÄ±mÄ±nÄ±zÄ± nasÄ±l optimize edeceÄŸinizi Ã¶ÄŸrenin.",
-  "Optimization.Book.Message": "Deneyim baÅŸÄ±na daha fazla deneyim!",
-  "Optimization.Power.Description": "Deneyim kazancÄ±nÄ±z artar.",
-
-  "BusDriving.Book.Name": "Ahmaklar Ä°Ã§in OtobÃ¼s KÄ±lavuzu",
-  "BusDriving.Book.Description": "Bu kitap, az Ã§ok otobÃ¼s kullanmak iÃ§in ihtiyacÄ±nÄ±z olan tÃ¼m bilgileri iÃ§erir.",
-  "BusDriving.Book.Message": "Araba sÃ¼rmeyi Ã¶ÄŸrendin!",
-  "BusDriving.Power.Description": "Calico Ã‡Ã¶lÃ¼'ne giden otobÃ¼sÃ¼ kendiniz sÃ¼rebilirsiniz.",
-
+  "Luck.Book.Name": "Acemi Şansı",
+  "Luck.Book.Description": "Şans istatiğinde kalıcı, küçük bir artış elde etmek için bu kitabı okuyun.",
+  "Luck.Book.Message": "Şanslı Hissediyorsun!",
+  "Luck.Power.Description": "Şans istatistiği küçük bir miktar kadar kalıcı olarak arttı.",
+  
+  "ExtraGifts.Book.Name": "Fedakarlık Kitabı",
+  "ExtraGifts.Book.Description": "Bu kitabı okuduktan sonra köylüler sizden haftada ikiden fazla hediye kabul edeceklerdir.",
+  "ExtraGifts.Book.Message": "Gerçekten yardımsever birisisin!",
+  "ExtraGifts.Power.Description": "Köylüler haftada ikiden fazla hediyeyi kabul edecekler.",
+  
+  "TreesIgnoreSeason.Book.Name": "Kış Ormancılığı",
+  "TreesIgnoreSeason.Book.Description": "Bu kitabı okumak size kış mevsiminde nasıl ağaç yetiştirileceğini öğretecektir.",
+  "TreesIgnoreSeason.Book.Message": "Doğayla iç içe!",
+  "TreesIgnoreSeason.Power.Description": "Ağaçlar yıl boyunca büyür.",
+  
+  "ArtisanMachines.Book.Name": "Esnaf Loncası Kılavuzu",
+  "ArtisanMachines.Book.Description": "Bu kitapta yer alan teknikler, zanaat ürünlerini çok daha hızlı üretmenize yardımcı olacaktır.",
+  "ArtisanMachines.Book.Message": "Zanaatkar makineleriniz artık daha verimli!",
+  "ArtisanMachines.Power.Description": "Makineler zanaat ürünlerini çok daha hızlı üretiyor.",
+  
+  "GiantCrops.Book.Name": "Büyük Kavunlar!",
+  "GiantCrops.Book.Description": "Bu kitabı okuduktan sonra dev mahsuller yetiştirme olasılığınız artacak.",
+  "GiantCrops.Book.Message": "Dev mahsulleri yetiştirmenin sırlarını öğrendiniz!",
+  "GiantCrops.Power.Description": "Dev mahsullerin bir gecede büyüme şansı daha da yükselir.",
+  
+  "Popularity.Book.Name": "Arkadaşlık 202",
+  "Popularity.Book.Description": "Arkadaşlarınızın size hediye gönderme olasılıkları daha yüksek olacaktır.",
+  "Popularity.Book.Message": "Arkadaşların seni seviyor!",
+  "Popularity.Power.Description": "Arkadaşlarınızın size postayla hediye gönderme olasılığı daha da artar.",
+  
+  "Optimization.Book.Name": "Optimize SDV +",
+  "Optimization.Book.Description": "Bu kitabı okuyarak deneyim kazanmanın nasıl optimize edeceğinizi öğrenin.",
+  "Optimization.Book.Message": "Deneyim başına daha fazla deneyim!",
+  "Optimization.Power.Description": "Deneyim kazancınız artar.",
+  
+  "BusDriving.Book.Name": "Ahmaklar İçin Otobüs Kılavuzu",
+  "BusDriving.Book.Description": "Bu kitap, az çok otobüs kullanmak için ihtiyacınız olan tüm bilgileri içerir.",
+  "BusDriving.Book.Message": "Araba sürmeyi öğrendin!",
+  "BusDriving.Power.Description": "Calico Çölü'ne giden otobüsü artık kendiniz sürebilirsiniz.",
+  
   "QiNotebook.Book.Name": "Bay Qi'nin Not Defteri",
-  "QiNotebook.Book.Description": "Bu notlar daha fazla rastgele Qi taÅŸÄ± bulmanÄ±za yardÄ±mcÄ± olacaktÄ±r.",
-  "QiNotebook.Book.Message": '"Ä°yi ÅŸanslar evlat."',
-  "QiNotebook.Power.Description": "Rastgele Qi taÅŸÄ± bulma ihtimali arttÄ±.",
-
-  "PetGifts.Book.Name": "Fareler ve Ä°nsanlar",
-  "PetGifts.Book.Description": "Bu kitap size daha iyi hediyeler sunmak iÃ§in evcil hayvanlarÄ±nÄ±zÄ± nasÄ±l eÄŸiteceÄŸinizi Ã¶ÄŸretecek.",
-  "PetGifts.Book.Message": "Evcil hayvanÄ±n seni GERÃ‡EKTEN seviyor!",
-  "PetGifts.Power.Description": "Evcil hayvanlarÄ±nÄ±zÄ±n size daha iyi hediyeler getirme olasÄ±lÄ±ÄŸÄ± daha yÃ¼ksektir.",
-
-  "CheatCodes.Book.Name": "Atari Makineleri iÃ§in Gizli Kodlar",
-  "CheatCodes.Book.Description": "Bu kitabÄ±n bir yerinde Junimo Kart'Ä± sonunda yenmenize yardÄ±mcÄ± olacak bir kod var, bundan eminsiniz.",
-  "CheatCodes.Book.Message": "YukarÄ±, yukarÄ±, aÅŸaÄŸÄ±, aÅŸaÄŸÄ±, sola, saÄŸa...",
-  "CheatCodes.Power.Description": "Junimo Kart ilerleme modunda daha fazla canla baÅŸlayÄ±n.",
-
-  "JunimoScrap.Book.Name": "Junimo AlbÃ¼mÃ¼",
-  "JunimoScrap.Book.Description": "Junimo'larÄ±nÄ±z bu kitabÄ± anÄ±larla doldurdu.",
-  "JunimoScrap.Book.Message": "ArtÄ±k Junimo'larla daha yakÄ±nsÄ±nÄ±z!",
-  "JunimoScrap.Power.Description": "Junimo'larÄ±nÄ±z daha konuÅŸkan ve size mektup gÃ¶nderecek.",
-
-  "Carols.Book.Name": "Ä°lahiler KitabÄ±",
-  "Carols.Book.Description": "Bu ÅŸarkÄ±lar kÄ±ÅŸ boyunca tatil neÅŸesini yaymanÄ±za yardÄ±mcÄ± olacak.",
-  "Carols.Book.Message": "BazÄ± mevsimlik ilahiler Ã¶ÄŸrendin!",
-  "Carols.Power.Description": "MaÄŸaza sahipleri kÄ±ÅŸ sezonunda size indirim yapacaktÄ±r.",
-
-  "Coffee.Book.Name": "En GÃ¼Ã§lÃ¼ Bira",
-  "Coffee.Book.Description": "Kafein tÃ¼ketiminizi bir sonraki seviyeye taÅŸÄ±mak iÃ§in bu kitabÄ± okuyun.",
-  "Coffee.Book.Message": "ArtÄ±k neredeyse bir baristasÄ±nÄ±z!",
-  "Coffee.Power.Description": "Kahve iÃ§ecekleri artÄ±k Ã¼Ã§ kat daha uzun sÃ¼re etki ediyor.",
-
-  "Sketchbook.Book.Name": "Ã‡ocuklarÄ±n Eskiz Defteri",
-  "Sketchbook.Book.Description": "Kirle kaplÄ± olmayan Ã§izimler aslÄ±nda oldukÃ§a iyi!",
-  "Sketchbook.Book.Message": "KazÄ±lacak daha Ã§ok ÅŸey varmÄ±ÅŸ gibi hissediyorsun!",
-  "Sketchbook.Power.Description": "KazÄ± noktalarÄ± daha iyi Ã¶ÄŸeler iÃ§erebilir.",
+  "QiNotebook.Book.Description": "Bu notlar daha fazla rastgele Qi taşı bulmannıza yardımcı olacaktır.",
+  "QiNotebook.Book.Message": '"İyi şanslar evlat."',
+  "QiNotebook.Power.Description": "Rastgele Qi taşı bulma ihtimali artar.",
+  
+  "PetGifts.Book.Name": "Fareler ve İnsanlar",
+  "PetGifts.Book.Description": "Bu kitap size daha iyi hediyeler sunmak için evcil hayvanlarınızı nasıl eğiteceğinizi öğretecek.",
+  "PetGifts.Book.Message": "Evcil hayvanın seni GERÇEKTEN seviyor!",
+  "PetGifts.Power.Description": "Evcil hayvanlarınızın size daha iyi hediyeler getirme olasılığı daha yüksektir.",
+  
+  "CheatCodes.Book.Name": "Atari Makineleri için Gizli Kodlar",
+  "CheatCodes.Book.Description": "Bu kitabın bir yerinde Junimo Kart'ı sonunda yenmenize yardımcı olacak bir kod var, bundan eminsiniz.",
+  "CheatCodes.Book.Message": "Yukarı, yukarı, aşağı, aşağı, sola, sağa...",
+  "CheatCodes.Power.Description": "Junimo Kart ilerleme modunda daha fazla canla başlarsın.",
+  
+  "JunimoScrap.Book.Name": "Junimo Albümü",
+  "JunimoScrap.Book.Description": "Junimo'larınız bu kitabı anılar ile doldurdu.",
+  "JunimoScrap.Book.Message": "Artık Junimo'larla daha yakınlaştınız!",
+  "JunimoScrap.Power.Description": "Junimo'larınız daha konuşkan ve size mektup gönderecek.",
+  
+  "Carols.Book.Name": "İlahiler Kitabı",
+  "Carols.Book.Description": "Bu şarkılar kış boyunca tatil neşesini yaymanıza yardımcı olacak.",
+  "Carols.Book.Message": "Bazı mevsimlik ilahiler öğrendin!",
+  "Carols.Power.Description": "Mağaza sahipleri kış sezonunda size indirim yapacaktır.",
+  
+  "Coffee.Book.Name": "Kafein Hakkında İnanılmaz Gerçekler",
+  "Coffee.Book.Description": "Kafein tüketiminizi bir sonraki seviyeye taşımak için bu kitabı okuyun.",
+  "Coffee.Book.Message": "Artık neredeyse bir baristasınız!",
+  "Coffee.Power.Description": "Kahve içecekleri artık üç kat daha uzun süre etki ediyor.",
+  
+  "Sketchbook.Book.Name": "Çocukların Eskiz Defteri",
+  "Sketchbook.Book.Description": "Kirle kaplı olmayan çizimler aslında oldukça iyi!",
+  "Sketchbook.Book.Message": "Kazılacak daha çok şey varmış gibi hissediyorsun!",
+  "Sketchbook.Power.Description": "Kazı noktaları daha iyi eşyalar içerebilir.",
 }
